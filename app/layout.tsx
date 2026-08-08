@@ -5,7 +5,7 @@ import "./globals.css";
 const manrope = Manrope({ variable: "--font-body", subsets: ["latin"] });
 const spaceGrotesk = Space_Grotesk({ variable: "--font-display", subsets: ["latin"] });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appsmakerdeluxe.github.io";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
