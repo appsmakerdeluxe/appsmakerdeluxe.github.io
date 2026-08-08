@@ -15,7 +15,7 @@ const apps = [
     description: "Ein farbenreiches Mobile-Game zwischen Wasser-Rifts, präzisem Timing und tropischen Welten.",
     image: "/apps/riftivo-store-2026-08.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.riftivo",
-    tone: "blue",
+    tone: "blue wide",
   },
   {
     name: "BuyMorrow",
@@ -49,6 +49,22 @@ const apps = [
     url: "https://play.google.com/store/apps/details?id=com.draven.indexgenie",
     tone: "cyan",
   },
+  {
+    name: "LuxCue",
+    tag: "Licht & Sicherheit",
+    description: "Ein lokales Android-Toolkit für Licht, Signale, Morse und hilfreiche Gerätefunktionen.",
+    image: "/apps/luxcue.webp",
+    url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.luxcue",
+    tone: "gold",
+  },
+  {
+    name: "ChiliWise",
+    tag: "Chili-Enzyklopädie",
+    description: "Ein farbenfrohes Offline-Lexikon für Sorten, Schärfe und Wissen rund um Anbau und Küche.",
+    image: "/apps/chiliwise.webp",
+    tone: "red wide",
+    availability: "In Vorbereitung",
+  },
 ];
 
 export default function Home() {
@@ -74,7 +90,7 @@ export default function Home() {
         <div className="hero-grid" id="main-content">
           <div className="hero-copy">
             <h1>Apps, die sich<br /><span>richtig anfühlen.</span></h1>
-            <p className="hero-lead">AppsMakerDeluxe Studios zeigt eine wachsende Sammlung eigenständiger Android-Produkte – klar gestaltet, sorgfältig entwickelt und direkt bei Google Play verfügbar.</p>
+            <p className="hero-lead">AppsMakerDeluxe Studios zeigt eine wachsende Sammlung eigenständiger Android-Produkte – klar gestaltet, sorgfältig entwickelt und bei Google Play verfügbar.</p>
             <div className="hero-actions">
               <a className="button primary" href="#arbeiten">Apps entdecken <span aria-hidden="true">↓</span></a>
               <a className="button ghost" href="#studio">Zum Studio <span aria-hidden="true">↓</span></a>
@@ -98,7 +114,7 @@ export default function Home() {
       <section className="section work" id="arbeiten">
         <div className="section-head reveal">
           <div><div className="eyebrow"><span /> Ausgewählte Arbeiten</div><h2>Veröffentlicht.<br /><em>Und im Einsatz.</em></h2></div>
-          <p>Sechs eigenständige Produkte, sechs unterschiedliche Aufgaben – verbunden durch klare Bedienung und sorgfältige Umsetzung.</p>
+          <p>Sieben veröffentlichte Apps und ein kommender Titel – verbunden durch klare Bedienung und sorgfältige Umsetzung.</p>
         </div>
         <div className="app-grid">
           {apps.map((app, index) => (
@@ -111,9 +127,11 @@ export default function Home() {
                 <div className="app-tag">{app.tag}</div>
                 <h3>{app.name}</h3>
                 <p>{app.description}</p>
-                <a href={app.url} target="_blank" rel="noreferrer" aria-label={`${app.name} bei Google Play öffnen`}>
-                  Bei Google Play <span aria-hidden="true">↗</span>
-                </a>
+                {app.url ? (
+                  <a href={app.url} target="_blank" rel="noreferrer" aria-label={`${app.name} bei Google Play öffnen`}>
+                    Bei Google Play <span aria-hidden="true">↗</span>
+                  </a>
+                ) : <span className="app-availability">{app.availability}</span>}
               </div>
             </article>
           ))}

@@ -28,7 +28,10 @@ test("renders the finished German portfolio with real app links", async () => {
     "de.appsmakerdeluxe.everago",
     "com.appsmakerdeluxe.callblockerplus",
     "com.draven.indexgenie",
+    "de.appsmakerdeluxe.luxcue",
   ]) assert.match(html, new RegExp(appId.replaceAll(".", "\\.")));
+  assert.match(html, /ChiliWise/);
+  assert.match(html, /In Vorbereitung/);
   assert.match(html, /og\.png/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton|formsubmit|Projekt anfragen|App anfragen/i);
 });
