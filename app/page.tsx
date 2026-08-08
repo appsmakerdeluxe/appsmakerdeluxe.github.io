@@ -113,7 +113,7 @@ export default function Home() {
 
       <section className="section work" id="arbeiten">
         <div className="section-head reveal">
-          <div><div className="eyebrow"><span /> Ausgewählte Arbeiten</div><h2>Veröffentlicht.<br /><em>Und im Einsatz.</em></h2></div>
+          <div><div className="eyebrow"><span /> Ausgewählte Arbeiten</div><h2>Produkte.<br /><em>Im Fokus.</em></h2></div>
           <p>Sieben veröffentlichte Apps und ein kommender Titel – verbunden durch klare Bedienung und sorgfältige Umsetzung.</p>
         </div>
         <div className="app-grid">
