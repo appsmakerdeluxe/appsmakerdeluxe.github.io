@@ -20,7 +20,6 @@ if (!response.ok) throw new Error(`Static export failed with HTTP ${response.sta
 await mkdir(pagesRoot, { recursive: true });
 await cp(clientRoot, pagesRoot, { recursive: true, force: true });
 await writeFile(new URL("index.html", pagesRoot), await response.text(), "utf8");
-await writeFile(new URL("CNAME", pagesRoot), "appsmakerdeluxe.is-a.dev\n", "utf8");
 await writeFile(
   new URL(".nojekyll", pagesRoot),
   "",
