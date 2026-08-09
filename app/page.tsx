@@ -18,6 +18,14 @@ const apps = [
     tone: "blue wide",
   },
   {
+    name: "Riftivo3D",
+    tag: "3D River Runner",
+    description: "Ein detailreicher 3D-Endless-Runner mit flotten Flussfahrten, Sammelobjekten und tropischen Strecken.",
+    image: "/apps/riftivo3d.webp",
+    url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.riftivo3d",
+    tone: "lime",
+  },
+  {
     name: "BuyMorrow",
     tag: "Bewusster einkaufen",
     description: "Fundstücke sammeln, Bedenkzeit gewinnen und Kaufentscheidungen mit Abstand treffen.",
@@ -114,7 +122,7 @@ export default function Home() {
       <section className="section work" id="arbeiten">
         <div className="section-head reveal">
           <div><div className="eyebrow"><span /> Ausgewählte Arbeiten</div><h2>Produkte.<br /><em>Im Fokus.</em></h2></div>
-          <p>Sieben veröffentlichte Apps und ein kommender Titel – verbunden durch klare Bedienung und sorgfältige Umsetzung.</p>
+          <p>Acht veröffentlichte Apps und ein kommender Titel – verbunden durch klare Bedienung und sorgfältige Umsetzung.</p>
         </div>
         <div className="app-grid">
           {apps.map((app, index) => (

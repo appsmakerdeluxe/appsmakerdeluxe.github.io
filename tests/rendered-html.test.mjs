@@ -24,6 +24,7 @@ test("renders the finished German portfolio with real app links", async () => {
   for (const appId of [
     "de.appsmakerdeluxe.daymigo",
     "de.appsmakerdeluxe.riftivo",
+    "de.appsmakerdeluxe.riftivo3d",
     "de.appsmakerdeluxe.buymorrow",
     "de.appsmakerdeluxe.everago",
     "com.appsmakerdeluxe.callblockerplus",
