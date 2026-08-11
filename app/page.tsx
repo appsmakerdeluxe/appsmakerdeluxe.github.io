@@ -34,6 +34,14 @@ const apps = [
     tone: "amber",
   },
   {
+    name: "Storivio",
+    tag: "Vorräte & MHD",
+    description: "Lebensmittel und Haushaltsvorräte offline verwalten, MHDs im Blick behalten und Einkäufe organisieren.",
+    image: "/apps/storivio.webp",
+    url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.storivio",
+    tone: "green",
+  },
+  {
     name: "EverAgo",
     tag: "Momente im Blick",
     description: "Persönliche Ereignisse und Zeitabstände in einer klaren, ruhigen Oberfläche festhalten.",
@@ -71,6 +79,14 @@ const apps = [
     description: "Ein farbenfrohes Offline-Lexikon für Sorten, Schärfe und Wissen rund um Anbau und Küche.",
     image: "/apps/chiliwise.webp",
     tone: "red wide",
+    availability: "In Vorbereitung",
+  },
+  {
+    name: "Kavorenza",
+    tag: "Multiplayer Mini-Games",
+    description: "Ein schneller Raum für gemeinsame Mini-Games mit kurzen Runden, klaren Regeln und Freunden.",
+    image: "/apps/kavorenza.webp",
+    tone: "indigo",
     availability: "In Vorbereitung",
   },
 ];
@@ -122,7 +138,7 @@ export default function Home() {
       <section className="section work" id="arbeiten">
         <div className="section-head reveal">
           <div><div className="eyebrow"><span /> Ausgewählte Arbeiten</div><h2>Produkte.<br /><em>Im Fokus.</em></h2></div>
-          <p>Acht veröffentlichte Apps und ein kommender Titel – verbunden durch klare Bedienung und sorgfältige Umsetzung.</p>
+          <p>Neun veröffentlichte Apps und zwei kommende Titel – verbunden durch klare Bedienung und sorgfältige Umsetzung.</p>
         </div>
         <div className="app-grid">
           {apps.map((app, index) => (
