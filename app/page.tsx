@@ -78,16 +78,16 @@ const apps = [
     tag: "Chili-Enzyklopädie",
     description: "Ein farbenfrohes Offline-Lexikon für Sorten, Schärfe und Wissen rund um Anbau und Küche.",
     image: "/apps/chiliwise.webp",
-    tone: "red wide",
-    availability: "In Vorbereitung",
+    url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.chiliwise",
+    tone: "red",
   },
   {
     name: "Kavorenza",
     tag: "Multiplayer Mini-Games",
     description: "Ein schneller Raum für gemeinsame Mini-Games mit kurzen Runden, klaren Regeln und Freunden.",
     image: "/apps/kavorenza.webp",
+    url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.Kavorenza",
     tone: "indigo",
-    availability: "In Vorbereitung",
   },
 ];
 
@@ -138,7 +138,7 @@ export default function Home() {
       <section className="section work" id="arbeiten">
         <div className="section-head reveal">
           <div><div className="eyebrow"><span /> Ausgewählte Arbeiten</div><h2>Produkte.<br /><em>Im Fokus.</em></h2></div>
-          <p>Neun veröffentlichte Apps und zwei kommende Titel – verbunden durch klare Bedienung und sorgfältige Umsetzung.</p>
+          <p>Elf veröffentlichte Apps, verbunden durch klare Bedienung und sorgfältige Umsetzung.</p>
         </div>
         <div className="app-grid">
           {apps.map((app, index) => (

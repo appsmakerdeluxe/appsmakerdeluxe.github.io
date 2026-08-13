@@ -31,10 +31,12 @@ test("renders the finished German portfolio with real app links", async () => {
     "com.draven.indexgenie",
     "de.appsmakerdeluxe.luxcue",
     "de.appsmakerdeluxe.storivio",
+    "de.appsmakerdeluxe.chiliwise",
+    "de.appsmakerdeluxe.Kavorenza",
   ]) assert.match(html, new RegExp(appId.replaceAll(".", "\\.")));
   assert.match(html, /ChiliWise/);
   assert.match(html, /Kavorenza/);
-  assert.match(html, /In Vorbereitung/);
+  assert.doesNotMatch(html, /In Vorbereitung/);
   assert.match(html, /og\.png/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton|formsubmit|Projekt anfragen|App anfragen/i);
 });
