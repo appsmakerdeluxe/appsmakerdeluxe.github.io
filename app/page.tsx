@@ -26,6 +26,14 @@ const apps = [
     tone: "lime",
   },
   {
+    name: "Recallune",
+    tag: "On-Device KI-Suche",
+    description: "Screenshots, Notizen und Belege offline wiederfinden – mit lokaler OCR-Texterkennung und semantischer Vektorsuche.",
+    image: "/apps/recallune.webp",
+    url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.recallune",
+    tone: "iris",
+  },
+  {
     name: "BuyMorrow",
     tag: "Bewusster einkaufen",
     description: "Fundstücke sammeln, Bedenkzeit gewinnen und Kaufentscheidungen mit Abstand treffen.",
@@ -138,14 +146,14 @@ export default function Home() {
       <section className="section work" id="arbeiten">
         <div className="section-head reveal">
           <div><div className="eyebrow"><span /> Ausgewählte Arbeiten</div><h2>Produkte.<br /><em>Im Fokus.</em></h2></div>
-          <p>Elf veröffentlichte Apps, verbunden durch klare Bedienung und sorgfältige Umsetzung.</p>
+          <p>Zwölf veröffentlichte Apps, verbunden durch klare Bedienung und sorgfältige Umsetzung.</p>
         </div>
         <div className="app-grid">
           {apps.map((app, index) => (
             <article className={`app-card ${index < 3 ? "featured" : "compact"} ${app.tone}`} key={app.name}>
               <div className="app-image-wrap">
                 <img src={app.image} alt={`Originaler Google-Play-Screenshot von ${app.name}`} loading={index > 1 ? "lazy" : "eager"} />
-                <span className="app-index">0{index + 1}</span>
+                <span className="app-index">{String(index + 1).padStart(2, "0")}</span>
               </div>
               <div className="app-info">
                 <div className="app-tag">{app.tag}</div>

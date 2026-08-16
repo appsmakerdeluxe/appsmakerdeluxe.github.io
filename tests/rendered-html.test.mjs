@@ -25,6 +25,7 @@ test("renders the finished German portfolio with real app links", async () => {
     "de.appsmakerdeluxe.daymigo",
     "de.appsmakerdeluxe.riftivo",
     "de.appsmakerdeluxe.riftivo3d",
+    "de.appsmakerdeluxe.recallune",
     "de.appsmakerdeluxe.buymorrow",
     "de.appsmakerdeluxe.everago",
     "com.appsmakerdeluxe.callblockerplus",
@@ -34,8 +35,10 @@ test("renders the finished German portfolio with real app links", async () => {
     "de.appsmakerdeluxe.chiliwise",
     "de.appsmakerdeluxe.Kavorenza",
   ]) assert.match(html, new RegExp(appId.replaceAll(".", "\\.")));
+  assert.match(html, /Recallune/);
   assert.match(html, /ChiliWise/);
   assert.match(html, /Kavorenza/);
+  assert.match(html, /Zwölf/);
   assert.doesNotMatch(html, /In Vorbereitung/);
   assert.match(html, /og\.png/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton|formsubmit|Projekt anfragen|App anfragen/i);
