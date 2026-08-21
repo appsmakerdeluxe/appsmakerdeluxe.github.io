@@ -28,12 +28,12 @@ const apps = [
     tone: "lime",
   },
   {
-    name: "Recallune",
-    tag: "On-Device KI-Suche",
-    description: "Screenshots, Notizen und Belege offline wiederfinden – mit lokaler OCR-Texterkennung und semantischer Vektorsuche.",
-    image: "/apps/recallune.webp",
-    url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.recallune",
-    tone: "iris",
+    name: "My Love Calculator",
+    tag: "Liebes- & Namensfunke",
+    description: "Zwei Namen in eine verspielte tägliche Konstellation verwandeln – mit Buchstaben-Harmonie, Namens-Rhythmus und Offline-Datenschutz.",
+    image: "/apps/mylovecalculator.webp",
+    url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.mylovecalculator",
+    tone: "rose",
   },
   {
     name: "BuyMorrow",

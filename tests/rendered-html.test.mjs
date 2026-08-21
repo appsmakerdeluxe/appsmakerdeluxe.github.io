@@ -25,7 +25,7 @@ test("renders the finished German portfolio with real app links", async () => {
     "de.appsmakerdeluxe.daymigo",
     "de.appsmakerdeluxe.riftivo",
     "de.appsmakerdeluxe.riftivo3d",
-    "de.appsmakerdeluxe.recallune",
+    "com.appsmakerdeluxe.mylovecalculator",
     "de.appsmakerdeluxe.buymorrow",
     "de.appsmakerdeluxe.everago",
     "com.appsmakerdeluxe.callblockerplus",
@@ -35,7 +35,8 @@ test("renders the finished German portfolio with real app links", async () => {
     "de.appsmakerdeluxe.chiliwise",
     "de.appsmakerdeluxe.Kavorenza",
   ]) assert.match(html, new RegExp(appId.replaceAll(".", "\\.")));
-  assert.match(html, /Recallune/);
+  assert.match(html, /My Love Calculator/);
+  assert.doesNotMatch(html, /Recallune/);
   assert.match(html, /ChiliWise/);
   assert.match(html, /Kavorenza/);
   assert.match(html, /Zwölf/);
