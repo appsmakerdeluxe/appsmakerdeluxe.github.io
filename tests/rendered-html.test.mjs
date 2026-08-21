@@ -75,6 +75,7 @@ test("keeps final assets and accessibility safeguards in place", async () => {
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   await access(new URL("../public/og.png", import.meta.url));
   await access(new URL("../public/logo.webp", import.meta.url));
+  await access(new URL("../public/studio-badge.webp", import.meta.url));
   await access(new URL("../public/logo-mark.webp", import.meta.url));
   await access(new URL("../public/favicon.png", import.meta.url));
   await assert.rejects(access(new URL("../app/_sites-preview/SkeletonPreview.tsx", import.meta.url)));

@@ -231,26 +231,40 @@ function PortfolioView() {
 
       <section className="statement" id="studio">
         <div className="statement-grid">
-          <div className="eyebrow">
-            <span /> {t.statement.eyebrow}
+          <div className="statement-brand-col">
+            <div className="eyebrow">
+              <span /> {t.statement.eyebrow}
+            </div>
+            <div className="statement-badge-wrap">
+              <img
+                src="/studio-badge.webp"
+                alt="AppsMakerDeluxe Studios 3D Badge"
+                className="statement-badge-img"
+                width="260"
+                height="246"
+              />
+              <div className="statement-badge-glow" aria-hidden="true" />
+            </div>
           </div>
-          <blockquote>
-            {t.statement.quotePrefix}
-            <em>{t.statement.quoteEmphasis}</em>
-            {t.statement.quoteSuffix}
-          </blockquote>
-          <div className="values">
-            <div>
-              <strong>{t.statement.value1Title}</strong>
-              <span>{t.statement.value1Desc}</span>
-            </div>
-            <div>
-              <strong>{t.statement.value2Title}</strong>
-              <span>{t.statement.value2Desc}</span>
-            </div>
-            <div>
-              <strong>{t.statement.value3Title}</strong>
-              <span>{t.statement.value3Desc}</span>
+          <div className="statement-content-col">
+            <blockquote>
+              {t.statement.quotePrefix}
+              <em>{t.statement.quoteEmphasis}</em>
+              {t.statement.quoteSuffix}
+            </blockquote>
+            <div className="values">
+              <div>
+                <strong>{t.statement.value1Title}</strong>
+                <span>{t.statement.value1Desc}</span>
+              </div>
+              <div>
+                <strong>{t.statement.value2Title}</strong>
+                <span>{t.statement.value2Desc}</span>
+              </div>
+              <div>
+                <strong>{t.statement.value3Title}</strong>
+                <span>{t.statement.value3Desc}</span>
+              </div>
             </div>
           </div>
         </div>
@@ -276,21 +290,23 @@ function PortfolioView() {
       </section>
 
       <footer>
-        <a
-          className="brand footer-brand"
-          href="#top"
-          aria-label="AppsMakerDeluxe Studios – Startseite"
-        >
-          <img
-            src="/logo.webp"
-            alt="AppsMakerDeluxe Studios Logo"
-            className="brand-logo"
-            width="220"
-            height="46"
-          />
-        </a>
-        <p>{t.footer.tagline}</p>
-        <div>
+        <div className="footer-brand-col">
+          <a
+            className="brand footer-brand"
+            href="#top"
+            aria-label="AppsMakerDeluxe Studios – Startseite"
+          >
+            <img
+              src="/logo.webp"
+              alt="AppsMakerDeluxe Studios Logo"
+              className="brand-logo footer-logo"
+              width="260"
+              height="56"
+            />
+          </a>
+          <p>{t.footer.tagline}</p>
+        </div>
+        <div className="footer-links">
           <a href="#arbeiten">{t.nav.apps}</a>
           <a href="#studio">{t.nav.studio}</a>
           <a href="#kontakt">{t.nav.contact}</a>
