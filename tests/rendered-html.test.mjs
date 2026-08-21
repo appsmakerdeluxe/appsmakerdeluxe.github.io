@@ -39,7 +39,7 @@ test("renders the finished German portfolio with real app links", async () => {
   assert.doesNotMatch(html, /Recallune/);
   assert.match(html, /ChiliWise/);
   assert.match(html, /Kavorenza/);
-  assert.match(html, /Zwölf/);
+  assert.match(html, /wachsende Sammlung/);
   assert.match(html, /appsmakerdeluxe@gmail\.com/);
   assert.match(html, /id="kontakt"/);
   assert.match(html, /lang-selector-btn/);
