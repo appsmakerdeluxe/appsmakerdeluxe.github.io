@@ -39,6 +39,7 @@ test("renders the finished German portfolio with real app links", async () => {
   assert.match(html, /ChiliWise/);
   assert.match(html, /Kavorenza/);
   assert.match(html, /Zwölf/);
+  assert.match(html, /logo\.webp/);
   assert.doesNotMatch(html, /In Vorbereitung/);
   assert.match(html, /og\.png/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton|formsubmit|Projekt anfragen|App anfragen/i);
@@ -55,5 +56,8 @@ test("keeps final assets and accessibility safeguards in place", async () => {
   assert.match(css, /prefers-reduced-motion:\s*reduce/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   await access(new URL("../public/og.png", import.meta.url));
+  await access(new URL("../public/logo.webp", import.meta.url));
+  await access(new URL("../public/logo-mark.webp", import.meta.url));
+  await access(new URL("../public/favicon.png", import.meta.url));
   await assert.rejects(access(new URL("../app/_sites-preview/SkeletonPreview.tsx", import.meta.url)));
 });

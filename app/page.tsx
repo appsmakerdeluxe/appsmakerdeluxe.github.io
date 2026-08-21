@@ -105,8 +105,7 @@ export default function Home() {
       <a className="skip-link" href="#main-content">Zum Inhalt springen</a>
       <header className="site-header" aria-label="Hauptnavigation">
         <a className="brand" href="#top" aria-label="AppsMakerDeluxe Studios – Startseite">
-          <span className="brand-mark" aria-hidden="true">A<span>M</span></span>
-          <span>AppsMakerDeluxe <em>Studios</em></span>
+          <img src="/logo.webp" alt="AppsMakerDeluxe Studios Logo" className="brand-logo" width="220" height="46" />
         </a>
         <nav className="desktop-nav" aria-label="Seitennavigation">
           <a href="#arbeiten">Apps</a>
@@ -183,7 +182,9 @@ export default function Home() {
       </section>
 
       <footer>
-        <a className="brand footer-brand" href="#top"><span className="brand-mark" aria-hidden="true">A<span>M</span></span><span>AppsMakerDeluxe <em>Studios</em></span></a>
+        <a className="brand footer-brand" href="#top" aria-label="AppsMakerDeluxe Studios – Startseite">
+          <img src="/logo.webp" alt="AppsMakerDeluxe Studios Logo" className="brand-logo" width="220" height="46" />
+        </a>
         <p>Android-Produkte mit Charakter.</p>
         <div><a href="#arbeiten">Apps</a><a href="#studio">Studio</a><a href="#top">Nach oben ↑</a></div>
         <small>© {new Date().getFullYear()} AppsMakerDeluxe Studios</small>
