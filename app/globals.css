@@ -112,16 +112,24 @@ h1 span, h2 em, blockquote em { color: var(--blue); font-style: normal; }
 .service-list p { color: #91a0ad; line-height: 1.65; font-size: 14px; }
 .service-arrow { font-size: 24px; color: #596a78; transition: transform .2s, color .2s; }
 .service-list article:hover .service-arrow { transform: rotate(45deg); color: var(--blue); }
-.statement { background: linear-gradient(135deg, #00c2ff 0%, #0080ff 100%); color: #051329; padding: 120px max(5vw, 24px); }
+.statement {
+  background: radial-gradient(circle at 85% 15%, rgba(0, 180, 255, .15) 0%, transparent 45%), linear-gradient(145deg, #071220 0%, #091a30 50%, #060e18 100%);
+  color: #f7fbff;
+  padding: 120px max(5vw, 24px);
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(0, 180, 255, .18);
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
 .statement-grid { max-width: 1300px; margin: auto; display: grid; grid-template-columns: .35fr 1.65fr; gap: 60px; }
-.statement .eyebrow { color: #063168; }
-.statement .eyebrow span { background: #063168; box-shadow: none; }
-.statement blockquote { font-size: clamp(38px, 5vw, 72px); line-height: 1.08; font-weight: 550; }
-.statement blockquote em { color: #002c66; }
-.values { grid-column: 2; display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid rgba(7, 17, 31, .25); margin-top: 25px; padding-top: 30px; gap: 32px; }
+.statement .eyebrow { color: #94a7b8; }
+.statement .eyebrow span { background: var(--blue); box-shadow: 0 0 10px var(--blue); }
+.statement blockquote { font-size: clamp(38px, 5vw, 72px); line-height: 1.08; font-weight: 550; color: #b8c8d6; }
+.statement blockquote em { color: #ffffff; font-style: normal; font-weight: 700; text-shadow: 0 0 30px rgba(255, 255, 255, .35), 0 0 10px rgba(0, 180, 255, .3); }
+.values { grid-column: 2; display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid rgba(255, 255, 255, .12); margin-top: 32px; padding-top: 32px; gap: 32px; }
 .values div { display: flex; flex-direction: column; gap: 9px; }
-.values strong { font: 700 15px var(--font-display); }
-.values span { font-size: 12px; color: #0e386e; line-height: 1.5; }
+.values strong { font: 700 15px var(--font-display); color: #ffffff; }
+.values span { font-size: 13px; color: #8e9fae; line-height: 1.6; }
 .contact { display: grid; grid-template-columns: .9fr 1.1fr; gap: 9vw; padding-top: 150px; padding-bottom: 150px; }
 .contact-intro h2 { font-size: clamp(46px, 5vw, 76px); line-height: 1.03; margin: 22px 0 28px; }
 .contact-intro>p { color: #9aa8b7; line-height: 1.7; max-width: 500px; }
