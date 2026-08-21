@@ -1,5 +1,7 @@
 /* Pre-compressed local WebP assets are used directly for predictable vinext output. */
 /* eslint-disable @next/next/no-img-element */
+import ContactForm from "./ContactForm";
+
 const apps = [
   {
     name: "DayMigo",
@@ -110,6 +112,7 @@ export default function Home() {
         <nav className="desktop-nav" aria-label="Seitennavigation">
           <a href="#arbeiten">Apps</a>
           <a href="#studio">Studio</a>
+          <a href="#kontakt">Kontakt</a>
         </nav>
         <a className="header-cta" href="#arbeiten">Apps entdecken <span aria-hidden="true">↓</span></a>
       </header>
@@ -124,7 +127,7 @@ export default function Home() {
             <p className="hero-lead">AppsMakerDeluxe Studios zeigt eine wachsende Sammlung eigenständiger Android-Produkte – klar gestaltet, sorgfältig entwickelt und bei Google Play verfügbar.</p>
             <div className="hero-actions">
               <a className="button primary" href="#arbeiten">Apps entdecken <span aria-hidden="true">↓</span></a>
-              <a className="button ghost" href="#studio">Zum Studio <span aria-hidden="true">↓</span></a>
+              <a className="button ghost" href="#kontakt">Kontakt aufnehmen <span aria-hidden="true">↓</span></a>
             </div>
             <div className="hero-proof" aria-label="Qualitätsmerkmale">
               <span><i /> Native Android</span>
@@ -181,12 +184,27 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section contact" id="kontakt">
+        <div className="contact-intro">
+          <div className="eyebrow"><span /> Kontakt & Support</div>
+          <h2>Fragen an unser<br /><em>Studio?</em></h2>
+          <p>
+            Ob Feedback zu unseren Android-Apps, Support-Fragen, Feature-Ideen oder geschäftliche Anfragen – wir freuen uns über Ihre Nachricht.
+          </p>
+          <a className="mail-link" href="mailto:appsmakerdeluxe@gmail.com">
+            <span>appsmakerdeluxe@gmail.com</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <ContactForm />
+      </section>
+
       <footer>
         <a className="brand footer-brand" href="#top" aria-label="AppsMakerDeluxe Studios – Startseite">
           <img src="/logo.webp" alt="AppsMakerDeluxe Studios Logo" className="brand-logo" width="220" height="46" />
         </a>
         <p>Android-Produkte mit Charakter.</p>
-        <div><a href="#arbeiten">Apps</a><a href="#studio">Studio</a><a href="#top">Nach oben ↑</a></div>
+        <div><a href="#arbeiten">Apps</a><a href="#studio">Studio</a><a href="#kontakt">Kontakt</a><a href="#top">Nach oben ↑</a></div>
         <small>© {new Date().getFullYear()} AppsMakerDeluxe Studios</small>
       </footer>
     </main>
