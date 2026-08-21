@@ -109,6 +109,7 @@ h1 span, h2 em, blockquote em { color: var(--blue); font-style: normal; }
 .app-info a:hover { color: #0077e6; border-color: #0077e6; }
 .app-availability { color: #9b442d; border-color: rgba(155, 68, 45, .36); }
 .blue .app-image-wrap { background: linear-gradient(145deg, #7fe4f2, #167ca6); }
+.emerald .app-image-wrap { background: linear-gradient(145deg, #a7f3d0, #047857); }
 .lime .app-image-wrap { background: linear-gradient(145deg, #c7ed85, #228b63); }
 .green .app-image-wrap { background: linear-gradient(145deg, #9de3bb, #216d58); }
 .amber .app-image-wrap { background: linear-gradient(145deg, #f7d99b, #df9d49); }

@@ -15,6 +15,12 @@ const APPS_META = [
     tone: "mint",
   },
   {
+    key: "lemivo" as const,
+    image: "/apps/lemivo.webp",
+    url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.lemivo",
+    tone: "emerald",
+  },
+  {
     key: "riftivo" as const,
     image: "/apps/riftivo-store-2026-08.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.riftivo",

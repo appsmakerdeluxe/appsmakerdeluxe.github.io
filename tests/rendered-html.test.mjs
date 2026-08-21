@@ -23,6 +23,7 @@ test("renders the finished German portfolio with real app links", async () => {
   assert.match(html, /Apps, die sich/);
   for (const appId of [
     "de.appsmakerdeluxe.daymigo",
+    "de.appsmakerdeluxe.lemivo",
     "de.appsmakerdeluxe.riftivo",
     "de.appsmakerdeluxe.riftivo3d",
     "com.appsmakerdeluxe.mylovecalculator",
@@ -35,6 +36,7 @@ test("renders the finished German portfolio with real app links", async () => {
     "de.appsmakerdeluxe.chiliwise",
     "de.appsmakerdeluxe.Kavorenza",
   ]) assert.match(html, new RegExp(appId.replaceAll(".", "\\.")));
+  assert.match(html, /Lemivo/);
   assert.match(html, /My Love Calculator/);
   assert.doesNotMatch(html, /Recallune/);
   assert.match(html, /ChiliWise/);
@@ -57,6 +59,7 @@ test("contains all 12 supported languages in translation dictionary", async () =
     assert.ok(dict.nav.apps, `nav.apps exists for ${lang.code}`);
     assert.ok(dict.hero.titleLine1, `hero.titleLine1 exists for ${lang.code}`);
     assert.ok(dict.apps.daymigo.name, `daymigo exists for ${lang.code}`);
+    assert.ok(dict.apps.lemivo.name, `lemivo exists for ${lang.code}`);
     assert.ok(dict.apps.mylovecalculator.name, `mylovecalculator exists for ${lang.code}`);
     assert.ok(dict.statement.quotePrefix, `statement exists for ${lang.code}`);
     assert.ok(dict.contact.form.submitButton, `contact.form.submitButton exists for ${lang.code}`);
@@ -76,6 +79,7 @@ test("keeps final assets and accessibility safeguards in place", async () => {
   await access(new URL("../public/og.png", import.meta.url));
   await access(new URL("../public/logo.webp", import.meta.url));
   await access(new URL("../public/studio-badge.webp", import.meta.url));
+  await access(new URL("../public/apps/lemivo.webp", import.meta.url));
   await access(new URL("../public/logo-mark.webp", import.meta.url));
   await access(new URL("../public/favicon.png", import.meta.url));
   await assert.rejects(access(new URL("../app/_sites-preview/SkeletonPreview.tsx", import.meta.url)));

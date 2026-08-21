@@ -53,6 +53,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Achtsame Routinen",
         description: "Kleine tägliche Missionen, die Fortschritt sichtbar machen und eine persönliche Welt wachsen lassen.",
       },
+      lemivo: {
+        name: "Lemivo",
+        tag: "Screenshots & Aktionen",
+        description: "Screenshots lokal verstehen und direkt in nützliche Aktionen verwandeln – Kalendereinträge, Navigation, Tracking oder Textkopie ohne Cloud-Zwang.",
+      },
       riftivo: {
         name: "Riftivo",
         tag: "Arcade Adventure",
@@ -199,6 +204,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "DayMigo",
         tag: "Mindful Habits",
         description: "Bite-sized daily quests that make personal growth tangible while nurturing your own interactive world.",
+      },
+      lemivo: {
+        name: "Lemivo",
+        tag: "Smart Screenshot Actions",
+        description: "Turn screenshots directly into useful actions on-device – calendar events, maps navigation, package tracking, and text copy with 100% offline privacy.",
       },
       riftivo: {
         name: "Riftivo",
@@ -347,6 +357,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Habitudes Positives",
         description: "De courtes missions quotidiennes pour visualiser ses progrès tout en développant un univers interactif.",
       },
+      lemivo: {
+        name: "Lemivo",
+        tag: "Actions sur captures d’écran",
+        description: "Analysez vos captures d'écran localement et transformez-les en actions utiles : calendrier, navigation, suivi de colis et copie de texte sans cloud.",
+      },
       riftivo: {
         name: "Riftivo",
         tag: "Aventure Arcade",
@@ -493,6 +508,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "DayMigo",
         tag: "Hábitos Conscientes",
         description: "Pequeñas misiones diarias que hacen visible tu progreso mientras cultivas un mundo interactivo.",
+      },
+      lemivo: {
+        name: "Lemivo",
+        tag: "Acciones desde capturas",
+        description: "Reconoce información en tus capturas de pantalla y conviértela al instante en citas, rutas, seguimiento de paquetes o texto copiado sin conexión.",
       },
       riftivo: {
         name: "Riftivo",
@@ -641,6 +661,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "عادات يومية واعية",
         description: "مهام يومية خفيفة تُظهر تقدمك بوضوح بينما تبني وتنمي عالمك الخاص.",
       },
+      lemivo: {
+        name: "Lemivo",
+        tag: "إجراءات لقطات الشاشة الذكية",
+        description: "تحويل لقطات الشاشة محلياً إلى إجراءات فورية ومفيدة – مواعيد في التقويم، تنقل بالخرائط، تتبع الشحنات ونسخ النصوص بخصوصية تامة دون إنترنت.",
+      },
       riftivo: {
         name: "Riftivo",
         tag: "مغامرة أركيد",
@@ -787,6 +812,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "DayMigo",
         tag: "عادت‌های آگاهانه",
         description: "ماموریت‌های کوچک روزانه که رشد فردی را نمایان ساخته و دنیای تعاملی شما را شکل می‌دهند.",
+      },
+      lemivo: {
+        name: "Lemivo",
+        tag: "اقدامات هوشمند اسکرین‌شات",
+        description: "تبدیل اسکرین‌شات‌ها به اقدامات فوری و کاربردی به‌صورت کاملاً آفلاین – رویدادهای تقویم، مسیریابی، پیگیری مرسولات و کپی متن با حفظ کامل حریم خصوصی.",
       },
       riftivo: {
         name: "Riftivo",
@@ -935,6 +965,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "毎日の習慣づくり",
         description: "毎日の小さなミッションを達成し、自分だけの世界を育てていく習慣化アプリ。",
       },
+      lemivo: {
+        name: "Lemivo",
+        tag: "スクショ即アクション",
+        description: "端末内でスクリーンショットを解析し、カレンダー登録、地図ナビ、荷物追跡、テキストコピーなどの便利なアクションへ瞬時に変換。完全オフライン設計。",
+      },
       riftivo: {
         name: "Riftivo",
         tag: "アーケードアドベンチャー",
@@ -1081,6 +1116,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "DayMigo",
         tag: "正念日常习惯",
         description: "通过微小的每日任务见证自我成长，同时培育属于你的互动小世界。",
+      },
+      lemivo: {
+        name: "Lemivo",
+        tag: "截图智能提取与行动",
+        description: "在设备本地快速解析截图内容，一键生成日程、开启地图导航、查询快递单号或复制文本，无需云端上传，隐私无忧。",
       },
       riftivo: {
         name: "Riftivo",
@@ -1229,6 +1269,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Abitudini Consapevoli",
         description: "Piccole missioni quotidiane per rendere visibili i tuoi progressi coltivando un mondo interattivo.",
       },
+      lemivo: {
+        name: "Lemivo",
+        tag: "Azioni intelligenti da screenshot",
+        description: "Riconosci dati utili dai tuoi screenshot ed esegui azioni immediate: eventi in calendario, navigazione, tracciamento spedizioni e copia testo senza cloud.",
+      },
       riftivo: {
         name: "Riftivo",
         tag: "Avventura Arcade",
@@ -1375,6 +1420,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "DayMigo",
         tag: "Hábitos Conscientes",
         description: "Pequenas missões diárias que tornam seu progresso visível enquanto você cultiva um mundo interativo.",
+      },
+      lemivo: {
+        name: "Lemivo",
+        tag: "Ações Inteligentes de Capturas",
+        description: "Converta capturas de tela em ações úteis no próprio dispositivo – eventos no calendário, rotas no mapa, rastreio e cópia de texto 100% offline.",
       },
       riftivo: {
         name: "Riftivo",
@@ -1523,6 +1573,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Осознанные привычки",
         description: "Небольшие ежедневные задания, делающие прогресс наглядным и развивающие ваш интерактивный мир.",
       },
+      lemivo: {
+        name: "Lemivo",
+        tag: "Умные действия со скриншотами",
+        description: "Локально распознавайте данные на скриншотах и мгновенно создавайте события в календаре, открывайте маршруты на картах и копируйте текст без облака.",
+      },
       riftivo: {
         name: "Riftivo",
         tag: "Аркадное приключение",
@@ -1669,6 +1724,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "DayMigo",
         tag: "Farkındalık Alışkanlıkları",
         description: "Gelişiminizi görünür kılan ve kendi etkileşimli dünyanızı büyüten küçük günlük görevler.",
+      },
+      lemivo: {
+        name: "Lemivo",
+        tag: "Ekran Görüntüsü Eylemleri",
+        description: "Ekran görüntülerini cihazınızda yerel olarak işleyin; takvim etkinliklerine, harita rotalarına, kargo takibine ve metin kopyalamaya anında dönüştürün.",
       },
       riftivo: {
         name: "Riftivo",

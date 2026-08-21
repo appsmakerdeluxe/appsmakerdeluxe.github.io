@@ -60,6 +60,7 @@ export interface TranslationSchema {
   };
   apps: {
     daymigo: AppItemTranslation;
+    lemivo: AppItemTranslation;
     riftivo: AppItemTranslation;
     riftivo3d: AppItemTranslation;
     mylovecalculator: AppItemTranslation;
