@@ -42,9 +42,25 @@ test("renders the finished German portfolio with real app links", async () => {
   assert.match(html, /Zwölf/);
   assert.match(html, /appsmakerdeluxe@gmail\.com/);
   assert.match(html, /id="kontakt"/);
+  assert.match(html, /lang-selector-btn/);
   assert.doesNotMatch(html, /In Vorbereitung/);
   assert.match(html, /og\.png/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton|formsubmit|Projekt anfragen|App anfragen/i);
+});
+
+test("contains all 12 supported languages in translation dictionary", async () => {
+  const { SUPPORTED_LANGUAGES, translations } = await import("../app/i18n/translations.ts");
+  assert.equal(SUPPORTED_LANGUAGES.length, 12);
+  for (const lang of SUPPORTED_LANGUAGES) {
+    const dict = translations[lang.code];
+    assert.ok(dict, `Translation dictionary for ${lang.code} exists`);
+    assert.ok(dict.nav.apps, `nav.apps exists for ${lang.code}`);
+    assert.ok(dict.hero.titleLine1, `hero.titleLine1 exists for ${lang.code}`);
+    assert.ok(dict.apps.daymigo.name, `daymigo exists for ${lang.code}`);
+    assert.ok(dict.apps.mylovecalculator.name, `mylovecalculator exists for ${lang.code}`);
+    assert.ok(dict.statement.quotePrefix, `statement exists for ${lang.code}`);
+    assert.ok(dict.contact.form.submitButton, `contact.form.submitButton exists for ${lang.code}`);
+  }
 });
 
 test("keeps final assets and accessibility safeguards in place", async () => {

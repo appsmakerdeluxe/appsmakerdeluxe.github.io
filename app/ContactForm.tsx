@@ -1,33 +1,52 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
+import { useLanguage } from "./i18n/LanguageContext";
 
 const RECIPIENT_EMAIL = "appsmakerdeluxe@gmail.com";
 
 type MailClient = "default" | "gmail" | "outlook" | "yahoo";
 
 export default function ContactForm() {
+  const { t, isRtl } = useLanguage();
+  const formT = t.contact.form;
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [category, setCategory] = useState("Allgemeine Frage");
+  const [category, setCategory] = useState("general");
   const [message, setMessage] = useState("");
   const [client, setClient] = useState<MailClient>("default");
   const [copied, setCopied] = useState(false);
 
+  const getCategoryTitle = () => {
+    switch (category) {
+      case "support":
+        return formT.topicSupport;
+      case "feature":
+        return formT.topicFeature;
+      case "collab":
+        return formT.topicCollab;
+      case "general":
+      default:
+        return formT.topicGeneral;
+    }
+  };
+
   const formatSubject = () => {
-    const prefix = "[AppsMakerDeluxe Kontakt]";
-    return `${prefix} ${category}${name ? ` - von ${name}` : ""}`;
+    return `${formT.emailSubjectPrefix} ${getCategoryTitle()}${
+      name ? ` - ${name}` : ""
+    }`;
   };
 
   const formatBody = () => {
-    return `Hallo AppsMakerDeluxe Studios Team,
+    return `${formT.emailGreeting}
 
 ${message}
 
 ---
-Absender: ${name || "Nicht angegeben"}
-Kontakt E-Mail: ${email || "Nicht angegeben"}
-Thema: ${category}`;
+${formT.emailSender} ${name || formT.notSpecified}
+${formT.emailContact} ${email || formT.notSpecified}
+${formT.emailTopic} ${getCategoryTitle()}`;
   };
 
   const getMailUrl = (targetClient: MailClient) => {
@@ -54,8 +73,8 @@ Thema: ${category}`;
   };
 
   const handleCopy = async () => {
-    const fullText = `An: ${RECIPIENT_EMAIL}
-Betreff: ${formatSubject()}
+    const fullText = `An / To: ${RECIPIENT_EMAIL}
+Betreff / Subject: ${formatSubject()}
 
 ${formatBody()}`;
     try {
@@ -71,22 +90,22 @@ ${formatBody()}`;
     <form className="contact-form" onSubmit={handleSubmit}>
       <div className="field-row">
         <label>
-          Ihr Name
+          {formT.nameLabel}
           <input
             type="text"
             name="name"
-            placeholder="z. B. Alex Weber"
+            placeholder={formT.namePlaceholder}
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
           />
         </label>
         <label>
-          Ihre E-Mail-Adresse
+          {formT.emailLabel}
           <input
             type="email"
             name="email"
-            placeholder="ihre.adresse@example.com"
+            placeholder={formT.emailPlaceholder}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -96,40 +115,40 @@ ${formatBody()}`;
 
       <div className="field-row">
         <label>
-          Thema / Anliegen
+          {formT.topicLabel}
           <select
             name="category"
             value={category}
             onChange={(e) => setCategory(e.target.value)}
           >
-            <option value="Allgemeine Frage">Allgemeine Anfrage</option>
-            <option value="App-Support & Feedback">App-Support & Feedback</option>
-            <option value="Feature-Vorschlag">Feature-Vorschlag / Idee</option>
-            <option value="Kooperation & Presse">Kooperation & Presse</option>
+            <option value="general">{formT.topicGeneral}</option>
+            <option value="support">{formT.topicSupport}</option>
+            <option value="feature">{formT.topicFeature}</option>
+            <option value="collab">{formT.topicCollab}</option>
           </select>
         </label>
 
         <label>
-          E-Mail-Programm / Dienst
+          {formT.clientLabel}
           <select
             name="client"
             value={client}
             onChange={(e) => setClient(e.target.value as MailClient)}
           >
-            <option value="default">Standard E-Mail-App (Outlook, Mail, etc.)</option>
-            <option value="gmail">Gmail im Browser öffnen</option>
-            <option value="outlook">Outlook / Hotmail Web öffnen</option>
-            <option value="yahoo">Yahoo Mail im Browser öffnen</option>
+            <option value="default">{formT.clientDefault}</option>
+            <option value="gmail">{formT.clientGmail}</option>
+            <option value="outlook">{formT.clientOutlook}</option>
+            <option value="yahoo">{formT.clientYahoo}</option>
           </select>
         </label>
       </div>
 
       <label>
-        Ihre Nachricht
+        {formT.messageLabel}
         <textarea
           name="message"
           rows={5}
-          placeholder="Wie können wir helfen oder worum geht es?"
+          placeholder={formT.messagePlaceholder}
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           required
@@ -138,22 +157,26 @@ ${formatBody()}`;
 
       <div className="contact-actions">
         <button type="submit" className="button primary submit-btn">
-          E-Mail vorbereiten & senden <span aria-hidden="true">↗</span>
+          {formT.submitButton}{" "}
+          <span aria-hidden="true">{isRtl ? "↖" : "↗"}</span>
         </button>
         <button
           type="button"
           className="button ghost copy-btn"
           onClick={handleCopy}
-          title="Nachrichtentext mit Empfänger in Zwischenablage kopieren"
+          title={formT.copyButton}
         >
-          {copied ? "In Zwischenablage kopiert! ✓" : "Text kopieren 📋"}
+          {copied ? formT.copiedSuccess : formT.copyButton}
         </button>
       </div>
 
       <p className="form-note">
-        Direktkontakt: <a href={`mailto:${RECIPIENT_EMAIL}`} className="direct-mail">{RECIPIENT_EMAIL}</a>
+        {formT.directContact}{" "}
+        <a href={`mailto:${RECIPIENT_EMAIL}`} className="direct-mail">
+          {RECIPIENT_EMAIL}
+        </a>
         <br />
-        Die Nachricht wird in Ihrem gewählten E-Mail-Dienst mit allen Angaben vorformatiert geöffnet.
+        {formT.clientNote}
       </p>
     </form>
   );
