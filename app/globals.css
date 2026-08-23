@@ -119,6 +119,7 @@ h1 span, h2 em, blockquote em { color: var(--blue); font-style: normal; }
 .gold .app-image-wrap { background: linear-gradient(145deg, #fae5a0, #d6a53a); }
 .red .app-image-wrap { background: linear-gradient(145deg, #f5c0ae, #b94b37); }
 .indigo .app-image-wrap { background: linear-gradient(145deg, #b4a5f5, #392d78); }
+.slate .app-image-wrap { background: linear-gradient(145deg, #cbd5e1, #1e293b); }
 .iris .app-image-wrap { background: linear-gradient(145deg, #a5b4fc, #312e81); }
 .rose .app-image-wrap { background: linear-gradient(145deg, #fbcfe8, #be185d); }
 .wide .app-image-wrap { align-items: center; padding-bottom: 28px; }

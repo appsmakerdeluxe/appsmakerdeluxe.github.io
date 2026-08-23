@@ -113,6 +113,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Multiplayer Mini-Games",
         description: "Ein schneller Raum für gemeinsame Mini-Games mit kurzen Runden, klaren Regeln und Freunden.",
       },
+      paginotetrial: {
+        name: "PagiNote Trial",
+        tag: "Digitales Notenpult",
+        description: "Offline Noten-Viewer für Musiker mit präzisen Annotationen, integriertem Metronom, schnellem Umblättern und flexibler Setlist-Verwaltung.",
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -264,6 +269,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Kavorenza",
         tag: "Multiplayer Party",
         description: "A lively hub for local multiplayer mini-games with snappy rounds, clear rules, and social fun.",
+      },
+      paginotetrial: {
+        name: "PagiNote Trial",
+        tag: "Digital Sheet Music",
+        description: "Offline sheet music viewer for musicians featuring precise annotations, built-in metronome, responsive page turns, and flexible setlist management.",
       },
     },
     statement: {
@@ -417,6 +427,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Mini-jeux Multijoueur",
         description: "Espace convivial de mini-jeux rapides entre amis aux règles simples et parties rythmées.",
       },
+      paginotetrial: {
+        name: "PagiNote Trial",
+        tag: "Lecteur de partitions",
+        description: "Visionneuse de partitions hors ligne pour musiciens avec annotations précises, métronome intégré, tourne de page fluide et gestion de setlists.",
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -568,6 +583,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Kavorenza",
         tag: "Minijuegos Multijugador",
         description: "Un espacio dinámico para minijuegos rápidos con amigos, reglas claras y diversión inmediata.",
+      },
+      paginotetrial: {
+        name: "PagiNote Trial",
+        tag: "Atril digital de partituras",
+        description: "Visor de partituras sin conexión para músicos con anotaciones precisas, metrónomo integrado, cambio de página ágil y gestión de repertorios.",
       },
     },
     statement: {
@@ -721,6 +741,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "ألعاب جماعية سريعة",
         description: "مساحة ممتعة للألعاب المصغرة مع الأصدقاء بجولات سريعة وقواعد واضحة.",
       },
+      paginotetrial: {
+        name: "PagiNote Trial",
+        tag: "قارئ النوتات الموسيقية",
+        description: "عارض نوتات موسيقية أوفلاين للموسيقيين مع تدوين ملاحظات دقيقة، بندول إيقاع مدمج، تقليب سريع للصفحات وإدارة قوائم العزف.",
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -872,6 +897,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Kavorenza",
         tag: "مینی‌گیم‌های چندنفره",
         description: "فضایی سرگرم‌کننده برای بازی‌های گروهی سریع با دوستان و قوانینی ساده.",
+      },
+      paginotetrial: {
+        name: "PagiNote Trial",
+        tag: "پایه نت دیجیتال",
+        description: "نمایشگر آفلاین نت‌های موسیقی برای نوازندگان با یادداشت‌نویسی دقیق، مترونوم داخلی، ورق زدن سریع و مدیریت لیست قطعات.",
       },
     },
     statement: {
@@ -1025,6 +1055,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "マルチプレイミニゲーム",
         description: "友達とサクッと遊べる、分かりやすいルールの対戦ミニゲーム集。",
       },
+      paginotetrial: {
+        name: "PagiNote Trial",
+        tag: "デジタル楽譜ビューア",
+        description: "演奏家のためのオフライン楽譜リーダー。正確な手書き注釈、内蔵メトロノーム、素早い譜めくり、セットリスト管理に対応。",
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -1176,6 +1211,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Kavorenza",
         tag: "多人聚会迷你游戏",
         description: "好友同乐的快节奏迷你游戏空间，规则明了，即开即玩。",
+      },
+      paginotetrial: {
+        name: "PagiNote Trial",
+        tag: "专业数字乐谱架",
+        description: "专为音乐人打造的离线乐谱阅读器，支持精确手写批注、内置节拍器、快速翻页与演出曲目单管理。",
       },
     },
     statement: {
@@ -1329,6 +1369,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Minigiochi Multiplayer",
         description: "Uno spazio divertente per minigiochi rapidi tra amici con regole semplici e turni frenetici.",
       },
+      paginotetrial: {
+        name: "PagiNote Trial",
+        tag: "Leggio Digitale per Spartiti",
+        description: "Visualizzatore di spartiti offline per musicisti con annotazioni precise, metronomo integrato, volta-pagina rapido e gestione setlist.",
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -1480,6 +1525,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Kavorenza",
         tag: "Minijogos Multijogador",
         description: "Um espaço dinâmico para minijogos rápidos com amigos, regras simples e partidas empolgantes.",
+      },
+      paginotetrial: {
+        name: "PagiNote Trial",
+        tag: "Leitor Digital de Partituras",
+        description: "Visualizador de partituras offline para músicos com anotações precisas, metrônomo integrado, virada rápida de páginas e gestão de repertório.",
       },
     },
     statement: {
@@ -1633,6 +1683,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Мини-игры с друзьями",
         description: "Пространство для быстрых мини-игр с друзьями, простыми правилами и азартными раундами.",
       },
+      paginotetrial: {
+        name: "PagiNote Trial",
+        tag: "Цифровой нотный пульт",
+        description: "Офлайн-ридер нотных партитур для музыкантов с точными аннотациями, встроенным метрономом, быстрым перелистыванием и управлением сет-листами.",
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -1784,6 +1839,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Kavorenza",
         tag: "Çok Oyunculu Mini Oyunlar",
         description: "Arkadaşlarınızla hızlı turlar ve basit kurallarla oynayabileceğiniz eğlenceli mini oyun alanı.",
+      },
+      paginotetrial: {
+        name: "PagiNote Trial",
+        tag: "Dijital Nota Sehpası",
+        description: "Müzisyenler için hassas not alma, dahili metronom, hızlı sayfa çevirme ve setlist yönetimi sunan çevrimdışı nota görüntüleyici.",
       },
     },
     statement: {

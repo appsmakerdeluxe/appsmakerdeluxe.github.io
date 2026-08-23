@@ -72,6 +72,7 @@ export interface TranslationSchema {
     luxcue: AppItemTranslation;
     chiliwise: AppItemTranslation;
     kavorenza: AppItemTranslation;
+    paginotetrial: AppItemTranslation;
   };
   statement: {
     eyebrow: string;

@@ -86,6 +86,12 @@ const APPS_META = [
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.Kavorenza",
     tone: "indigo",
   },
+  {
+    key: "paginotetrial" as const,
+    image: "/apps/paginotetrial.webp",
+    url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.paginotetrial",
+    tone: "slate",
+  },
 ];
 
 function PortfolioView() {
