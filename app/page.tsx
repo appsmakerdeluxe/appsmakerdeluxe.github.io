@@ -92,6 +92,12 @@ const APPS_META = [
     url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.paginotetrial",
     tone: "slate",
   },
+  {
+    key: "stimmivo" as const,
+    image: "/apps/stimmivo.webp",
+    url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.stimmivo",
+    tone: "purple",
+  },
 ];
 
 function PortfolioView() {

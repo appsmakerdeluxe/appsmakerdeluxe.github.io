@@ -118,6 +118,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Digitales Notenpult",
         description: "Offline Noten-Viewer für Musiker mit präzisen Annotationen, integriertem Metronom, schnellem Umblättern und flexibler Setlist-Verwaltung.",
       },
+      stimmivo: {
+        name: "Stimmivo",
+        tag: "Sprachnachrichten zu Text",
+        description: "Transkribiere Sprachnachrichten und Audiodateien lokal auf deinem Smartphone. 100 % privat, offlinefähig und ohne Cloud-Zwang.",
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -274,6 +279,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "PagiNote Trial",
         tag: "Digital Sheet Music",
         description: "Offline sheet music viewer for musicians featuring precise annotations, built-in metronome, responsive page turns, and flexible setlist management.",
+      },
+      stimmivo: {
+        name: "Stimmivo",
+        tag: "Voice to Text",
+        description: "Transcribe voice messages and audio files locally on your phone. 100% private, offline-ready, and without any cloud tracking.",
       },
     },
     statement: {
@@ -432,6 +442,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Lecteur de partitions",
         description: "Visionneuse de partitions hors ligne pour musiciens avec annotations précises, métronome intégré, tourne de page fluide et gestion de setlists.",
       },
+      stimmivo: {
+        name: "Stimmivo",
+        tag: "Messages Vocaux en Texte",
+        description: "Transcrivez vos messages vocaux et fichiers audio localement sur votre smartphone. 100 % privé, hors ligne et sans cloud.",
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -588,6 +603,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "PagiNote Trial",
         tag: "Atril digital de partituras",
         description: "Visor de partituras sin conexión para músicos con anotaciones precisas, metrónomo integrado, cambio de página ágil y gestión de repertorios.",
+      },
+      stimmivo: {
+        name: "Stimmivo",
+        tag: "Voz a Texto",
+        description: "Transcribe notas de voz y archivos de audio localmente en tu teléfono. 100% privado, sin conexión y sin enviar datos a la nube.",
       },
     },
     statement: {
@@ -746,6 +766,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "قارئ النوتات الموسيقية",
         description: "عارض نوتات موسيقية أوفلاين للموسيقيين مع تدوين ملاحظات دقيقة، بندول إيقاع مدمج، تقليب سريع للصفحات وإدارة قوائم العزف.",
       },
+      stimmivo: {
+        name: "Stimmivo",
+        tag: "تحويل الرسائل الصوتية إلى نص",
+        description: "تحويل الرسائل الصوتية والملفات الصوتية إلى نصوص محلياً على جهازك. خصوصية تامة 100%، يعمل دون اتصال وبدون سحابة.",
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -902,6 +927,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "PagiNote Trial",
         tag: "پایه نت دیجیتال",
         description: "نمایشگر آفلاین نت‌های موسیقی برای نوازندگان با یادداشت‌نویسی دقیق، مترونوم داخلی، ورق زدن سریع و مدیریت لیست قطعات.",
+      },
+      stimmivo: {
+        name: "Stimmivo",
+        tag: "تبدیل پیام صوتی به متن",
+        description: "رونویسی پیام‌های صوتی و فایل‌های صوتی به صورت کاملاً محلی روی گوشی. ۱۰۰٪ خصوصی، آفلاین و بدون نیاز به کلود.",
       },
     },
     statement: {
@@ -1060,6 +1090,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "デジタル楽譜ビューア",
         description: "演奏家のためのオフライン楽譜リーダー。正確な手書き注釈、内蔵メトロノーム、素早い譜めくり、セットリスト管理に対応。",
       },
+      stimmivo: {
+        name: "Stimmivo",
+        tag: "音声メッセージをテキスト化",
+        description: "音声メッセージや録音ファイルを端末内で完全にローカル文字起こし。100%プライベート、オフライン対応、クラウド不要。",
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -1216,6 +1251,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "PagiNote Trial",
         tag: "专业数字乐谱架",
         description: "专为音乐人打造的离线乐谱阅读器，支持精确手写批注、内置节拍器、快速翻页与演出曲目单管理。",
+      },
+      stimmivo: {
+        name: "Stimmivo",
+        tag: "语音信息转文字",
+        description: "完全在本地将语音消息与音频文件转录为文字。100% 隐私保护、离线可用且无需上传云端。",
       },
     },
     statement: {
@@ -1374,6 +1414,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Leggio Digitale per Spartiti",
         description: "Visualizzatore di spartiti offline per musicisti con annotazioni precise, metronomo integrato, volta-pagina rapido e gestione setlist.",
       },
+      stimmivo: {
+        name: "Stimmivo",
+        tag: "Messaggi Vocali in Testo",
+        description: "Trascrivi messaggi vocali e file audio localmente sul tuo telefono. 100% privato, utilizzabile offline e senza cloud.",
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -1530,6 +1575,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "PagiNote Trial",
         tag: "Leitor Digital de Partituras",
         description: "Visualizador de partituras offline para músicos com anotações precisas, metrônomo integrado, virada rápida de páginas e gestão de repertório.",
+      },
+      stimmivo: {
+        name: "Stimmivo",
+        tag: "Mensagens de Voz em Texto",
+        description: "Transcreva mensagens de voz e arquivos de áudio localmente no seu celular. 100% privado, offline e sem nuvem.",
       },
     },
     statement: {
@@ -1688,6 +1738,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Цифровой нотный пульт",
         description: "Офлайн-ридер нотных партитур для музыкантов с точными аннотациями, встроенным метрономом, быстрым перелистыванием и управлением сет-листами.",
       },
+      stimmivo: {
+        name: "Stimmivo",
+        tag: "Голосовые сообщения в текст",
+        description: "Транскрибируйте голосовые сообщения и аудиофайлы локально на устройстве. 100% приватность, работа офлайн и без облака.",
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -1844,6 +1899,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "PagiNote Trial",
         tag: "Dijital Nota Sehpası",
         description: "Müzisyenler için hassas not alma, dahili metronom, hızlı sayfa çevirme ve setlist yönetimi sunan çevrimdışı nota görüntüleyici.",
+      },
+      stimmivo: {
+        name: "Stimmivo",
+        tag: "Sesli Mesajları Metne Dönüştürme",
+        description: "Sesli mesajları ve ses dosyalarını cihazınızda tamamen yerel olarak metne dönüştürün. %100 gizli, çevrimdışı ve bulutsuz.",
       },
     },
     statement: {
