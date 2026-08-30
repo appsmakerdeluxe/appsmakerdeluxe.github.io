@@ -31,7 +31,7 @@ const APPS_META = [
   },
   {
     key: "dialvexa" as const,
-    image: "/apps/dialvexa.webp",
+    image: "/apps/dialvexa-store.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.dialvexa",
     tone: "titanium",
     category: "wearos" as const,

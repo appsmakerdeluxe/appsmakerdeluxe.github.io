@@ -99,6 +99,7 @@ test("keeps final assets and accessibility safeguards in place", async () => {
   await access(new URL("../public/apps/stimmivo.webp", import.meta.url));
   await access(new URL("../public/apps/dialvori.webp", import.meta.url));
   await access(new URL("../public/apps/dialvexa.webp", import.meta.url));
+  await access(new URL("../public/apps/dialvexa-store.webp", import.meta.url));
   await access(new URL("../public/logo-mark.webp", import.meta.url));
   await access(new URL("../public/favicon.png", import.meta.url));
   await assert.rejects(access(new URL("../app/_sites-preview/SkeletonPreview.tsx", import.meta.url)));
