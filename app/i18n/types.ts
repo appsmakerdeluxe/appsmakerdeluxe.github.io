@@ -54,6 +54,9 @@ export interface TranslationSchema {
     titlePrefix: string;
     titleEmphasis: string;
     subtitle: string;
+    filterAll: string;
+    filterPhone: string;
+    filterWear: string;
     playStoreButton: string;
     screenshotAltPrefix: string;
     openPlayStoreAria: string;
@@ -74,6 +77,8 @@ export interface TranslationSchema {
     kavorenza: AppItemTranslation;
     paginotetrial: AppItemTranslation;
     stimmivo: AppItemTranslation;
+    dialvori: AppItemTranslation;
+    dialvexa: AppItemTranslation;
   };
   statement: {
     eyebrow: string;

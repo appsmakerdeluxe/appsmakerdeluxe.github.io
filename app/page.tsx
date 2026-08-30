@@ -13,95 +13,129 @@ const APPS_META = [
     image: "/apps/daymigo.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.daymigo",
     tone: "mint",
+    category: "phone" as const,
   },
   {
     key: "lemivo" as const,
     image: "/apps/lemivo.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.lemivo",
     tone: "emerald",
+    category: "phone" as const,
+  },
+  {
+    key: "dialvori" as const,
+    image: "/apps/dialvori.webp",
+    url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.dialvori",
+    tone: "cyber",
+    category: "wearos" as const,
+  },
+  {
+    key: "dialvexa" as const,
+    image: "/apps/dialvexa.webp",
+    url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.dialvexa",
+    tone: "titanium",
+    category: "wearos" as const,
   },
   {
     key: "riftivo" as const,
     image: "/apps/riftivo-store-2026-08.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.riftivo",
     tone: "blue wide",
+    category: "phone" as const,
   },
   {
     key: "riftivo3d" as const,
     image: "/apps/riftivo3d.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.riftivo3d",
     tone: "lime",
+    category: "phone" as const,
   },
   {
     key: "mylovecalculator" as const,
     image: "/apps/mylovecalculator.webp",
     url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.mylovecalculator",
     tone: "rose",
+    category: "phone" as const,
   },
   {
     key: "buymorrow" as const,
     image: "/apps/buymorrow.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.buymorrow",
     tone: "amber",
+    category: "phone" as const,
   },
   {
     key: "storivio" as const,
     image: "/apps/storivio.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.storivio",
     tone: "green",
+    category: "phone" as const,
   },
   {
     key: "everago" as const,
     image: "/apps/everago.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.everago",
     tone: "violet",
+    category: "phone" as const,
   },
   {
     key: "callblockerplus" as const,
     image: "/apps/call-blocker-plus.webp",
     url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.callblockerplus",
     tone: "coral",
+    category: "phone" as const,
   },
   {
     key: "indexgenie" as const,
     image: "/apps/indexgenie.webp",
     url: "https://play.google.com/store/apps/details?id=com.draven.indexgenie",
     tone: "cyan",
+    category: "phone" as const,
   },
   {
     key: "luxcue" as const,
     image: "/apps/luxcue.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.luxcue",
     tone: "gold",
+    category: "phone" as const,
   },
   {
     key: "chiliwise" as const,
     image: "/apps/chiliwise.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.chiliwise",
     tone: "red",
+    category: "phone" as const,
   },
   {
     key: "kavorenza" as const,
     image: "/apps/kavorenza.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.Kavorenza",
     tone: "indigo",
+    category: "phone" as const,
   },
   {
     key: "paginotetrial" as const,
     image: "/apps/paginotetrial.webp",
     url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.paginotetrial",
     tone: "slate",
+    category: "phone" as const,
   },
   {
     key: "stimmivo" as const,
     image: "/apps/stimmivo.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.stimmivo",
     tone: "purple",
+    category: "phone" as const,
   },
 ];
 
 function PortfolioView() {
   const { t, isRtl } = useLanguage();
+  const [filter, setFilter] = React.useState<"all" | "phone" | "wearos">("all");
+
+  const visibleApps = APPS_META.filter(
+    (app) => filter === "all" || app.category === filter
+  );
 
   return (
     <main>
@@ -201,14 +235,52 @@ function PortfolioView() {
               <em>{t.work.titleEmphasis}</em>
             </h2>
           </div>
-          <p>{t.work.subtitle}</p>
+          <div>
+            <p>{t.work.subtitle}</p>
+            <div className="category-filters" role="tablist" aria-label="Kategorien">
+              <button
+                type="button"
+                role="tab"
+                aria-selected={filter === "all"}
+                className={`filter-pill ${filter === "all" ? "active" : ""}`}
+                onClick={() => setFilter("all")}
+              >
+                {t.work.filterAll}
+                <span className="pill-count">{APPS_META.length}</span>
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected={filter === "phone"}
+                className={`filter-pill ${filter === "phone" ? "active" : ""}`}
+                onClick={() => setFilter("phone")}
+              >
+                {t.work.filterPhone}
+                <span className="pill-count">
+                  {APPS_META.filter((a) => a.category === "phone").length}
+                </span>
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected={filter === "wearos"}
+                className={`filter-pill ${filter === "wearos" ? "active" : ""}`}
+                onClick={() => setFilter("wearos")}
+              >
+                {t.work.filterWear}
+                <span className="pill-count">
+                  {APPS_META.filter((a) => a.category === "wearos").length}
+                </span>
+              </button>
+            </div>
+          </div>
         </div>
         <div className="app-grid">
-          {APPS_META.map((meta, index) => {
+          {visibleApps.map((meta, index) => {
             const app = t.apps[meta.key];
             return (
               <article
-                className={`app-card ${index < 3 ? "featured" : "compact"} ${
+                className={`app-card ${meta.category === "wearos" ? "wear-card" : index < 3 ? "featured" : "compact"} ${
                   meta.tone
                 }`}
                 key={meta.key}
@@ -222,6 +294,9 @@ function PortfolioView() {
                   <span className="app-index">
                     {String(index + 1).padStart(2, "0")}
                   </span>
+                  {meta.category === "wearos" && (
+                    <span className="platform-pill">Wear OS</span>
+                  )}
                 </div>
                 <div className="app-info">
                   <div className="app-tag">{app.tag}</div>
