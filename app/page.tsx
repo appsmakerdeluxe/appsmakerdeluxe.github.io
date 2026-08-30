@@ -209,12 +209,24 @@ function PortfolioView() {
           >
             <div className="orbit orbit-one" aria-hidden="true" />
             <div className="orbit orbit-two" aria-hidden="true" />
-            <div className="phone phone-back">
+            <a
+              href="https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.everago"
+              target="_blank"
+              rel="noreferrer"
+              className="phone phone-back"
+              aria-label={`EverAgo ${t.work.openPlayStoreAria}`}
+            >
               <img src="/apps/everago.webp" alt={t.hero.backAppAlt} />
-            </div>
-            <div className="phone phone-main">
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.daymigo"
+              target="_blank"
+              rel="noreferrer"
+              className="phone phone-main"
+              aria-label={`DayMigo ${t.work.openPlayStoreAria}`}
+            >
               <img src="/apps/daymigo.webp" alt={t.hero.mainAppAlt} />
-            </div>
+            </a>
           </div>
         </div>
         <div className="scroll-cue" aria-hidden="true">
@@ -285,19 +297,41 @@ function PortfolioView() {
                 }`}
                 key={meta.key}
               >
-                <div className="app-image-wrap">
-                  <img
-                    src={meta.image}
-                    alt={`${t.work.screenshotAltPrefix} ${app.name}`}
-                    loading={index > 1 ? "lazy" : "eager"}
-                  />
-                  <span className="app-index">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  {meta.category === "wearos" && (
-                    <span className="platform-pill">Wear OS</span>
-                  )}
-                </div>
+                {meta.url ? (
+                  <a
+                    href={meta.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="app-image-wrap"
+                    aria-label={`${app.name} ${t.work.openPlayStoreAria}`}
+                  >
+                    <img
+                      src={meta.image}
+                      alt={`${t.work.screenshotAltPrefix} ${app.name}`}
+                      loading={index > 1 ? "lazy" : "eager"}
+                    />
+                    <span className="app-index">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    {meta.category === "wearos" && (
+                      <span className="platform-pill">Wear OS</span>
+                    )}
+                  </a>
+                ) : (
+                  <div className="app-image-wrap">
+                    <img
+                      src={meta.image}
+                      alt={`${t.work.screenshotAltPrefix} ${app.name}`}
+                      loading={index > 1 ? "lazy" : "eager"}
+                    />
+                    <span className="app-index">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    {meta.category === "wearos" && (
+                      <span className="platform-pill">Wear OS</span>
+                    )}
+                  </div>
+                )}
                 <div className="app-info">
                   <div className="app-tag">{app.tag}</div>
                   <h3>{app.name}</h3>
