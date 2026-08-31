@@ -127,6 +127,13 @@ const APPS_META = [
     tone: "purple",
     category: "phone" as const,
   },
+  {
+    key: "shiftano" as const,
+    image: "/apps/shiftano.webp",
+    url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.shiftano",
+    tone: "blue",
+    category: "phone" as const,
+  },
 ];
 
 function PortfolioView() {

@@ -37,12 +37,14 @@ test("renders the finished German portfolio with real app links", async () => {
     "de.appsmakerdeluxe.Kavorenza",
     "com.appsmakerdeluxe.paginotetrial",
     "de.appsmakerdeluxe.stimmivo",
+    "de.appsmakerdeluxe.shiftano",
     "de.appsmakerdeluxe.dialvori",
     "de.appsmakerdeluxe.dialvexa",
   ]) assert.match(html, new RegExp(appId.replaceAll(".", "\\.")));
   assert.match(html, /Lemivo/);
   assert.match(html, /PagiNote Trial/);
   assert.match(html, /Stimmivo/);
+  assert.match(html, /Shiftano/);
   assert.match(html, /Dialvori/);
   assert.match(html, /Dialvexa/);
   assert.match(html, /Wear OS/);
@@ -71,6 +73,7 @@ test("contains all 12 supported languages in translation dictionary", async () =
     assert.ok(dict.work.filterWear, `work.filterWear exists for ${lang.code}`);
     assert.ok(dict.apps.daymigo.name, `daymigo exists for ${lang.code}`);
     assert.ok(dict.apps.lemivo.name, `lemivo exists for ${lang.code}`);
+    assert.ok(dict.apps.shiftano.name, `shiftano exists for ${lang.code}`);
     assert.ok(dict.apps.dialvori.name, `dialvori exists for ${lang.code}`);
     assert.ok(dict.apps.dialvexa.name, `dialvexa exists for ${lang.code}`);
     assert.ok(dict.apps.mylovecalculator.name, `mylovecalculator exists for ${lang.code}`);
@@ -97,6 +100,7 @@ test("keeps final assets and accessibility safeguards in place", async () => {
   await access(new URL("../public/apps/lemivo.webp", import.meta.url));
   await access(new URL("../public/apps/paginotetrial.webp", import.meta.url));
   await access(new URL("../public/apps/stimmivo.webp", import.meta.url));
+  await access(new URL("../public/apps/shiftano.webp", import.meta.url));
   await access(new URL("../public/apps/dialvori.webp", import.meta.url));
   await access(new URL("../public/apps/dialvexa.webp", import.meta.url));
   await access(new URL("../public/apps/dialvexa-store.webp", import.meta.url));

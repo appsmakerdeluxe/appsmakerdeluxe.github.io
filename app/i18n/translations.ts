@@ -126,6 +126,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Sprachnachrichten zu Text",
         description: "Transkribiere Sprachnachrichten und Audiodateien lokal auf deinem Smartphone. 100 % privat, offlinefähig und ohne Cloud-Zwang.",
       },
+      shiftano: {
+        name: "Shiftano",
+        tag: "Dienstplan & Schichten",
+        description: "Moderner Schichtplaner mit flexiblen Schichtmustern, lokaler Arbeitszeiterfassung, Stundenauswertung und privatem On-Device Dienstplan-Scan.",
+      },
       dialvori: {
         name: "Dialvori: Hybrid Watch Face",
         tag: "Wear OS Chronograph",
@@ -300,6 +305,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Stimmivo",
         tag: "Voice to Text",
         description: "Transcribe voice messages and audio files locally on your phone. 100% private, offline-ready, and without any cloud tracking.",
+      },
+      shiftano: {
+        name: "Shiftano",
+        tag: "Shift Planner & Roster",
+        description: "Modern shift planner featuring custom rotation patterns, local work time tracking, hour statistics, and private on-device roster scanning.",
       },
       dialvori: {
         name: "Dialvori: Hybrid Watch Face",
@@ -476,6 +486,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Messages Vocaux en Texte",
         description: "Transcrivez vos messages vocaux et fichiers audio localement sur votre smartphone. 100 % privé, hors ligne et sans cloud.",
       },
+      shiftano: {
+        name: "Shiftano",
+        tag: "Planning & Horaires",
+        description: "Planificateur d\'horaires moderne avec cycles de travail personnalis\'es, suivi du temps local, statistiques d\'heures et scan de planning s\'ecuris\'e.",
+      },
       dialvori: {
         name: "Dialvori: Cadran Hybride",
         tag: "Wear OS Chronographe",
@@ -650,6 +665,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Stimmivo",
         tag: "Voz a Texto",
         description: "Transcribe notas de voz y archivos de audio localmente en tu teléfono. 100% privado, sin conexión y sin enviar datos a la nube.",
+      },
+      shiftano: {
+        name: "Shiftano",
+        tag: "Cuadrante & Turnos",
+        description: "Planificador de turnos moderno con patrones de rotaci\'on, registro de horas de trabajo local, estad\'isticas y esc\'aner de cuadrante 100 % privado.",
       },
       dialvori: {
         name: "Dialvori: Esfera Híbrida",
@@ -826,6 +846,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "تحويل الرسائل الصوتية إلى نص",
         description: "تحويل الرسائل الصوتية والملفات الصوتية إلى نصوص محلياً على جهازك. خصوصية تامة 100%، يعمل دون اتصال وبدون سحابة.",
       },
+      shiftano: {
+        name: "Shiftano",
+        tag: "جدول الورديات والمناوبات",
+        description: "مخطط ورديات حديث مع أنماط مناوبة مخصصة، تتبع ساعات العمل محلياً، إحصائيات دقيقة ومسح جداول العمل دون اتصال بالإنترنت.",
+      },
       dialvori: {
         name: "Dialvori: واجهة ساعة هجينة",
         tag: "كرونوغراف Wear OS",
@@ -1000,6 +1025,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Stimmivo",
         tag: "تبدیل پیام صوتی به متن",
         description: "رونویسی پیام‌های صوتی و فایل‌های صوتی به صورت کاملاً محلی روی گوشی. ۱۰۰٪ خصوصی، آفلاین و بدون نیاز به کلود.",
+      },
+      shiftano: {
+        name: "Shiftano",
+        tag: "برنامه‌ریزی شیفت و کار",
+        description: "برنامه‌ریز مدرن شیفت‌های کاری با الگوهای چرخشی، ثبت محلی ساعات کاری، آمار کارکرد و اسکن آفلاین جدول کاری با حفظ کامل حریم خصوصی.",
       },
       dialvori: {
         name: "Dialvori: صفحه ساعت هیبریدی",
@@ -1176,6 +1206,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "音声メッセージをテキスト化",
         description: "音声メッセージや録音ファイルを端末内で完全にローカル文字起こし。100%プライベート、オフライン対応、クラウド不要。",
       },
+      shiftano: {
+        name: "Shiftano",
+        tag: "シフト手帳・勤務管理",
+        description: "カスタムシフトパターン、ローカル勤務時間記録、時間集計、完全プライベートなオンデバイス勤務表スキャンを備えた最新シフト管理アプリ。",
+      },
       dialvori: {
         name: "Dialvori: ハイブリッド文字盤",
         tag: "Wear OS クロノグラフ",
@@ -1350,6 +1385,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Stimmivo",
         tag: "语音信息转文字",
         description: "完全在本地将语音消息与音频文件转录为文字。100% 隐私保护、离线可用且无需上传云端。",
+      },
+      shiftano: {
+        name: "Shiftano",
+        tag: "倒班排班与工时管理",
+        description: "现代化智能排班表，支持自定义轮班周期、本地工时打卡统计以及 100% 本地运行的排班表智能扫描。",
       },
       dialvori: {
         name: "Dialvori: 混合指针表盘",
@@ -1526,6 +1566,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Messaggi Vocali in Testo",
         description: "Trascrivi messaggi vocali e file audio localmente sul tuo telefono. 100% privato, utilizzabile offline e senza cloud.",
       },
+      shiftano: {
+        name: "Shiftano",
+        tag: "Turni di Lavoro & Agenda",
+        description: "Pianificatore di turni moderno con modelli di rotazione personalizzati, monitoraggio delle ore di lavoro, statistiche e scansione turni locale.",
+      },
       dialvori: {
         name: "Dialvori: Quadrante Ibrido",
         tag: "Wear OS Cronografo",
@@ -1700,6 +1745,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Stimmivo",
         tag: "Mensagens de Voz em Texto",
         description: "Transcreva mensagens de voz e arquivos de áudio localmente no seu celular. 100% privado, offline e sem nuvem.",
+      },
+      shiftano: {
+        name: "Shiftano",
+        tag: "Escala de Turnos & Horários",
+        description: "Planeador de turnos moderno com padrões de rotação, registo de horas de trabalho local, estatísticas e scanner de escala totalmente privado.",
       },
       dialvori: {
         name: "Dialvori: Mostrador Híbrido",
@@ -1876,6 +1926,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Голосовые сообщения в текст",
         description: "Транскрибируйте голосовые сообщения и аудиофайлы локально на устройстве. 100% приватность, работа офлайн и без облака.",
       },
+      shiftano: {
+        name: "Shiftano",
+        tag: "График смен и табель",
+        description: "Современный планировщик смен с гибкими графиками чередования, локальным учетом рабочего времени, статистикой часов и приватным сканированием графиков.",
+      },
       dialvori: {
         name: "Dialvori: Гибридный циферблат",
         tag: "Хронограф Wear OS",
@@ -2050,6 +2105,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Stimmivo",
         tag: "Sesli Mesajları Metne Dönüştürme",
         description: "Sesli mesajları ve ses dosyalarını cihazınızda tamamen yerel olarak metne dönüştürün. %100 gizli, çevrimdışı ve bulutsuz.",
+      },
+      shiftano: {
+        name: "Shiftano",
+        tag: "Vardiya & Nöbet Çizelgesi",
+        description: "Özelleştirilebilir vardiya döngüleri, yerel çalışma saati takibi, detaylı mesai analizleri ve yerleşik nöbet çizelgesi tarayıcısı sunan modern vardiya yöneticisi.",
       },
       dialvori: {
         name: "Dialvori: Hibrit Saat Yüzü",

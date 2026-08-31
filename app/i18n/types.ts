@@ -77,6 +77,7 @@ export interface TranslationSchema {
     kavorenza: AppItemTranslation;
     paginotetrial: AppItemTranslation;
     stimmivo: AppItemTranslation;
+    shiftano: AppItemTranslation;
     dialvori: AppItemTranslation;
     dialvexa: AppItemTranslation;
   };
