@@ -499,17 +499,17 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       shiftano: {
         name: "Shiftano",
         tag: "Planning & Horaires",
-        description: "Planificateur d\'horaires moderne avec cycles de travail personnalis\'es, suivi du temps local, statistiques d\'heures et scan de planning s\'ecuris\'e.",
+        description: "Planificateur d'horaires moderne avec cycles de travail personnalisés, suivi du temps local, statistiques d'heures et scan de planning sécurisé.",
       },
       batterynivo: {
         name: "BatteryNivo",
         tag: "Moniteur de Batterie 3D",
-        description: "Moniteur de batterie moderne avec jauge 3D, alertes intelligentes de limite de charge, mesures pr\'ecises en mA/Watt et widgets en direct.",
+        description: "Moniteur de batterie moderne avec jauge 3D, alertes intelligentes de limite de charge, mesures précises en mA/Watt et widgets en direct.",
       },
       dialvori: {
         name: "Dialvori: Cadran Hybride",
         tag: "Wear OS Chronographe",
-        description: "Cadran hybride de haute précision pour Wear OS avec 5 complications personnalisables, 6 styles d\'aiguilles et 11 accents LED.",
+        description: "Cadran hybride de haute précision pour Wear OS avec 5 complications personnalisables, 6 styles d'aiguilles et 11 accents LED.",
       },
       dialvexa: {
         name: "Dialvexa: Chrono HUD",
@@ -684,12 +684,12 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       shiftano: {
         name: "Shiftano",
         tag: "Cuadrante & Turnos",
-        description: "Planificador de turnos moderno con patrones de rotaci\'on, registro de horas de trabajo local, estad\'isticas y esc\'aner de cuadrante 100 % privado.",
+        description: "Planificador de turnos moderno con patrones de rotación, registro de horas de trabajo local, estadísticas y escáner de cuadrante 100 % privado.",
       },
       batterynivo: {
         name: "BatteryNivo",
         tag: "Monitor de Batería 3D",
-        description: "Monitor de bater\'ia moderno con visualizaci\'on 3D, alarmas de l\'imite de carga inteligentes, telemetr\'ia real en mA/vatios y widgets.",
+        description: "Monitor de batería moderno con visualización 3D, alarmas de límite de carga inteligentes, telemetría real en mA/vatios y widgets.",
       },
       dialvori: {
         name: "Dialvori: Esfera Híbrida",
@@ -2169,7 +2169,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       batterynivo: {
         name: "BatteryNivo",
         tag: "3D Pil & Şarj Monitörü",
-        description: "3D pil göstergesi, akıllı şarj hedefi uyarıları, gerçek zamanlı mA/Watt telemetrisi ve ana ekran widget\'ları sunan modern pil takipçisi.",
+        description: "3D pil göstergesi, akıllı şarj hedefi uyarıları, gerçek zamanlı mA/Watt telemetrisi ve ana ekran widget'ları sunan modern pil takipçisi.",
       },
       dialvori: {
         name: "Dialvori: Hibrit Saat Yüzü",
