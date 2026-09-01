@@ -134,6 +134,13 @@ const APPS_META = [
     tone: "blue",
     category: "phone" as const,
   },
+  {
+    key: "batterynivo" as const,
+    image: "/apps/batterynivo.webp",
+    url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.batterynivo",
+    tone: "emerald",
+    category: "phone" as const,
+  },
 ];
 
 function PortfolioView() {

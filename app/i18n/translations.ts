@@ -131,6 +131,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Dienstplan & Schichten",
         description: "Moderner Schichtplaner mit flexiblen Schichtmustern, lokaler Arbeitszeiterfassung, Stundenauswertung und privatem On-Device Dienstplan-Scan.",
       },
+      batterynivo: {
+        name: "BatteryNivo",
+        tag: "Akku Monitor & 3D Anzeige",
+        description: "Moderner Akku-Monitor mit 3D-Ladevisualisierung, smarten Ladeziel-Warnungen, präzisen mA/Watt-Messwerten und Live-Widgets.",
+      },
       dialvori: {
         name: "Dialvori: Hybrid Watch Face",
         tag: "Wear OS Chronograph",
@@ -310,6 +315,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Shiftano",
         tag: "Shift Planner & Roster",
         description: "Modern shift planner featuring custom rotation patterns, local work time tracking, hour statistics, and private on-device roster scanning.",
+      },
+      batterynivo: {
+        name: "BatteryNivo",
+        tag: "Battery Monitor & 3D Gauge",
+        description: "Modern battery health monitor featuring 3D charging visuals, smart charge target alarms, real-time mA/watt telemetry, and live widgets.",
       },
       dialvori: {
         name: "Dialvori: Hybrid Watch Face",
@@ -491,6 +501,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Planning & Horaires",
         description: "Planificateur d\'horaires moderne avec cycles de travail personnalis\'es, suivi du temps local, statistiques d\'heures et scan de planning s\'ecuris\'e.",
       },
+      batterynivo: {
+        name: "BatteryNivo",
+        tag: "Moniteur de Batterie 3D",
+        description: "Moniteur de batterie moderne avec jauge 3D, alertes intelligentes de limite de charge, mesures pr\'ecises en mA/Watt et widgets en direct.",
+      },
       dialvori: {
         name: "Dialvori: Cadran Hybride",
         tag: "Wear OS Chronographe",
@@ -670,6 +685,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Shiftano",
         tag: "Cuadrante & Turnos",
         description: "Planificador de turnos moderno con patrones de rotaci\'on, registro de horas de trabajo local, estad\'isticas y esc\'aner de cuadrante 100 % privado.",
+      },
+      batterynivo: {
+        name: "BatteryNivo",
+        tag: "Monitor de Batería 3D",
+        description: "Monitor de bater\'ia moderno con visualizaci\'on 3D, alarmas de l\'imite de carga inteligentes, telemetr\'ia real en mA/vatios y widgets.",
       },
       dialvori: {
         name: "Dialvori: Esfera Híbrida",
@@ -851,6 +871,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "جدول الورديات والمناوبات",
         description: "مخطط ورديات حديث مع أنماط مناوبة مخصصة، تتبع ساعات العمل محلياً، إحصائيات دقيقة ومسح جداول العمل دون اتصال بالإنترنت.",
       },
+      batterynivo: {
+        name: "BatteryNivo",
+        tag: "مراقب البطارية ثلاثي الأبعاد",
+        description: "مراقب بطارية متطور مع قياسات ثلاثية الأبعاد، تنبيهات ذكية لمستويات الشحن، قياس مباشر بالمللي أمبير والواط وودجات للشاشة الرئيسية.",
+      },
       dialvori: {
         name: "Dialvori: واجهة ساعة هجينة",
         tag: "كرونوغراف Wear OS",
@@ -1030,6 +1055,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Shiftano",
         tag: "برنامه‌ریزی شیفت و کار",
         description: "برنامه‌ریز مدرن شیفت‌های کاری با الگوهای چرخشی، ثبت محلی ساعات کاری، آمار کارکرد و اسکن آفلاین جدول کاری با حفظ کامل حریم خصوصی.",
+      },
+      batterynivo: {
+        name: "BatteryNivo",
+        tag: "پایشگر باتری سه‌بعدی",
+        description: "پایشگر مدرن باتری با نمایش سه‌بعدی، هشدارهای هوشمند شارژ بهینه، تله‌متری زنده میلی‌آمپر/وات و ویجت‌های کاربردی صفحه اصلی.",
       },
       dialvori: {
         name: "Dialvori: صفحه ساعت هیبریدی",
@@ -1211,6 +1241,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "シフト手帳・勤務管理",
         description: "カスタムシフトパターン、ローカル勤務時間記録、時間集計、完全プライベートなオンデバイス勤務表スキャンを備えた最新シフト管理アプリ。",
       },
+      batterynivo: {
+        name: "BatteryNivo",
+        tag: "3Dバッテリーモニター",
+        description: "3Dグラフィック充電表示、スマートな充電目標アラーム、リアルタイムなmA/W計測、ホーム画面ウィジェットを備えた最新バッテリーモニター。",
+      },
       dialvori: {
         name: "Dialvori: ハイブリッド文字盤",
         tag: "Wear OS クロノグラフ",
@@ -1390,6 +1425,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Shiftano",
         tag: "倒班排班与工时管理",
         description: "现代化智能排班表，支持自定义轮班周期、本地工时打卡统计以及 100% 本地运行的排班表智能扫描。",
+      },
+      batterynivo: {
+        name: "BatteryNivo",
+        tag: "3D 电池健康与工况监测",
+        description: "现代化电池健康监测工具，支持 3D 拟真电量动效、智能充放电目标提醒、实时毫安/瓦特硬件遥测及桌面小组件。",
       },
       dialvori: {
         name: "Dialvori: 混合指针表盘",
@@ -1571,6 +1611,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Turni di Lavoro & Agenda",
         description: "Pianificatore di turni moderno con modelli di rotazione personalizzati, monitoraggio delle ore di lavoro, statistiche e scansione turni locale.",
       },
+      batterynivo: {
+        name: "BatteryNivo",
+        tag: "Monitor Batteria 3D",
+        description: "Monitor della batteria moderno con indicatore 3D, allarmi intelligenti per il target di ricarica, telemetria in tempo reale e widget live.",
+      },
       dialvori: {
         name: "Dialvori: Quadrante Ibrido",
         tag: "Wear OS Cronografo",
@@ -1750,6 +1795,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Shiftano",
         tag: "Escala de Turnos & Horários",
         description: "Planeador de turnos moderno com padrões de rotação, registo de horas de trabalho local, estatísticas e scanner de escala totalmente privado.",
+      },
+      batterynivo: {
+        name: "BatteryNivo",
+        tag: "Monitor de Bateria 3D",
+        description: "Monitor de bateria moderno com visualização 3D, alarmes inteligentes de limite de carga, medição real de mA/Watts e widgets para ecrã principal.",
       },
       dialvori: {
         name: "Dialvori: Mostrador Híbrido",
@@ -1931,6 +1981,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "График смен и табель",
         description: "Современный планировщик смен с гибкими графиками чередования, локальным учетом рабочего времени, статистикой часов и приватным сканированием графиков.",
       },
+      batterynivo: {
+        name: "BatteryNivo",
+        tag: "3D Монитор батареи",
+        description: "Современный монитор батареи с 3D-индикатором, умными уведомлениями о целевом уровне заряда, точными измерениями тока/мощности и виджетами.",
+      },
       dialvori: {
         name: "Dialvori: Гибридный циферблат",
         tag: "Хронограф Wear OS",
@@ -2110,6 +2165,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Shiftano",
         tag: "Vardiya & Nöbet Çizelgesi",
         description: "Özelleştirilebilir vardiya döngüleri, yerel çalışma saati takibi, detaylı mesai analizleri ve yerleşik nöbet çizelgesi tarayıcısı sunan modern vardiya yöneticisi.",
+      },
+      batterynivo: {
+        name: "BatteryNivo",
+        tag: "3D Pil & Şarj Monitörü",
+        description: "3D pil göstergesi, akıllı şarj hedefi uyarıları, gerçek zamanlı mA/Watt telemetrisi ve ana ekran widget\'ları sunan modern pil takipçisi.",
       },
       dialvori: {
         name: "Dialvori: Hibrit Saat Yüzü",

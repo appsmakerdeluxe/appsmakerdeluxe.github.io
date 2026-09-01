@@ -78,6 +78,7 @@ export interface TranslationSchema {
     paginotetrial: AppItemTranslation;
     stimmivo: AppItemTranslation;
     shiftano: AppItemTranslation;
+    batterynivo: AppItemTranslation;
     dialvori: AppItemTranslation;
     dialvexa: AppItemTranslation;
   };
