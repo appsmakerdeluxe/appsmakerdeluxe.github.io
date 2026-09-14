@@ -108,7 +108,7 @@ const APPS_META = [
   },
   {
     key: "kavorenza" as const,
-    image: "/apps/kavorenza.webp",
+    image: "/apps/kavorenza-store.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.Kavorenza",
     tone: "indigo",
     category: "phone" as const,
