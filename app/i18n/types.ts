@@ -79,6 +79,7 @@ export interface TranslationSchema {
     stimmivo: AppItemTranslation;
     shiftano: AppItemTranslation;
     batterynivo: AppItemTranslation;
+    pdfpouch: AppItemTranslation;
     dialvori: AppItemTranslation;
     dialvexa: AppItemTranslation;
   };

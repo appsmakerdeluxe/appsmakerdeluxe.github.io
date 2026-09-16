@@ -141,6 +141,13 @@ const APPS_META = [
     tone: "emerald",
     category: "phone" as const,
   },
+  {
+    key: "pdfpouch" as const,
+    image: "/apps/pdfpouch.webp",
+    url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.pdfpouch",
+    tone: "coral",
+    category: "phone" as const,
+  },
 ];
 
 function PortfolioView() {

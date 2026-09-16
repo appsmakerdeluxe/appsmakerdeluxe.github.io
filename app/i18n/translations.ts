@@ -136,6 +136,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Akku Monitor & 3D Anzeige",
         description: "Moderner Akku-Monitor mit 3D-Ladevisualisierung, smarten Ladeziel-Warnungen, präzisen mA/Watt-Messwerten und Live-Widgets.",
       },
+      pdfpouch: {
+        name: "PDFPouch",
+        tag: "PDF-Werkzeuge ohne Cloud",
+        description: "Privater Allrounder für Android: PDFs lokal öffnen, lesen, scannen, zusammenführen, Seiten sortieren, signieren und komprimieren – 100 % werbefrei und ohne Konto.",
+      },
       dialvori: {
         name: "Dialvori: Hybrid Watch Face",
         tag: "Wear OS Chronograph",
@@ -320,6 +325,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "BatteryNivo",
         tag: "Battery Monitor & 3D Gauge",
         description: "Modern battery health monitor featuring 3D charging visuals, smart charge target alarms, real-time mA/watt telemetry, and live widgets.",
+      },
+      pdfpouch: {
+        name: "PDFPouch",
+        tag: "Local-First PDF Tools",
+        description: "Private, all-in-one PDF toolkit for Android: open, read, scan, merge, organize pages, sign, and compress PDFs locally without an account or cloud.",
       },
       dialvori: {
         name: "Dialvori: Hybrid Watch Face",
@@ -506,6 +516,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Moniteur de Batterie 3D",
         description: "Moniteur de batterie moderne avec jauge 3D, alertes intelligentes de limite de charge, mesures précises en mA/Watt et widgets en direct.",
       },
+      pdfpouch: {
+        name: "PDFPouch",
+        tag: "Outils PDF Privés et Hors Ligne",
+        description: "Boîte à outils PDF complète et locale pour Android : ouvrez, lisez, numérisez, fusionnez, organisez les pages, signez et compressez vos fichiers sans compte ni cloud.",
+      },
       dialvori: {
         name: "Dialvori: Cadran Hybride",
         tag: "Wear OS Chronographe",
@@ -690,6 +705,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "BatteryNivo",
         tag: "Monitor de Batería 3D",
         description: "Monitor de batería moderno con visualización 3D, alarmas de límite de carga inteligentes, telemetría real en mA/vatios y widgets.",
+      },
+      pdfpouch: {
+        name: "PDFPouch",
+        tag: "Herramientas PDF Locales",
+        description: "Caja de herramientas PDF privada para Android: abre, lee, escanea, combina, reorganiza páginas, firma y comprime documentos de forma local, sin cuenta ni nube.",
       },
       dialvori: {
         name: "Dialvori: Esfera Híbrida",
@@ -876,6 +896,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "مراقب البطارية ثلاثي الأبعاد",
         description: "مراقب بطارية متطور مع قياسات ثلاثية الأبعاد، تنبيهات ذكية لمستويات الشحن، قياس مباشر بالمللي أمبير والواط وودجات للشاشة الرئيسية.",
       },
+      pdfpouch: {
+        name: "PDFPouch",
+        tag: "أدوات PDF محلية وخاصة",
+        description: "مجموعة أدوات PDF متكاملة ومحلية لنظام أندرويد: فتح، قراءة، مسح ضوئي، دمج، ترتيب الصفحات، توقيع وضغط المستندات دون حساب أو تخزين سحابي.",
+      },
       dialvori: {
         name: "Dialvori: واجهة ساعة هجينة",
         tag: "كرونوغراف Wear OS",
@@ -1060,6 +1085,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "BatteryNivo",
         tag: "پایشگر باتری سه‌بعدی",
         description: "پایشگر مدرن باتری با نمایش سه‌بعدی، هشدارهای هوشمند شارژ بهینه، تله‌متری زنده میلی‌آمپر/وات و ویجت‌های کاربردی صفحه اصلی.",
+      },
+      pdfpouch: {
+        name: "PDFPouch",
+        tag: "ابزار همه‌کاره PDF محلی",
+        description: "مجموعه ابزار خصوصی و محلی پی‌دی‌اف برای اندروید: مشاهده، اسکن، ادغام، چیدمان صفحات، امضا و فشرده‌سازی کاملاً آفلاین، بدون نیاز به حساب یا کلود.",
       },
       dialvori: {
         name: "Dialvori: صفحه ساعت هیبریدی",
@@ -1246,6 +1276,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "3Dバッテリーモニター",
         description: "3Dグラフィック充電表示、スマートな充電目標アラーム、リアルタイムなmA/W計測、ホーム画面ウィジェットを備えた最新バッテリーモニター。",
       },
+      pdfpouch: {
+        name: "PDFPouch",
+        tag: "完全ローカルPDFツール",
+        description: "Android向けプライベートPDFツール：アカウントやクラウド不要で、PDFの閲覧・スキャン・結合・ページ整理・署名・圧縮を端末内で完結。",
+      },
       dialvori: {
         name: "Dialvori: ハイブリッド文字盤",
         tag: "Wear OS クロノグラフ",
@@ -1430,6 +1465,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "BatteryNivo",
         tag: "3D 电池健康与工况监测",
         description: "现代化电池健康监测工具，支持 3D 拟真电量动效、智能充放电目标提醒、实时毫安/瓦特硬件遥测及桌面小组件。",
+      },
+      pdfpouch: {
+        name: "PDFPouch",
+        tag: "本地轻量级 PDF 全能工具",
+        description: "专为 Android 打造的纯本地私密 PDF 工具箱：支持阅读、扫描、合并、页面排序旋转、手写签名及压缩，无广告、免注册且无需上传云端。",
       },
       dialvori: {
         name: "Dialvori: 混合指针表盘",
@@ -1616,6 +1656,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Monitor Batteria 3D",
         description: "Monitor della batteria moderno con indicatore 3D, allarmi intelligenti per il target di ricarica, telemetria in tempo reale e widget live.",
       },
+      pdfpouch: {
+        name: "PDFPouch",
+        tag: "Strumenti PDF Locali e Privati",
+        description: "Strumenti PDF completi e privati per Android: apri, leggi, scansiona, unisci, riordina pagine, firma e comprimi documenti in locale senza account né cloud.",
+      },
       dialvori: {
         name: "Dialvori: Quadrante Ibrido",
         tag: "Wear OS Cronografo",
@@ -1800,6 +1845,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "BatteryNivo",
         tag: "Monitor de Bateria 3D",
         description: "Monitor de bateria moderno com visualização 3D, alarmes inteligentes de limite de carga, medição real de mA/Watts e widgets para ecrã principal.",
+      },
+      pdfpouch: {
+        name: "PDFPouch",
+        tag: "Ferramentas PDF Locais e Privadas",
+        description: "Kit completo de ferramentas PDF locais para Android: abra, leia, digitalize, combine, reorganize páginas, assine e comprima ficheiros sem conta nem nuvem.",
       },
       dialvori: {
         name: "Dialvori: Mostrador Híbrido",
@@ -1986,6 +2036,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "3D Монитор батареи",
         description: "Современный монитор батареи с 3D-индикатором, умными уведомлениями о целевом уровне заряда, точными измерениями тока/мощности и виджетами.",
       },
+      pdfpouch: {
+        name: "PDFPouch",
+        tag: "Локальные PDF-инструменты",
+        description: "Приватный набор инструментов для PDF на Android: открытие, чтение, сканирование, объединение, сортировка страниц, подпись и сжатие локально без облака и аккаунта.",
+      },
       dialvori: {
         name: "Dialvori: Гибридный циферблат",
         tag: "Хронограф Wear OS",
@@ -2170,6 +2225,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "BatteryNivo",
         tag: "3D Pil & Şarj Monitörü",
         description: "3D pil göstergesi, akıllı şarj hedefi uyarıları, gerçek zamanlı mA/Watt telemetrisi ve ana ekran widget'ları sunan modern pil takipçisi.",
+      },
+      pdfpouch: {
+        name: "PDFPouch",
+        tag: "Yerel ve Gizli PDF Araçları",
+        description: "Android için hepsi bir arada yerel PDF araç kutusu: hesap veya bulut olmadan PDF açın, okuyun, tarayın, birleştirin, sayfaları düzenleyin, imzalayın ve sıkıştırın.",
       },
       dialvori: {
         name: "Dialvori: Hibrit Saat Yüzü",
