@@ -148,6 +148,13 @@ const APPS_META = [
     tone: "coral",
     category: "phone" as const,
   },
+  {
+    key: "solitowers" as const,
+    image: "/apps/solitowers.webp",
+    url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.solitowers",
+    tone: "emerald",
+    category: "phone" as const,
+  },
 ];
 
 function PortfolioView() {

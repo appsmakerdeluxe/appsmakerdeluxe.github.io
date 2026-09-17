@@ -80,6 +80,7 @@ export interface TranslationSchema {
     shiftano: AppItemTranslation;
     batterynivo: AppItemTranslation;
     pdfpouch: AppItemTranslation;
+    solitowers: AppItemTranslation;
     dialvori: AppItemTranslation;
     dialvexa: AppItemTranslation;
   };

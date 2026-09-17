@@ -141,6 +141,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "PDF-Werkzeuge ohne Cloud",
         description: "Privater Allrounder für Android: PDFs lokal öffnen, lesen, scannen, zusammenführen, Seiten sortieren, signieren und komprimieren – 100 % werbefrei und ohne Konto.",
       },
+      solitowers: {
+        name: "SoliTowers: Tropics",
+        tag: "Tropisches TriPeaks Solitaire",
+        description: "Entspannendes TriPeaks Solitaire im sonnigen Südsee-Paradies. 52 exotische Karten mit Papageien, Tukanen und Palmen – 100 % werbefrei, offline und ohne In-App-Käufe.",
+      },
       dialvori: {
         name: "Dialvori: Hybrid Watch Face",
         tag: "Wear OS Chronograph",
@@ -330,6 +335,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "PDFPouch",
         tag: "Local-First PDF Tools",
         description: "Private, all-in-one PDF toolkit for Android: open, read, scan, merge, organize pages, sign, and compress PDFs locally without an account or cloud.",
+      },
+      solitowers: {
+        name: "SoliTowers: Tropics",
+        tag: "Tropical TriPeaks Solitaire",
+        description: "Relaxing TriPeaks Solitaire set in a sunny tropical paradise. 52 exotic hand-drawn cards featuring parrots, toucans, and palms – 100% ad-free, offline, and no in-app purchases.",
       },
       dialvori: {
         name: "Dialvori: Hybrid Watch Face",
@@ -521,6 +531,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Outils PDF Privés et Hors Ligne",
         description: "Boîte à outils PDF complète et locale pour Android : ouvrez, lisez, numérisez, fusionnez, organisez les pages, signez et compressez vos fichiers sans compte ni cloud.",
       },
+      solitowers: {
+        name: "SoliTowers: Tropics",
+        tag: "Solitaire TriPeaks Tropical",
+        description: "Solitaire TriPeaks relaxant dans un paradis tropical ensoleillé. 52 cartes exotiques avec perroquets, toucans et palmiers – 100 % sans pub, hors ligne et sans achats intégrés.",
+      },
       dialvori: {
         name: "Dialvori: Cadran Hybride",
         tag: "Wear OS Chronographe",
@@ -710,6 +725,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "PDFPouch",
         tag: "Herramientas PDF Locales",
         description: "Caja de herramientas PDF privada para Android: abre, lee, escanea, combina, reorganiza páginas, firma y comprime documentos de forma local, sin cuenta ni nube.",
+      },
+      solitowers: {
+        name: "SoliTowers: Tropics",
+        tag: "Solitario TriPeaks Tropical",
+        description: "Relajante solitario TriPeaks en un paraíso tropical soleado. 52 cartas exóticas con loros, tucanes y palmeras: 100 % sin anuncios, sin conexión y sin compras integradas.",
       },
       dialvori: {
         name: "Dialvori: Esfera Híbrida",
@@ -901,6 +921,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "أدوات PDF محلية وخاصة",
         description: "مجموعة أدوات PDF متكاملة ومحلية لنظام أندرويد: فتح، قراءة، مسح ضوئي، دمج، ترتيب الصفحات، توقيع وضغط المستندات دون حساب أو تخزين سحابي.",
       },
+      solitowers: {
+        name: "SoliTowers: Tropics",
+        tag: "سوليتير تريبيكس الاستوائية",
+        description: "لعبة سوليتير تريبيكس مريحة في جنة استوائية مشمسة. 52 بطاقة غريبة مع الببغاوات والطوقان وأشجار النخيل - بدون إعلانات وبدون اتصال بالإنترنت تماماً.",
+      },
       dialvori: {
         name: "Dialvori: واجهة ساعة هجينة",
         tag: "كرونوغراف Wear OS",
@@ -1090,6 +1115,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "PDFPouch",
         tag: "ابزار همه‌کاره PDF محلی",
         description: "مجموعه ابزار خصوصی و محلی پی‌دی‌اف برای اندروید: مشاهده، اسکن، ادغام، چیدمان صفحات، امضا و فشرده‌سازی کاملاً آفلاین، بدون نیاز به حساب یا کلود.",
+      },
+      solitowers: {
+        name: "SoliTowers: Tropics",
+        tag: "سولیتر تری‌پیکس گرمسیری",
+        description: "بازی کارتی آرامش‌بخش سولیتر تری‌پیکس در بهشت گرمسیری آفتابی با ۵۲ کارت چشم‌نواز طوطی، توکان و نخل – ۱۰۰٪ رایگان، بدون تبلیغات و کاملاً آفلاین.",
       },
       dialvori: {
         name: "Dialvori: صفحه ساعت هیبریدی",
@@ -1281,6 +1311,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "完全ローカルPDFツール",
         description: "Android向けプライベートPDFツール：アカウントやクラウド不要で、PDFの閲覧・スキャン・結合・ページ整理・署名・圧縮を端末内で完結。",
       },
+      solitowers: {
+        name: "SoliTowers: Tropics",
+        tag: "南国トライピークスソリティア",
+        description: "南国の楽園を舞台にしたリラックスできるトライピークス・ソリティア。オウムやオオハシ、ヤシの木が描かれた52枚の美麗カード。完全広告なし・オフライン対応。",
+      },
       dialvori: {
         name: "Dialvori: ハイブリッド文字盤",
         tag: "Wear OS クロノグラフ",
@@ -1470,6 +1505,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "PDFPouch",
         tag: "本地轻量级 PDF 全能工具",
         description: "专为 Android 打造的纯本地私密 PDF 工具箱：支持阅读、扫描、合并、页面排序旋转、手写签名及压缩，无广告、免注册且无需上传云端。",
+      },
+      solitowers: {
+        name: "SoliTowers: Tropics",
+        tag: "热带风情三峰纸牌",
+        description: "置身阳光海岛的休闲三峰单人纸牌（TriPeaks）。52 张手绘风情纸牌，包含金刚鹦鹉、巨嘴鸟与椰林热带美景——纯粹单机、无广告、无内购。",
       },
       dialvori: {
         name: "Dialvori: 混合指针表盘",
@@ -1661,6 +1701,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Strumenti PDF Locali e Privati",
         description: "Strumenti PDF completi e privati per Android: apri, leggi, scansiona, unisci, riordina pagine, firma e comprimi documenti in locale senza account né cloud.",
       },
+      solitowers: {
+        name: "SoliTowers: Tropics",
+        tag: "Solitario TriPeaks Tropicale",
+        description: "Rilassante solitario TriPeaks in un paradiso tropicale soleggiato. 52 carte esotiche con pappagalli, tucani e palme: 100% senza pubblicità, offline e senza acquisti in-app.",
+      },
       dialvori: {
         name: "Dialvori: Quadrante Ibrido",
         tag: "Wear OS Cronografo",
@@ -1850,6 +1895,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "PDFPouch",
         tag: "Ferramentas PDF Locais e Privadas",
         description: "Kit completo de ferramentas PDF locais para Android: abra, leia, digitalize, combine, reorganize páginas, assine e comprima ficheiros sem conta nem nuvem.",
+      },
+      solitowers: {
+        name: "SoliTowers: Tropics",
+        tag: "Solitário TriPeaks Tropical",
+        description: "Solitário TriPeaks relaxante num paraíso tropical ensolarado. 52 cartas exóticas com araras, tucanos e palmeiras – 100% sem anúncios, offline e sem compras na app.",
       },
       dialvori: {
         name: "Dialvori: Mostrador Híbrido",
@@ -2041,6 +2091,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Локальные PDF-инструменты",
         description: "Приватный набор инструментов для PDF на Android: открытие, чтение, сканирование, объединение, сортировка страниц, подпись и сжатие локально без облака и аккаунта.",
       },
+      solitowers: {
+        name: "SoliTowers: Tropics",
+        tag: "Тропический пасьянс Трипикс",
+        description: "Расслабляющий пасьянс Трипикс в солнечном тропическом раю. 52 экзотические карты с попугаями, туканами и пальмами — 100% без рекламы, офлайн и без встроенных покупок.",
+      },
       dialvori: {
         name: "Dialvori: Гибридный циферблат",
         tag: "Хронограф Wear OS",
@@ -2230,6 +2285,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "PDFPouch",
         tag: "Yerel ve Gizli PDF Araçları",
         description: "Android için hepsi bir arada yerel PDF araç kutusu: hesap veya bulut olmadan PDF açın, okuyun, tarayın, birleştirin, sayfaları düzenleyin, imzalayın ve sıkıştırın.",
+      },
+      solitowers: {
+        name: "SoliTowers: Tropics",
+        tag: "Tropikal TriPeaks Solitaire",
+        description: "Güneşli tropik bir cennette geçen rahatlatıcı TriPeaks solitaire kart oyunu. Papağanlar, tukanlar ve palmiyelerle 52 egzotik kart – %100 reklamsız, çevrimdışı ve satın almasız.",
       },
       dialvori: {
         name: "Dialvori: Hibrit Saat Yüzü",
