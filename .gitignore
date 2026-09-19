@@ -41,4 +41,6 @@ next-env.d.ts
 /.openai/dev-preview.log
 /.openai/dev-preview-error.log
 /outputs/
+/output/
+/tmp/
 /work/

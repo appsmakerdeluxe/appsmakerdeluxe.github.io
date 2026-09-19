@@ -146,6 +146,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Tropisches TriPeaks Solitaire",
         description: "Entspannendes TriPeaks Solitaire im sonnigen Südsee-Paradies. 52 exotische Karten mit Papageien, Tukanen und Palmen – 100 % werbefrei, offline und ohne In-App-Käufe.",
       },
+      wallivex: {
+        name: "Wallivex",
+        tag: "Lokale Android-Firewall",
+        description: "Schütze deine Privatsphäre ohne externe Server: Kontrolliere den Datenverkehr jeder einzelnen App, blockiere Tracker und wähle sichere DNS-Anbieter – 100 % werbefrei und lokal.",
+      },
       dialvori: {
         name: "Dialvori: Hybrid Watch Face",
         tag: "Wear OS Chronograph",
@@ -340,6 +345,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "SoliTowers: Tropics",
         tag: "Tropical TriPeaks Solitaire",
         description: "Relaxing TriPeaks Solitaire set in a sunny tropical paradise. 52 exotic hand-drawn cards featuring parrots, toucans, and palms – 100% ad-free, offline, and no in-app purchases.",
+      },
+      wallivex: {
+        name: "Wallivex",
+        tag: "Local Android Firewall",
+        description: "Protect your privacy with no external servers: control per-app network traffic, block trackers, and choose encrypted DNS – 100% ad-free, secure, and local.",
       },
       dialvori: {
         name: "Dialvori: Hybrid Watch Face",
@@ -536,6 +546,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Solitaire TriPeaks Tropical",
         description: "Solitaire TriPeaks relaxant dans un paradis tropical ensoleillé. 52 cartes exotiques avec perroquets, toucans et palmiers – 100 % sans pub, hors ligne et sans achats intégrés.",
       },
+      wallivex: {
+        name: "Wallivex",
+        tag: "Pare-feu Android Local",
+        description: "Protégez votre vie privée sans serveur externe : contrôlez l'accès réseau de chaque application, bloquez les traceurs et configurez un DNS sécurisé – 100 % local et sans pub.",
+      },
       dialvori: {
         name: "Dialvori: Cadran Hybride",
         tag: "Wear OS Chronographe",
@@ -730,6 +745,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "SoliTowers: Tropics",
         tag: "Solitario TriPeaks Tropical",
         description: "Relajante solitario TriPeaks en un paraíso tropical soleado. 52 cartas exóticas con loros, tucanes y palmeras: 100 % sin anuncios, sin conexión y sin compras integradas.",
+      },
+      wallivex: {
+        name: "Wallivex",
+        tag: "Cortafuegos Android Local",
+        description: "Protege tu privacidad sin servidores externos: controla el tráfico de cada app, bloquea rastreadores y elige un DNS seguro y cifrado: 100 % local y sin publicidad.",
       },
       dialvori: {
         name: "Dialvori: Esfera Híbrida",
@@ -926,6 +946,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "سوليتير تريبيكس الاستوائية",
         description: "لعبة سوليتير تريبيكس مريحة في جنة استوائية مشمسة. 52 بطاقة غريبة مع الببغاوات والطوقان وأشجار النخيل - بدون إعلانات وبدون اتصال بالإنترنت تماماً.",
       },
+      wallivex: {
+        name: "Wallivex",
+        tag: "جدار حماية محلي لأندرويد",
+        description: "احمِ خصوصيتك بدون خوادم خارجية: تحكّم في اتصال كل تطبيق بالإنترنت، واحظر أدوات التتبع واختر خادم DNS مشفر – محلي 100% وخالٍ من الإعلانات.",
+      },
       dialvori: {
         name: "Dialvori: واجهة ساعة هجينة",
         tag: "كرونوغراف Wear OS",
@@ -1120,6 +1145,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "SoliTowers: Tropics",
         tag: "سولیتر تری‌پیکس گرمسیری",
         description: "بازی کارتی آرامش‌بخش سولیتر تری‌پیکس در بهشت گرمسیری آفتابی با ۵۲ کارت چشم‌نواز طوطی، توکان و نخل – ۱۰۰٪ رایگان، بدون تبلیغات و کاملاً آفلاین.",
+      },
+      wallivex: {
+        name: "Wallivex",
+        tag: "فایروال محلی اندروید",
+        description: "محافظت کامل از حریم خصوصی بدون سرور خارجی: دسترسی هر برنامه به اینترنت را کنترل کنید، ردیاب‌ها را مسدود نمایید و از DNS امن لذت ببرید – ۱۰۰٪ محلی و بدون تبلیغات.",
       },
       dialvori: {
         name: "Dialvori: صفحه ساعت هیبریدی",
@@ -1316,6 +1346,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "南国トライピークスソリティア",
         description: "南国の楽園を舞台にしたリラックスできるトライピークス・ソリティア。オウムやオオハシ、ヤシの木が描かれた52枚の美麗カード。完全広告なし・オフライン対応。",
       },
+      wallivex: {
+        name: "Wallivex",
+        tag: "端末内ローカルファイアウォール",
+        description: "外部サーバーを使わずプライバシーを徹底保護：アプリごとの通信制御、トラッカー遮断、安全な暗号化DNS選択に対応。完全広告なし・ローカル完結。",
+      },
       dialvori: {
         name: "Dialvori: ハイブリッド文字盤",
         tag: "Wear OS クロノグラフ",
@@ -1510,6 +1545,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "SoliTowers: Tropics",
         tag: "热带风情三峰纸牌",
         description: "置身阳光海岛的休闲三峰单人纸牌（TriPeaks）。52 张手绘风情纸牌，包含金刚鹦鹉、巨嘴鸟与椰林热带美景——纯粹单机、无广告、无内购。",
+      },
+      wallivex: {
+        name: "Wallivex",
+        tag: "本地 Android 防火墙",
+        description: "无需外部服务器即可保护隐私：精细控制单个应用的网络访问、拦截追踪器并支持安全加密 DNS——100% 纯本地、无广告且不限速。",
       },
       dialvori: {
         name: "Dialvori: 混合指针表盘",
@@ -1706,6 +1746,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Solitario TriPeaks Tropicale",
         description: "Rilassante solitario TriPeaks in un paradiso tropicale soleggiato. 52 carte esotiche con pappagalli, tucani e palme: 100% senza pubblicità, offline e senza acquisti in-app.",
       },
+      wallivex: {
+        name: "Wallivex",
+        tag: "Firewall Locale Android",
+        description: "Proteggi la tua privacy senza server esterni: controlla il traffico di ogni singola app, blocca i tracker e imposta DNS sicuri e crittografati: 100% locale e senza pubblicità.",
+      },
       dialvori: {
         name: "Dialvori: Quadrante Ibrido",
         tag: "Wear OS Cronografo",
@@ -1900,6 +1945,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "SoliTowers: Tropics",
         tag: "Solitário TriPeaks Tropical",
         description: "Solitário TriPeaks relaxante num paraíso tropical ensolarado. 52 cartas exóticas com araras, tucanos e palmeiras – 100% sem anúncios, offline e sem compras na app.",
+      },
+      wallivex: {
+        name: "Wallivex",
+        tag: "Firewall Local para Android",
+        description: "Proteja a sua privacidade sem servidores externos: controle o tráfego de rede de cada app, bloqueie rastreadores e escolha DNS encriptado – 100% local e sem anúncios.",
       },
       dialvori: {
         name: "Dialvori: Mostrador Híbrido",
@@ -2096,6 +2146,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Тропический пасьянс Трипикс",
         description: "Расслабляющий пасьянс Трипикс в солнечном тропическом раю. 52 экзотические карты с попугаями, туканами и пальмами — 100% без рекламы, офлайн и без встроенных покупок.",
       },
+      wallivex: {
+        name: "Wallivex",
+        tag: "Локальный фаервол Android",
+        description: "Защита конфиденциальности без внешних серверов: контроль интернет-трафика каждого приложения, блокировка трекеров и выбор безопасного DNS — 100% локально и без рекламы.",
+      },
       dialvori: {
         name: "Dialvori: Гибридный циферблат",
         tag: "Хронограф Wear OS",
@@ -2290,6 +2345,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "SoliTowers: Tropics",
         tag: "Tropikal TriPeaks Solitaire",
         description: "Güneşli tropik bir cennette geçen rahatlatıcı TriPeaks solitaire kart oyunu. Papağanlar, tukanlar ve palmiyelerle 52 egzotik kart – %100 reklamsız, çevrimdışı ve satın almasız.",
+      },
+      wallivex: {
+        name: "Wallivex",
+        tag: "Yerel Android Güvenlik Duvarı",
+        description: "Harici sunucu olmadan gizliliğinizi koruyun: uygulama bazında internet erişimini denetleyin, izleyicileri engelleyin ve şifreli DNS seçin – %100 yerel ve reklamsız.",
       },
       dialvori: {
         name: "Dialvori: Hibrit Saat Yüzü",

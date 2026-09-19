@@ -155,6 +155,13 @@ const APPS_META = [
     tone: "emerald",
     category: "phone" as const,
   },
+  {
+    key: "wallivex" as const,
+    image: "/apps/wallivex.webp",
+    url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.wallivex",
+    tone: "emerald",
+    category: "phone" as const,
+  },
 ];
 
 function PortfolioView() {

@@ -81,6 +81,7 @@ export interface TranslationSchema {
     batterynivo: AppItemTranslation;
     pdfpouch: AppItemTranslation;
     solitowers: AppItemTranslation;
+    wallivex: AppItemTranslation;
     dialvori: AppItemTranslation;
     dialvexa: AppItemTranslation;
   };
