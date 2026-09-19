@@ -164,9 +164,47 @@ const APPS_META = [
   },
 ];
 
+const initialBackApp = APPS_META.find((a) => a.key === "everago")!;
+const initialMainApp = APPS_META.find((a) => a.key === "daymigo")!;
+const otherHeroApps = APPS_META.filter(
+  (a) =>
+    a.category === "phone" &&
+    !a.tone.includes("wide") &&
+    a.key !== "everago" &&
+    a.key !== "daymigo"
+);
+
+export const HERO_APPS = [initialBackApp, initialMainApp, ...otherHeroApps];
+
 function PortfolioView() {
   const { t, isRtl } = useLanguage();
   const [filter, setFilter] = React.useState<"all" | "phone" | "wearos">("all");
+  const [heroIndex, setHeroIndex] = React.useState(0);
+  const [isFading, setIsFading] = React.useState(false);
+  const [isPaused, setIsPaused] = React.useState(false);
+
+  React.useEffect(() => {
+    if (isPaused || HERO_APPS.length < 2) return;
+
+    let fadeTimeout: NodeJS.Timeout | null = null;
+    const interval = setInterval(() => {
+      setIsFading(true);
+      fadeTimeout = setTimeout(() => {
+        setHeroIndex((prev) => (prev + 2) % HERO_APPS.length);
+        setIsFading(false);
+      }, 400);
+    }, 10000);
+
+    return () => {
+      clearInterval(interval);
+      if (fadeTimeout) clearTimeout(fadeTimeout);
+    };
+  }, [isPaused]);
+
+  const backApp = HERO_APPS[heroIndex % HERO_APPS.length];
+  const mainApp = HERO_APPS[(heroIndex + 1) % HERO_APPS.length];
+  const backAppName = t.apps[backApp.key]?.name ?? backApp.key;
+  const mainAppName = t.apps[mainApp.key]?.name ?? mainApp.key;
 
   const visibleApps = APPS_META.filter(
     (app) => filter === "all" || app.category === filter
@@ -241,26 +279,42 @@ function PortfolioView() {
           <div
             className="hero-visual"
             aria-label="Auswahl realer App-Oberflächen"
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
           >
             <div className="orbit orbit-one" aria-hidden="true" />
             <div className="orbit orbit-two" aria-hidden="true" />
             <a
-              href="https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.everago"
+              href={backApp.url}
               target="_blank"
               rel="noreferrer"
-              className="phone phone-back"
-              aria-label={`EverAgo ${t.work.openPlayStoreAria}`}
+              className={`phone phone-back ${isFading ? "fading" : ""}`}
+              aria-label={`${backAppName} ${t.work.openPlayStoreAria}`}
             >
-              <img src="/apps/everago.webp" alt={t.hero.backAppAlt} />
+              <img
+                src={backApp.image}
+                alt={
+                  backApp.key === "everago"
+                    ? t.hero.backAppAlt
+                    : `${t.work.screenshotAltPrefix} ${backAppName}`
+                }
+              />
             </a>
             <a
-              href="https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.daymigo"
+              href={mainApp.url}
               target="_blank"
               rel="noreferrer"
-              className="phone phone-main"
-              aria-label={`DayMigo ${t.work.openPlayStoreAria}`}
+              className={`phone phone-main ${isFading ? "fading" : ""}`}
+              aria-label={`${mainAppName} ${t.work.openPlayStoreAria}`}
             >
-              <img src="/apps/daymigo.webp" alt={t.hero.mainAppAlt} />
+              <img
+                src={mainApp.image}
+                alt={
+                  mainApp.key === "daymigo"
+                    ? t.hero.mainAppAlt
+                    : `${t.work.screenshotAltPrefix} ${mainAppName}`
+                }
+              />
             </a>
           </div>
         </div>

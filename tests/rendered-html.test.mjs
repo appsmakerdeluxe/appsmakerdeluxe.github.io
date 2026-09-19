@@ -126,3 +126,14 @@ test("keeps final assets and accessibility safeguards in place", async () => {
   await access(new URL("../public/favicon.png", import.meta.url));
   await assert.rejects(access(new URL("../app/_sites-preview/SkeletonPreview.tsx", import.meta.url)));
 });
+
+test("hero rotating apps pool dynamically includes phone apps and supports hover pause", async () => {
+  const page = await readFile(new URL("../app/page.tsx", import.meta.url), "utf8");
+  assert.match(page, /export const HERO_APPS/);
+  assert.match(page, /onMouseEnter=\{.*setIsPaused\(true\)/);
+  assert.match(page, /onMouseLeave=\{.*setIsPaused\(false\)/);
+  assert.match(page, /10000/);
+  assert.match(page, /phone phone-back/);
+  assert.match(page, /phone phone-main/);
+});
+
