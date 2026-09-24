@@ -83,3 +83,7 @@ When adding a new app (e.g. from an external Android project workspace):
   - **DO NOT** create or restore `.github/workflows/deploy.yml` — it causes simultaneous deployment race conditions with GitHub's native Pages deploy.
 - **Node Environment**:
   - Always prefix `$env:PATH` with `C:\Users\DrAvE\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin;` in PowerShell when running `pnpm`, `npm`, or `node` commands.
+
+## Store screenshot text encoding
+
+Windows PowerShell 5.1 reads UTF-8 .ps1 files without a BOM as the active ANSI code page. Literal German umlauts can therefore become mojibake in rendered PNGs (for example, Fundst<U+00FC>cke becomes Fundst<U+00C3><U+00BC>cke; <U+00FC>, <U+00E4>, and <U+00F6> are misdecoded). The Play API preserves uploaded PNG bytes; the renderer causes this defect. Keep screenshot-renderer source ASCII-only and build diacritics explicitly from Unicode code points (for example [char]0x00FC), or use a verified UTF-8-with-BOM workflow. Reject U+00C3, U+00C2, and U+FFFD in marketing text, regenerate the images, and inspect full-size PNGs before upload; thumbnails can hide encoding defects.

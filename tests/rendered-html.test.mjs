@@ -42,6 +42,7 @@ test("renders the finished German portfolio with real app links", async () => {
     "com.appsmakerdeluxe.pdfpouch",
     "com.appsmakerdeluxe.solitowers",
     "com.appsmakerdeluxe.wallivex",
+    "com.appsmakerdeluxe.reframiq",
     "de.appsmakerdeluxe.dialvori",
     "de.appsmakerdeluxe.dialvexa",
   ]) assert.match(html, new RegExp(appId.replaceAll(".", "\\.")));
@@ -53,6 +54,7 @@ test("renders the finished German portfolio with real app links", async () => {
   assert.match(html, /PDFPouch/);
   assert.match(html, /SoliTowers/);
   assert.match(html, /Wallivex/);
+  assert.match(html, /Reframiq/);
   assert.match(html, /Dialvori/);
   assert.match(html, /Dialvexa/);
   assert.match(html, /Wear OS/);
@@ -86,6 +88,7 @@ test("contains all 12 supported languages in translation dictionary", async () =
     assert.ok(dict.apps.pdfpouch.name, `pdfpouch exists for ${lang.code}`);
     assert.ok(dict.apps.solitowers.name, `solitowers exists for ${lang.code}`);
     assert.ok(dict.apps.wallivex.name, `wallivex exists for ${lang.code}`);
+    assert.ok(dict.apps.reframiq.name, `reframiq exists for ${lang.code}`);
     assert.ok(dict.apps.dialvori.name, `dialvori exists for ${lang.code}`);
     assert.ok(dict.apps.dialvexa.name, `dialvexa exists for ${lang.code}`);
     assert.ok(dict.apps.mylovecalculator.name, `mylovecalculator exists for ${lang.code}`);
@@ -117,6 +120,7 @@ test("keeps final assets and accessibility safeguards in place", async () => {
   await access(new URL("../public/apps/pdfpouch.webp", import.meta.url));
   await access(new URL("../public/apps/solitowers.webp", import.meta.url));
   await access(new URL("../public/apps/wallivex.webp", import.meta.url));
+  await access(new URL("../public/apps/reframiq.webp", import.meta.url));
   await access(new URL("../public/apps/dialvori.webp", import.meta.url));
   await access(new URL("../public/apps/dialvexa.webp", import.meta.url));
   await access(new URL("../public/apps/dialvexa-store.webp", import.meta.url));

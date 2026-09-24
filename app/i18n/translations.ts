@@ -151,6 +151,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Lokale Android-Firewall",
         description: "Schütze deine Privatsphäre ohne externe Server: Kontrolliere den Datenverkehr jeder einzelnen App, blockiere Tracker und wähle sichere DNS-Anbieter – 100 % werbefrei und lokal.",
       },
+      reframiq: {
+        name: "Reframiq",
+        tag: "Perspektiven-Kamera",
+        description: "Nimm dasselbe Motiv später erneut aus derselben Perspektive auf: Mit transparentem Referenz-Overlay, On-Device-Ausrichtung und Vorher-Nachher-Vergleich – 100 % lokal und ohne Cloud.",
+      },
       dialvori: {
         name: "Dialvori: Hybrid Watch Face",
         tag: "Wear OS Chronograph",
@@ -350,6 +355,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Wallivex",
         tag: "Local Android Firewall",
         description: "Protect your privacy with no external servers: control per-app network traffic, block trackers, and choose encrypted DNS – 100% ad-free, secure, and local.",
+      },
+      reframiq: {
+        name: "Reframiq",
+        tag: "Photo Alignment & Compare",
+        description: "Retake any subject later from the exact same perspective: featuring reference overlay ghosting, on-device visual alignment, and interactive before/after comparison – 100% offline and private.",
       },
       dialvori: {
         name: "Dialvori: Hybrid Watch Face",
@@ -551,6 +561,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Pare-feu Android Local",
         description: "Protégez votre vie privée sans serveur externe : contrôlez l'accès réseau de chaque application, bloquez les traceurs et configurez un DNS sécurisé – 100 % local et sans pub.",
       },
+      reframiq: {
+        name: "Reframiq",
+        tag: "Alignement Photo & Avant/Après",
+        description: "Reprenez le même sujet plus tard sous la même perspective : superposition de référence transparente, alignement visuel sur l'appareil et comparateur avant/après – 100 % hors ligne et privé.",
+      },
       dialvori: {
         name: "Dialvori: Cadran Hybride",
         tag: "Wear OS Chronographe",
@@ -750,6 +765,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Wallivex",
         tag: "Cortafuegos Android Local",
         description: "Protege tu privacidad sin servidores externos: controla el tráfico de cada app, bloquea rastreadores y elige un DNS seguro y cifrado: 100 % local y sin publicidad.",
+      },
+      reframiq: {
+        name: "Reframiq",
+        tag: "Alineación de Fotos & Comparación",
+        description: "Vuelve a fotografiar el mismo motivo más tarde desde la misma perspectiva: con superposición semitransparente de referencia, alineación visual en el dispositivo y comparación interactiva – 100 % local y privada.",
       },
       dialvori: {
         name: "Dialvori: Esfera Híbrida",
@@ -951,6 +971,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "جدار حماية محلي لأندرويد",
         description: "احمِ خصوصيتك بدون خوادم خارجية: تحكّم في اتصال كل تطبيق بالإنترنت، واحظر أدوات التتبع واختر خادم DNS مشفر – محلي 100% وخالٍ من الإعلانات.",
       },
+      reframiq: {
+        name: "Reframiq",
+        tag: "محاذاة الصور ومقارنتها",
+        description: "التقط نفس المشهد لاحقاً من نفس الزاوية بدقة: طبقة شفافة للمقارنة المرجعية، ومحاذاة بصرية مباشرة على الجهاز، ومقارنة قبل وبعد تفاعلية – محلية وخاصة 100% بدون إنترنت.",
+      },
       dialvori: {
         name: "Dialvori: واجهة ساعة هجينة",
         tag: "كرونوغراف Wear OS",
@@ -1150,6 +1175,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Wallivex",
         tag: "فایروال محلی اندروید",
         description: "محافظت کامل از حریم خصوصی بدون سرور خارجی: دسترسی هر برنامه به اینترنت را کنترل کنید، ردیاب‌ها را مسدود نمایید و از DNS امن لذت ببرید – ۱۰۰٪ محلی و بدون تبلیغات.",
+      },
+      reframiq: {
+        name: "Reframiq",
+        tag: "تراز زاویه عکس و مقایسه",
+        description: "عکاسی مجدد از یک سوژه دقیقاً از همان زاویه و پرسپکتیو: دارای لایه راهنمای شفاف، تنظیم بصری روی دستگاه و مقایسه قبل و بعد تعاملی – کاملاً آفلاین و امن بدون ابر.",
       },
       dialvori: {
         name: "Dialvori: صفحه ساعت هیبریدی",
@@ -1351,6 +1381,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "端末内ローカルファイアウォール",
         description: "外部サーバーを使わずプライバシーを徹底保護：アプリごとの通信制御、トラッカー遮断、安全な暗号化DNS選択に対応。完全広告なし・ローカル完結。",
       },
+      reframiq: {
+        name: "Reframiq",
+        tag: "構図合わせ＆前後比較カメラ",
+        description: "同じ被写体を後から全く同じアングル・視点で再撮影：半透明の参照オーバーレイ、端末内ビジュアル位置合わせ、インタラクティブなBefore/After比較 – 完全オフライン・プライベート完結。",
+      },
       dialvori: {
         name: "Dialvori: ハイブリッド文字盤",
         tag: "Wear OS クロノグラフ",
@@ -1550,6 +1585,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Wallivex",
         tag: "本地 Android 防火墙",
         description: "无需外部服务器即可保护隐私：精细控制单个应用的网络访问、拦截追踪器并支持安全加密 DNS——100% 纯本地、无广告且不限速。",
+      },
+      reframiq: {
+        name: "Reframiq",
+        tag: "透视对齐与前后对比相机",
+        description: "以完全相同的视角重新拍摄同一场景：支持半透明参考图层重叠、设备端视觉精准对齐与交互式前后滑动对比——100% 离线、私密且无需联网权限。",
       },
       dialvori: {
         name: "Dialvori: 混合指针表盘",
@@ -1751,6 +1791,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Firewall Locale Android",
         description: "Proteggi la tua privacy senza server esterni: controlla il traffico di ogni singola app, blocca i tracker e imposta DNS sicuri e crittografati: 100% locale e senza pubblicità.",
       },
+      reframiq: {
+        name: "Reframiq",
+        tag: "Allineamento Foto & Confronto",
+        description: "Scatta di nuovo lo stesso soggetto dalla medesima prospettiva: overlay di riferimento semitrasparente, allineamento visivo sul dispositivo e confronto prima/dopo interattivo – 100% offline e privato.",
+      },
       dialvori: {
         name: "Dialvori: Quadrante Ibrido",
         tag: "Wear OS Cronografo",
@@ -1950,6 +1995,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Wallivex",
         tag: "Firewall Local para Android",
         description: "Proteja a sua privacidade sem servidores externos: controle o tráfego de rede de cada app, bloqueie rastreadores e escolha DNS encriptado – 100% local e sem anúncios.",
+      },
+      reframiq: {
+        name: "Reframiq",
+        tag: "Alinhamento de Fotos & Comparação",
+        description: "Fotografe o mesmo motivo mais tarde sob a mesma perspectiva: com sobreposição de referência transparente, alinhamento visual no dispositivo e comparação antes/depois – 100% offline e privada.",
       },
       dialvori: {
         name: "Dialvori: Mostrador Híbrido",
@@ -2151,6 +2201,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Локальный фаервол Android",
         description: "Защита конфиденциальности без внешних серверов: контроль интернет-трафика каждого приложения, блокировка трекеров и выбор безопасного DNS — 100% локально и без рекламы.",
       },
+      reframiq: {
+        name: "Reframiq",
+        tag: "Выравнивание фото и сравнение",
+        description: "Переснимайте объекты позже из той же перспективы: полупрозрачное наложение оригинала, визуальное выравнивание на устройстве и интерактивное сравнение «до и после» — 100% локально и без интернета.",
+      },
       dialvori: {
         name: "Dialvori: Гибридный циферблат",
         tag: "Хронограф Wear OS",
@@ -2350,6 +2405,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Wallivex",
         tag: "Yerel Android Güvenlik Duvarı",
         description: "Harici sunucu olmadan gizliliğinizi koruyun: uygulama bazında internet erişimini denetleyin, izleyicileri engelleyin ve şifreli DNS seçin – %100 yerel ve reklamsız.",
+      },
+      reframiq: {
+        name: "Reframiq",
+        tag: "Fotoğraf Hizalama ve Karşılaştırma",
+        description: "Aynı kareyi daha sonra tam olarak aynı açıdan yeniden çekin: yarı saydam referans katmanı, cihaz üzerinde görsel hizalama ve etkileşimli önce/sonra karşılaştırması – %100 çevrimdışı ve gizli.",
       },
       dialvori: {
         name: "Dialvori: Hibrit Saat Yüzü",

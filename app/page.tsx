@@ -162,6 +162,13 @@ const APPS_META = [
     tone: "emerald",
     category: "phone" as const,
   },
+  {
+    key: "reframiq" as const,
+    image: "/apps/reframiq.webp",
+    url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.reframiq",
+    tone: "indigo",
+    category: "phone" as const,
+  },
 ];
 
 const initialBackApp = APPS_META.find((a) => a.key === "everago")!;

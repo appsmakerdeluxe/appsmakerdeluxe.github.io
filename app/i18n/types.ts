@@ -82,6 +82,7 @@ export interface TranslationSchema {
     pdfpouch: AppItemTranslation;
     solitowers: AppItemTranslation;
     wallivex: AppItemTranslation;
+    reframiq: AppItemTranslation;
     dialvori: AppItemTranslation;
     dialvexa: AppItemTranslation;
   };
