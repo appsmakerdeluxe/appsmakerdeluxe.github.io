@@ -169,6 +169,13 @@ const APPS_META = [
     tone: "indigo",
     category: "phone" as const,
   },
+  {
+    key: "niwajoridemo" as const,
+    image: "/apps/niwajoridemo.webp",
+    url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.niwajori.demo",
+    tone: "rose",
+    category: "phone" as const,
+  },
 ];
 
 const initialBackApp = APPS_META.find((a) => a.key === "everago")!;

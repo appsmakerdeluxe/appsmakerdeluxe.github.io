@@ -45,7 +45,9 @@ test("renders the finished German portfolio with real app links", async () => {
     "com.appsmakerdeluxe.reframiq",
     "de.appsmakerdeluxe.dialvori",
     "de.appsmakerdeluxe.dialvexa",
+    "com.appsmakerdeluxe.niwajori.demo",
   ]) assert.match(html, new RegExp(appId.replaceAll(".", "\\.")));
+  assert.match(html, /Niwajori/);
   assert.match(html, /Lemivo/);
   assert.match(html, /PagiNote Trial/);
   assert.match(html, /Stimmivo/);
@@ -94,6 +96,7 @@ test("contains all 12 supported languages in translation dictionary", async () =
     assert.ok(dict.apps.mylovecalculator.name, `mylovecalculator exists for ${lang.code}`);
     assert.ok(dict.apps.paginotetrial.name, `paginotetrial exists for ${lang.code}`);
     assert.ok(dict.apps.stimmivo.name, `stimmivo exists for ${lang.code}`);
+    assert.ok(dict.apps.niwajoridemo.name, `niwajoridemo exists for ${lang.code}`);
     assert.ok(dict.statement.quotePrefix, `statement exists for ${lang.code}`);
     assert.ok(dict.contact.form.submitButton, `contact.form.submitButton exists for ${lang.code}`);
   }
@@ -126,6 +129,7 @@ test("keeps final assets and accessibility safeguards in place", async () => {
   await access(new URL("../public/apps/dialvexa-store.webp", import.meta.url));
   await access(new URL("../public/apps/kavorenza.webp", import.meta.url));
   await access(new URL("../public/apps/kavorenza-store.webp", import.meta.url));
+  await access(new URL("../public/apps/niwajoridemo.webp", import.meta.url));
   await access(new URL("../public/logo-mark.webp", import.meta.url));
   await access(new URL("../public/favicon.png", import.meta.url));
   await assert.rejects(access(new URL("../app/_sites-preview/SkeletonPreview.tsx", import.meta.url)));

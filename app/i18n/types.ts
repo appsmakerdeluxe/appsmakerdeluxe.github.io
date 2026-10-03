@@ -83,6 +83,7 @@ export interface TranslationSchema {
     solitowers: AppItemTranslation;
     wallivex: AppItemTranslation;
     reframiq: AppItemTranslation;
+    niwajoridemo: AppItemTranslation;
     dialvori: AppItemTranslation;
     dialvexa: AppItemTranslation;
   };

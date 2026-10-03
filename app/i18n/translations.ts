@@ -156,6 +156,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Perspektiven-Kamera",
         description: "Nimm dasselbe Motiv später erneut aus derselben Perspektive auf: Mit transparentem Referenz-Overlay, On-Device-Ausrichtung und Vorher-Nachher-Vergleich – 100 % lokal und ohne Cloud.",
       },
+      niwajoridemo: {
+        name: "Niwajori Mahjong Demo",
+        tag: "Zen-Mahjong-Solitär",
+        description: "12 beruhigende Mahjong-Rätsel im stillen Sakura-Garten: Vier kunstvolle Steinsätze, unbegrenzte Hilfen und sanfte Klänge – 100 % werbefrei, offline und in deinem Tempo.",
+      },
       dialvori: {
         name: "Dialvori: Hybrid Watch Face",
         tag: "Wear OS Chronograph",
@@ -360,6 +365,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Reframiq",
         tag: "Photo Alignment & Compare",
         description: "Retake any subject later from the exact same perspective: featuring reference overlay ghosting, on-device visual alignment, and interactive before/after comparison – 100% offline and private.",
+      },
+      niwajoridemo: {
+        name: "Niwajori Mahjong Demo",
+        tag: "Zen Mahjong Solitaire",
+        description: "Twelve calm Mahjong solitaire puzzles in a peaceful sakura garden: four artistic tile sets, unlimited hints and undos, gentle music – 100% ad-free and playable offline.",
       },
       dialvori: {
         name: "Dialvori: Hybrid Watch Face",
@@ -566,6 +576,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Alignement Photo & Avant/Après",
         description: "Reprenez le même sujet plus tard sous la même perspective : superposition de référence transparente, alignement visuel sur l'appareil et comparateur avant/après – 100 % hors ligne et privé.",
       },
+      niwajoridemo: {
+        name: "Niwajori Mahjong Démo",
+        tag: "Mah-jong Solitaire Zen",
+        description: "Douze puzzles de mah-jong relaxants dans un paisible jardin sakura : quatre styles de tuiles artistiques, indices illimités et sons doux – 100 % sans pub et hors ligne.",
+      },
       dialvori: {
         name: "Dialvori: Cadran Hybride",
         tag: "Wear OS Chronographe",
@@ -770,6 +785,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Reframiq",
         tag: "Alineación de Fotos & Comparación",
         description: "Vuelve a fotografiar el mismo motivo más tarde desde la misma perspectiva: con superposición semitransparente de referencia, alineación visual en el dispositivo y comparación interactiva – 100 % local y privada.",
+      },
+      niwajoridemo: {
+        name: "Niwajori Mahjong Demo",
+        tag: "Solitario Mahjong Zen",
+        description: "Doce relajantes puzles de mahjong en un apacible jardín sakura: cuatro estilos artísticos de fichas, pistas ilimitadas y melodías tranquilas: 100 % sin anuncios y sin conexión.",
       },
       dialvori: {
         name: "Dialvori: Esfera Híbrida",
@@ -976,6 +996,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "محاذاة الصور ومقارنتها",
         description: "التقط نفس المشهد لاحقاً من نفس الزاوية بدقة: طبقة شفافة للمقارنة المرجعية، ومحاذاة بصرية مباشرة على الجهاز، ومقارنة قبل وبعد تفاعلية – محلية وخاصة 100% بدون إنترنت.",
       },
+      niwajoridemo: {
+        name: "Niwajori Mahjong Demo",
+        tag: "ما جونغ سوليتير الهادئة",
+        description: "اثنا عشر لغز ما جونغ هادئاً في حديقة الساكورا الساحرة: أربعة أنماط فنية للبلاطات، تلميحات غير محدودة وألحان مريحة – بدون إعلانات وبدون إنترنت تماماً.",
+      },
       dialvori: {
         name: "Dialvori: واجهة ساعة هجينة",
         tag: "كرونوغراف Wear OS",
@@ -1180,6 +1205,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Reframiq",
         tag: "تراز زاویه عکس و مقایسه",
         description: "عکاسی مجدد از یک سوژه دقیقاً از همان زاویه و پرسپکتیو: دارای لایه راهنمای شفاف، تنظیم بصری روی دستگاه و مقایسه قبل و بعد تعاملی – کاملاً آفلاین و امن بدون ابر.",
+      },
+      niwajoridemo: {
+        name: "Niwajori Mahjong Demo",
+        tag: "سولیتر فال ماه‌جونگ ذن",
+        description: "۱۲ پازل آرامش‌بخش ماه‌جونگ در باغ ساکورا: چهار طرح زیبای مهره‌ها، راهنما و بازگشت نامحدود و موسیقی دلنشین – کاملاً آفلاین و بدون تبلیغات با آرامش خاطر.",
       },
       dialvori: {
         name: "Dialvori: صفحه ساعت هیبریدی",
@@ -1386,6 +1416,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "構図合わせ＆前後比較カメラ",
         description: "同じ被写体を後から全く同じアングル・視点で再撮影：半透明の参照オーバーレイ、端末内ビジュアル位置合わせ、インタラクティブなBefore/After比較 – 完全オフライン・プライベート完結。",
       },
+      niwajoridemo: {
+        name: "Niwajori Mahjong Demo",
+        tag: "和風・桜の庭 牌パズル",
+        description: "静かな桜の庭園で楽しむ12問の麻雀ソリティア：美しい4種の牌デザイン、無制限のヒント＆取り消し、心安らぐ和の調べ。完全広告なし・オフライン対応。",
+      },
       dialvori: {
         name: "Dialvori: ハイブリッド文字盤",
         tag: "Wear OS クロノグラフ",
@@ -1590,6 +1625,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Reframiq",
         tag: "透视对齐与前后对比相机",
         description: "以完全相同的视角重新拍摄同一场景：支持半透明参考图层重叠、设备端视觉精准对齐与交互式前后滑动对比——100% 离线、私密且无需联网权限。",
+      },
+      niwajoridemo: {
+        name: "Niwajori Mahjong Demo",
+        tag: "樱花园林禅意麻将",
+        description: "在静谧的樱花园林中畅玩 12 道治愈单人麻将谜题：4 种雅致牌面风格、无限提示与撤销、舒缓和风背景音乐——完全单机无广告，慢享宁静时光。",
       },
       dialvori: {
         name: "Dialvori: 混合指针表盘",
@@ -1796,6 +1836,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Allineamento Foto & Confronto",
         description: "Scatta di nuovo lo stesso soggetto dalla medesima prospettiva: overlay di riferimento semitrasparente, allineamento visivo sul dispositivo e confronto prima/dopo interattivo – 100% offline e privato.",
       },
+      niwajoridemo: {
+        name: "Niwajori Mahjong Demo",
+        tag: "Mahjong Solitario Zen",
+        description: "Dodici rilassanti rompicapi di mahjong in un tranquillo giardino di sakura: quattro set di tessere artistiche, aiuti illimitati e musiche dolci – 100% offline e senza pubblicità.",
+      },
       dialvori: {
         name: "Dialvori: Quadrante Ibrido",
         tag: "Wear OS Cronografo",
@@ -2000,6 +2045,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Reframiq",
         tag: "Alinhamento de Fotos & Comparação",
         description: "Fotografe o mesmo motivo mais tarde sob a mesma perspectiva: com sobreposição de referência transparente, alinhamento visual no dispositivo e comparação antes/depois – 100% offline e privada.",
+      },
+      niwajoridemo: {
+        name: "Niwajori Mahjong Demo",
+        tag: "Solitário Mahjong Zen",
+        description: "Doze puzzles relaxantes de mahjong num sereno jardim de sakura: quatro conjuntos de peças artísticas, dicas ilimitadas e música suave – 100% offline e sem anúncios.",
       },
       dialvori: {
         name: "Dialvori: Mostrador Híbrido",
@@ -2206,6 +2256,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Выравнивание фото и сравнение",
         description: "Переснимайте объекты позже из той же перспективы: полупрозрачное наложение оригинала, визуальное выравнивание на устройстве и интерактивное сравнение «до и после» — 100% локально и без интернета.",
       },
+      niwajoridemo: {
+        name: "Niwajori Mahjong Demo",
+        tag: "Дзен-пасьянс маджонг",
+        description: "12 медитативных головоломок маджонг в цветущем саду сакуры: 4 изысканных набора костей, неограниченные подсказки и спокойная музыка — 100% без рекламы и офлайн.",
+      },
       dialvori: {
         name: "Dialvori: Гибридный циферблат",
         tag: "Хронограф Wear OS",
@@ -2410,6 +2465,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Reframiq",
         tag: "Fotoğraf Hizalama ve Karşılaştırma",
         description: "Aynı kareyi daha sonra tam olarak aynı açıdan yeniden çekin: yarı saydam referans katmanı, cihaz üzerinde görsel hizalama ve etkileşimli önce/sonra karşılaştırması – %100 çevrimdışı ve gizli.",
+      },
+      niwajoridemo: {
+        name: "Niwajori Mahjong Demo",
+        tag: "Zen Mahjong Solitaire",
+        description: "Huzurlu sakura bahçesinde 12 dinlendirici mahjong bulmacası: 4 sanatsal taş seti, sınırsız ipucu ve sakinleştirici müzikler – %100 reklamsız ve tamamen çevrimdışı.",
       },
       dialvori: {
         name: "Dialvori: Hibrit Saat Yüzü",
