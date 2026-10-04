@@ -196,6 +196,7 @@ function PortfolioView() {
   const [heroIndex, setHeroIndex] = React.useState(0);
   const [isFading, setIsFading] = React.useState(false);
   const [isPaused, setIsPaused] = React.useState(false);
+  const [isVideoActive, setIsVideoActive] = React.useState(false);
 
   React.useEffect(() => {
     if (isPaused || HERO_APPS.length < 2) return;
@@ -245,10 +246,23 @@ function PortfolioView() {
         </a>
         <nav className="desktop-nav" aria-label="Seitennavigation">
           <a href="#arbeiten">{t.nav.apps}</a>
+          <a href="#videos">{t.nav.videos}</a>
           <a href="#studio">{t.nav.studio}</a>
           <a href="#kontakt">{t.nav.contact}</a>
         </nav>
         <div className="header-right-group">
+          <a
+            href="https://www.youtube.com/channel/UCCks9uUVA_N2LTcV4fHtnSw"
+            target="_blank"
+            rel="noreferrer"
+            className="header-youtube-btn"
+            aria-label={t.youtube.headerAria}
+            title={t.youtube.headerAria}
+          >
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
           <LanguageSelector />
           <a className="header-cta" href="#arbeiten">
             {t.nav.discoverCta} <span aria-hidden="true">↓</span>
@@ -459,6 +473,157 @@ function PortfolioView() {
         </div>
       </section>
 
+      <section className="section youtube-section" id="videos">
+        <div className="section-head reveal">
+          <div>
+            <div className="eyebrow">
+              <span className="eyebrow-red" /> {t.youtube.eyebrow}
+            </div>
+            <h2>
+              {t.youtube.titlePrefix}
+              <br />
+              <em>{t.youtube.titleEmphasis}</em>
+            </h2>
+          </div>
+          <div>
+            <p>{t.youtube.lead}</p>
+          </div>
+        </div>
+
+        <div className="youtube-showcase">
+          <div className="trailer-card">
+            {isVideoActive ? (
+              <div className="trailer-embed-wrap">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/yG09FU7UE8k?autoplay=1&rel=0"
+                  title={t.youtube.trailerTitle}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="trailer-iframe"
+                />
+                <button
+                  type="button"
+                  className="trailer-close-btn"
+                  onClick={() => setIsVideoActive(false)}
+                  aria-label={t.youtube.closeTrailer}
+                >
+                  ✕ {t.youtube.closeTrailer}
+                </button>
+              </div>
+            ) : (
+              <div
+                className="trailer-preview"
+                role="button"
+                tabIndex={0}
+                onClick={() => setIsVideoActive(true)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    setIsVideoActive(true);
+                  }
+                }}
+                aria-label={t.youtube.playTrailerAria}
+              >
+                <img
+                  src="/trailer-solitowers.webp"
+                  alt={`${t.youtube.trailerTitle} – ${t.youtube.badgeTrailer}`}
+                  className="trailer-thumb"
+                  loading="lazy"
+                  width="1280"
+                  height="720"
+                />
+                <div className="trailer-overlay">
+                  <div className="trailer-top-badges">
+                    <span className="badge-yt-pill">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                      </svg>
+                      {t.youtube.badgeTrailer}
+                    </span>
+                    <span className="badge-duration">0:33</span>
+                  </div>
+
+                  <div className="trailer-play-button" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="34" height="34" fill="currentColor">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+
+                  <div className="trailer-info-bar">
+                    <div className="trailer-info-text">
+                      <span className="trailer-label">{t.youtube.badgeTrailer}</span>
+                      <h3 className="trailer-headline">{t.youtube.trailerTitle}</h3>
+                      <p className="trailer-subline">{t.youtube.trailerSubtitle}</p>
+                    </div>
+                    <span className="trailer-cta-hint">
+                      {t.youtube.playTrailerAria} <span aria-hidden="true">{isRtl ? "↖" : "↗"}</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+
+          <div className="channel-card">
+            <div className="channel-card-glow" aria-hidden="true" />
+            <div className="channel-header">
+              <div className="channel-avatar-wrap">
+                <img
+                  src="/youtube-avatar.webp"
+                  alt="AppsMakerDeluxe Studios YouTube Avatar"
+                  className="channel-avatar-img"
+                  width="74"
+                  height="74"
+                />
+                <div className="channel-avatar-badge" title="Official Studio Channel">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="channel-meta">
+                <span className="channel-tag">YouTube Creator</span>
+                <h3 className="channel-name">{t.youtube.channelTitle}</h3>
+                <span className="channel-handle">{t.youtube.channelHandle}</span>
+              </div>
+            </div>
+
+            <p className="channel-description">{t.youtube.channelDesc}</p>
+
+            <div className="channel-features">
+              <div className="channel-feature-item">
+                <span className="channel-feature-bullet">🎬</span>
+                <span>{t.youtube.feature1}</span>
+              </div>
+              <div className="channel-feature-item">
+                <span className="channel-feature-bullet">⚡</span>
+                <span>{t.youtube.feature2}</span>
+              </div>
+              <div className="channel-feature-item">
+                <span className="channel-feature-bullet">📱</span>
+                <span>{t.youtube.feature3}</span>
+              </div>
+            </div>
+
+            <div className="channel-actions">
+              <a
+                href="https://www.youtube.com/channel/UCCks9uUVA_N2LTcV4fHtnSw"
+                target="_blank"
+                rel="noreferrer"
+                className="button youtube-primary-btn"
+                aria-label={`${t.youtube.subscribeButton}: ${t.youtube.channelTitle}`}
+              >
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+                <span>{t.youtube.subscribeButton}</span>
+                <span aria-hidden="true">{isRtl ? "↖" : "↗"}</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="statement" id="studio">
         <div className="statement-grid">
           <div className="statement-brand-col">
@@ -538,8 +703,22 @@ function PortfolioView() {
         </div>
         <div className="footer-links">
           <a href="#arbeiten">{t.nav.apps}</a>
+          <a href="#videos">{t.nav.videos}</a>
           <a href="#studio">{t.nav.studio}</a>
           <a href="#kontakt">{t.nav.contact}</a>
+          <a
+            href="https://www.youtube.com/channel/UCCks9uUVA_N2LTcV4fHtnSw"
+            target="_blank"
+            rel="noreferrer"
+            className="footer-youtube-link"
+            aria-label={t.youtube.headerAria}
+          >
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+            <span>{t.footer.youtube}</span>
+            <span aria-hidden="true">{isRtl ? "↖" : "↗"}</span>
+          </a>
           <a href="#top">{t.footer.backToTop}</a>
         </div>
         <small>

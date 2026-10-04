@@ -30,6 +30,7 @@ export interface AppItemTranslation {
 export interface TranslationSchema {
   nav: {
     apps: string;
+    videos: string;
     studio: string;
     contact: string;
     discoverCta: string;
@@ -134,8 +135,29 @@ export interface TranslationSchema {
       emailSubjectPrefix: string;
     };
   };
+  youtube: {
+    eyebrow: string;
+    titlePrefix: string;
+    titleEmphasis: string;
+    lead: string;
+    badgeTrailer: string;
+    trailerTitle: string;
+    trailerSubtitle: string;
+    watchOnYoutube: string;
+    channelTitle: string;
+    channelHandle: string;
+    channelDesc: string;
+    feature1: string;
+    feature2: string;
+    feature3: string;
+    subscribeButton: string;
+    headerAria: string;
+    playTrailerAria: string;
+    closeTrailer: string;
+  };
   footer: {
     tagline: string;
+    youtube: string;
     backToTop: string;
     copyright: string;
   };

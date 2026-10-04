@@ -67,6 +67,9 @@ test("renders the finished German portfolio with real app links", async () => {
   assert.match(html, /wachsende Sammlung/);
   assert.match(html, /appsmakerdeluxe@gmail\.com/);
   assert.match(html, /id="kontakt"/);
+  assert.match(html, /id="videos"/);
+  assert.match(html, /https:\/\/www\.youtube\.com\/channel\/UCCks9uUVA_N2LTcV4fHtnSw/);
+  assert.match(html, /@AppsMakerDeluxeStudios/);
   assert.match(html, /lang-selector-btn/);
   assert.doesNotMatch(html, /In Vorbereitung/);
   assert.match(html, /og\.png/);
@@ -97,6 +100,9 @@ test("contains all 12 supported languages in translation dictionary", async () =
     assert.ok(dict.apps.paginotetrial.name, `paginotetrial exists for ${lang.code}`);
     assert.ok(dict.apps.stimmivo.name, `stimmivo exists for ${lang.code}`);
     assert.ok(dict.apps.niwajoridemo.name, `niwajoridemo exists for ${lang.code}`);
+    assert.ok(dict.nav.videos, `nav.videos exists for ${lang.code}`);
+    assert.ok(dict.youtube.titlePrefix, `youtube.titlePrefix exists for ${lang.code}`);
+    assert.ok(dict.footer.youtube, `footer.youtube exists for ${lang.code}`);
     assert.ok(dict.statement.quotePrefix, `statement exists for ${lang.code}`);
     assert.ok(dict.contact.form.submitButton, `contact.form.submitButton exists for ${lang.code}`);
   }
@@ -130,6 +136,8 @@ test("keeps final assets and accessibility safeguards in place", async () => {
   await access(new URL("../public/apps/kavorenza.webp", import.meta.url));
   await access(new URL("../public/apps/kavorenza-store.webp", import.meta.url));
   await access(new URL("../public/apps/niwajoridemo.webp", import.meta.url));
+  await access(new URL("../public/trailer-solitowers.webp", import.meta.url));
+  await access(new URL("../public/youtube-avatar.webp", import.meta.url));
   await access(new URL("../public/logo-mark.webp", import.meta.url));
   await access(new URL("../public/favicon.png", import.meta.url));
   await assert.rejects(access(new URL("../app/_sites-preview/SkeletonPreview.tsx", import.meta.url)));
