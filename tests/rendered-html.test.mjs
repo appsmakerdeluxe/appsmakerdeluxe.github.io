@@ -68,7 +68,7 @@ test("renders the finished German portfolio with real app links", async () => {
   assert.match(html, /appsmakerdeluxe@gmail\.com/);
   assert.match(html, /id="kontakt"/);
   assert.match(html, /id="videos"/);
-  assert.match(html, /https:\/\/www\.youtube\.com\/channel\/UCCks9uUVA_N2LTcV4fHtnSw/);
+  assert.match(html, /https:\/\/www\.youtube\.com\/@AppsMakerDeluxeStudios/);
   assert.match(html, /@AppsMakerDeluxeStudios/);
   assert.match(html, /lang-selector-btn/);
   assert.doesNotMatch(html, /In Vorbereitung/);

@@ -7,6 +7,8 @@ import ContactForm from "./ContactForm";
 import LanguageSelector from "./components/LanguageSelector";
 import { LanguageProvider, useLanguage } from "./i18n/LanguageContext";
 
+const YOUTUBE_CHANNEL_URL = "https://www.youtube.com/@AppsMakerDeluxeStudios";
+
 const APPS_META = [
   {
     key: "daymigo" as const,
@@ -252,7 +254,7 @@ function PortfolioView() {
         </nav>
         <div className="header-right-group">
           <a
-            href="https://www.youtube.com/channel/UCCks9uUVA_N2LTcV4fHtnSw"
+            href={YOUTUBE_CHANNEL_URL}
             target="_blank"
             rel="noreferrer"
             className="header-youtube-btn"
@@ -607,7 +609,7 @@ function PortfolioView() {
 
             <div className="channel-actions">
               <a
-                href="https://www.youtube.com/channel/UCCks9uUVA_N2LTcV4fHtnSw"
+                href={YOUTUBE_CHANNEL_URL}
                 target="_blank"
                 rel="noreferrer"
                 className="button youtube-primary-btn"
@@ -707,7 +709,7 @@ function PortfolioView() {
           <a href="#studio">{t.nav.studio}</a>
           <a href="#kontakt">{t.nav.contact}</a>
           <a
-            href="https://www.youtube.com/channel/UCCks9uUVA_N2LTcV4fHtnSw"
+            href={YOUTUBE_CHANNEL_URL}
             target="_blank"
             rel="noreferrer"
             className="footer-youtube-link"
