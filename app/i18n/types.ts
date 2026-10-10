@@ -164,6 +164,14 @@ export interface TranslationSchema {
     feature3: string;
     button: string;
     headerAria: string;
+    gameBadge: string;
+    gameTitle: string;
+    gameLead: string;
+    gameFeature1: string;
+    gameFeature2: string;
+    gameFeature3: string;
+    gameBuyButton: string;
+    gameStoreBadge: string;
   };
   footer: {
     tagline: string;

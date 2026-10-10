@@ -71,8 +71,11 @@ test("renders the finished German portfolio with real app links", async () => {
   assert.match(html, /https:\/\/www\.youtube\.com\/@AppsMakerDeluxeStudios/);
   assert.match(html, /@AppsMakerDeluxeStudios/);
   assert.match(html, /https:\/\/appsmakerdeluxe-studios\.itch\.io/);
+  assert.match(html, /https:\/\/appsmakerdeluxe-studios\.itch\.io\/niwajori-mahjong/);
   assert.match(html, /header-itch-btn/);
   assert.match(html, /itchio-card/);
+  assert.match(html, /itchio-spotlight/);
+  assert.match(html, /itchio-buy-btn/);
   assert.match(html, /footer-itch-link/);
   assert.match(html, /lang-selector-btn/);
   assert.doesNotMatch(html, /In Vorbereitung/);
@@ -109,6 +112,9 @@ test("contains all 12 supported languages in translation dictionary", async () =
     assert.ok(dict.footer.youtube, `footer.youtube exists for ${lang.code}`);
     assert.ok(dict.itchio.title, `itchio.title exists for ${lang.code}`);
     assert.ok(dict.itchio.badge, `itchio.badge exists for ${lang.code}`);
+    assert.ok(dict.itchio.gameTitle, `itchio.gameTitle exists for ${lang.code}`);
+    assert.ok(dict.itchio.gameBadge, `itchio.gameBadge exists for ${lang.code}`);
+    assert.ok(dict.itchio.gameBuyButton, `itchio.gameBuyButton exists for ${lang.code}`);
     assert.ok(dict.footer.itchio, `footer.itchio exists for ${lang.code}`);
     assert.ok(dict.statement.quotePrefix, `statement exists for ${lang.code}`);
     assert.ok(dict.contact.form.submitButton, `contact.form.submitButton exists for ${lang.code}`);
@@ -143,6 +149,7 @@ test("keeps final assets and accessibility safeguards in place", async () => {
   await access(new URL("../public/apps/kavorenza.webp", import.meta.url));
   await access(new URL("../public/apps/kavorenza-store.webp", import.meta.url));
   await access(new URL("../public/apps/niwajoridemo.webp", import.meta.url));
+  await access(new URL("../public/niwajori-itch-cover.jpg", import.meta.url));
   await access(new URL("../public/trailer-solitowers.webp", import.meta.url));
   await access(new URL("../public/youtube-avatar.webp", import.meta.url));
   await access(new URL("../public/logo-mark.webp", import.meta.url));

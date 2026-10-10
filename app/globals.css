@@ -582,48 +582,175 @@ h1 span, h2 em, blockquote em { color: var(--blue); font-style: normal; }
   color: #9db0c0;
   margin: 0;
 }
-.itchio-features {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px 20px;
-  padding: 14px 0;
-  border-top: 1px solid rgba(255, 255, 255, .08);
-  border-bottom: 1px solid rgba(255, 255, 255, .08);
+
+.itchio-spotlight {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 24px;
+  background: rgba(0, 0, 0, .32);
+  border: 1px solid rgba(250, 92, 92, .25);
+  border-radius: 18px;
+  padding: 20px;
+  align-items: center;
+  transition: border-color .3s ease, box-shadow .3s ease;
 }
-.itchio-feature-item {
+.itchio-spotlight:hover {
+  border-color: rgba(250, 92, 92, .55);
+  box-shadow: 0 10px 30px rgba(250, 92, 92, .15);
+}
+.itchio-spotlight-media {
+  position: relative;
+  display: block;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .55);
+  aspect-ratio: 630 / 500;
+  border: 1px solid rgba(255, 255, 255, .1);
+}
+.itchio-spotlight-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .45s ease;
+  display: block;
+}
+.itchio-spotlight-media:hover .itchio-spotlight-cover {
+  transform: scale(1.04);
+}
+.itchio-exclusive-pill {
+  position: absolute;
+  top: 10px;
+  left: 10px;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  font-size: 13px;
+  gap: 7px;
+  background: rgba(7, 18, 32, .9);
+  border: 1px solid rgba(250, 92, 92, .65);
+  padding: 4px 11px;
+  border-radius: 999px;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #ff7575;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .5);
+}
+.exclusive-pulse {
+  width: 6px;
+  height: 6px;
+  background: #fa5c5c;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #fa5c5c;
+  animation: pulseDot 2s infinite ease-in-out;
+}
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: .5; transform: scale(.75); }
+}
+.itchio-spotlight-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.itchio-spotlight-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.itchio-spotlight-title {
+  font-size: clamp(18px, 1.8vw, 22px);
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+.itchio-spotlight-lead {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #a5b7c7;
+  margin: 0;
+}
+.itchio-spotlight-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+.itchio-feature-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, .04);
+  border: 1px solid rgba(255, 255, 255, .09);
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 12px;
   color: #cbd5e1;
 }
-.itchio-feature-bullet {
-  font-size: 14px;
+.feature-icon {
+  font-size: 13px;
 }
-.itchio-actions {
+.itchio-spotlight-actions {
   display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
   align-items: center;
+  margin-top: 4px;
 }
-.itchio-btn {
-  background: linear-gradient(135deg, #fa5c5c 0%, #e03a3a 100%);
+.itchio-buy-btn {
+  background: linear-gradient(135deg, #fa5c5c 0%, #d42c2c 100%);
   color: #ffffff;
   border: 0;
-  box-shadow: 0 10px 30px rgba(250, 92, 92, .35);
+  box-shadow: 0 10px 28px rgba(250, 92, 92, .4);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 10px;
   font-weight: 700;
-  padding: 0 24px;
-  min-height: 48px;
+  font-size: 13.5px;
+  padding: 0 22px;
+  min-height: 46px;
   border-radius: 999px;
   transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
   text-decoration: none;
 }
-.itchio-btn:hover {
+.itchio-buy-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 40px rgba(250, 92, 92, .55);
-  filter: brightness(1.08);
+  box-shadow: 0 14px 38px rgba(250, 92, 92, .6);
+  filter: brightness(1.1);
+}
+.itchio-profile-btn {
+  border-color: rgba(255, 255, 255, .2);
+  color: #e2e8f0;
+  font-size: 13px;
+  min-height: 46px;
+  padding: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border-radius: 999px;
+  transition: all .25s ease;
+}
+.itchio-profile-btn:hover {
+  border-color: #fa5c5c;
+  color: #ffffff;
+  background: rgba(250, 92, 92, .12);
+  transform: translateY(-2px);
+}
+.app-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.app-secondary-itch-link {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fa5c5c!important;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color .2s ease;
+}
+.app-secondary-itch-link:hover {
+  color: #ff7575!important;
+  text-decoration: underline;
 }
 .contact { display: grid; grid-template-columns: .9fr 1.1fr; gap: 9vw; padding-top: 150px; padding-bottom: 150px; }
 .contact-intro h2 { font-size: clamp(46px, 5vw, 76px); line-height: 1.03; margin: 22px 0 28px; }
@@ -700,8 +827,9 @@ footer p { font-size: 13px; margin: 0; color: #94a3b8; }
   .statement-badge-img { width: 180px; }
   .values { grid-template-columns: 1fr; gap: 24px; }
   .itchio-card { padding: 22px 18px; }
-  .itchio-features { flex-direction: column; gap: 10px; }
-  .itchio-btn { width: 100%; }
+  .itchio-spotlight { grid-template-columns: 1fr; gap: 16px; padding: 16px 14px; }
+  .itchio-spotlight-actions { flex-direction: column; width: 100%; }
+  .itchio-buy-btn, .itchio-profile-btn { width: 100%; justify-content: center; }
   .field-row { grid-template-columns: 1fr; }
   .contact-form { padding: 24px 18px; }
   .contact-intro h2 { font-size: 43px; }
@@ -732,9 +860,12 @@ footer p { font-size: 13px; margin: 0; color: #94a3b8; }
 [dir="rtl"] .values { direction: rtl; text-align: right; }
 [dir="rtl"] .itchio-card { direction: rtl; text-align: right; }
 [dir="rtl"] .itchio-card-header { text-align: right; }
-[dir="rtl"] .itchio-features { direction: rtl; text-align: right; }
-[dir="rtl"] .itchio-feature-item { flex-direction: row; }
-[dir="rtl"] .itchio-btn { flex-direction: row; }
+[dir="rtl"] .itchio-spotlight { direction: rtl; text-align: right; }
+[dir="rtl"] .itchio-spotlight-heading { text-align: right; }
+[dir="rtl"] .itchio-spotlight-features { direction: rtl; text-align: right; }
+[dir="rtl"] .itchio-spotlight-actions { flex-direction: row; }
+[dir="rtl"] .itchio-exclusive-pill { left: auto; right: 10px; flex-direction: row; }
+[dir="rtl"] .app-secondary-itch-link { flex-direction: row; }
 [dir="rtl"] .contact { direction: rtl; }
 [dir="rtl"] .contact-intro { text-align: right; }
 [dir="rtl"] .contact-form { direction: rtl; text-align: right; }
