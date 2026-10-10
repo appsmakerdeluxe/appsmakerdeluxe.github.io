@@ -155,9 +155,20 @@ export interface TranslationSchema {
     playTrailerAria: string;
     closeTrailer: string;
   };
+  itchio: {
+    badge: string;
+    title: string;
+    lead: string;
+    feature1: string;
+    feature2: string;
+    feature3: string;
+    button: string;
+    headerAria: string;
+  };
   footer: {
     tagline: string;
     youtube: string;
+    itchio: string;
     backToTop: string;
     copyright: string;
   };
