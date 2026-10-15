@@ -85,6 +85,7 @@ export interface TranslationSchema {
     wallivex: AppItemTranslation;
     reframiq: AppItemTranslation;
     niwajoridemo: AppItemTranslation;
+    tavolunio: AppItemTranslation;
     dialvori: AppItemTranslation;
     dialvexa: AppItemTranslation;
   };

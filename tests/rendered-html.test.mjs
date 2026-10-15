@@ -46,7 +46,9 @@ test("renders the finished German portfolio with real app links", async () => {
     "de.appsmakerdeluxe.dialvori",
     "de.appsmakerdeluxe.dialvexa",
     "com.appsmakerdeluxe.niwajori.demo",
+    "com.appsmakerdeluxe.tavolunio",
   ]) assert.match(html, new RegExp(appId.replaceAll(".", "\\.")));
+  assert.match(html, /Tavolunio/);
   assert.match(html, /Niwajori/);
   assert.match(html, /Lemivo/);
   assert.match(html, /PagiNote Trial/);
@@ -107,6 +109,7 @@ test("contains all 12 supported languages in translation dictionary", async () =
     assert.ok(dict.apps.paginotetrial.name, `paginotetrial exists for ${lang.code}`);
     assert.ok(dict.apps.stimmivo.name, `stimmivo exists for ${lang.code}`);
     assert.ok(dict.apps.niwajoridemo.name, `niwajoridemo exists for ${lang.code}`);
+    assert.ok(dict.apps.tavolunio.name, `tavolunio exists for ${lang.code}`);
     assert.ok(dict.nav.videos, `nav.videos exists for ${lang.code}`);
     assert.ok(dict.youtube.titlePrefix, `youtube.titlePrefix exists for ${lang.code}`);
     assert.ok(dict.footer.youtube, `footer.youtube exists for ${lang.code}`);
@@ -149,6 +152,7 @@ test("keeps final assets and accessibility safeguards in place", async () => {
   await access(new URL("../public/apps/kavorenza.webp", import.meta.url));
   await access(new URL("../public/apps/kavorenza-store.webp", import.meta.url));
   await access(new URL("../public/apps/niwajoridemo.webp", import.meta.url));
+  await access(new URL("../public/apps/tavolunio.webp", import.meta.url));
   await access(new URL("../public/niwajori-itch-cover.jpg", import.meta.url));
   await access(new URL("../public/trailer-solitowers.webp", import.meta.url));
   await access(new URL("../public/youtube-avatar.webp", import.meta.url));

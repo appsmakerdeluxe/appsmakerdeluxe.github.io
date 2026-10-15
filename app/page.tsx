@@ -180,6 +180,13 @@ const APPS_META = [
     tone: "rose",
     category: "phone" as const,
   },
+  {
+    key: "tavolunio" as const,
+    image: "/apps/tavolunio.webp",
+    url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.tavolunio",
+    tone: "amber",
+    category: "phone" as const,
+  },
 ];
 
 const initialBackApp = APPS_META.find((a) => a.key === "everago")!;

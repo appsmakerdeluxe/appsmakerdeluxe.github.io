@@ -162,6 +162,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Zen-Mahjong-Solitär",
         description: "12 beruhigende Mahjong-Rätsel im stillen Sakura-Garten: Vier kunstvolle Steinsätze, unbegrenzte Hilfen und sanfte Klänge – 100 % werbefrei, offline und in deinem Tempo.",
       },
+      tavolunio: {
+        name: "Tavolunio",
+        tag: "3D Diner & Restaurant Arcade",
+        description: "Führe dein Restaurant zum Erfolg: Nimm Bestellungen auf, koche am Herd, serviere zügig und meistere herausfordernde Schichten – 100 % werbefrei und ohne In-App-Käufe.",
+      },
       dialvori: {
         name: "Dialvori: Hybrid Watch Face",
         tag: "Wear OS Chronograph",
@@ -412,6 +417,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Niwajori Mahjong Demo",
         tag: "Zen Mahjong Solitaire",
         description: "Twelve calm Mahjong solitaire puzzles in a peaceful sakura garden: four artistic tile sets, unlimited hints and undos, gentle music – 100% ad-free and playable offline.",
+      },
+      tavolunio: {
+        name: "Tavolunio",
+        tag: "3D Diner & Restaurant Arcade",
+        description: "Run your restaurant to victory: Take customer orders, cook on the stove, serve fast, and master demanding shifts – 100% ad-free and without in-app purchases.",
       },
       dialvori: {
         name: "Dialvori: Hybrid Watch Face",
@@ -664,6 +674,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Mah-jong Solitaire Zen",
         description: "Douze puzzles de mah-jong relaxants dans un paisible jardin sakura : quatre styles de tuiles artistiques, indices illimités et sons doux – 100 % sans pub et hors ligne.",
       },
+      tavolunio: {
+        name: "Tavolunio",
+        tag: "Arcade Restaurant & Diner 3D",
+        description: "Menez votre restaurant au succès : prenez les commandes, cuisinez aux fourneaux, servez vite et maîtrisez des services rythmés – 100 % sans pub ni achat intégré.",
+      },
       dialvori: {
         name: "Dialvori: Cadran Hybride",
         tag: "Wear OS Chronographe",
@@ -914,6 +929,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Niwajori Mahjong Demo",
         tag: "Solitario Mahjong Zen",
         description: "Doce relajantes puzles de mahjong en un apacible jardín sakura: cuatro estilos artísticos de fichas, pistas ilimitadas y melodías tranquilas: 100 % sin anuncios y sin conexión.",
+      },
+      tavolunio: {
+        name: "Tavolunio",
+        tag: "Arcade de Restaurante y Diner 3D",
+        description: "Lleva tu restaurante al éxito: anota pedidos, cocina en los fogones, sirve con rapidez y domina turnos desafiantes: 100 % sin anuncios ni compras integradas.",
       },
       dialvori: {
         name: "Dialvori: Esfera Híbrida",
@@ -1166,6 +1186,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "ما جونغ سوليتير الهادئة",
         description: "اثنا عشر لغز ما جونغ هادئاً في حديقة الساكورا الساحرة: أربعة أنماط فنية للبلاطات، تلميحات غير محدودة وألحان مريحة – بدون إعلانات وبدون إنترنت تماماً.",
       },
+      tavolunio: {
+        name: "Tavolunio",
+        tag: "لعبة مطعم ثلاثية الأبعاد",
+        description: "قم بإدارة مطعمك نحو النجاح: استلم طلبات الزبائن، واطبخ على الموقد، وقدّم الأطباق بسرعة وتغلّب على نوبات العمل الحماسية - خالية تماماً من الإعلانات وعمليات الشراء.",
+      },
       dialvori: {
         name: "Dialvori: واجهة ساعة هجينة",
         tag: "كرونوغراف Wear OS",
@@ -1416,6 +1441,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Niwajori Mahjong Demo",
         tag: "سولیتر فال ماه‌جونگ ذن",
         description: "۱۲ پازل آرامش‌بخش ماه‌جونگ در باغ ساکورا: چهار طرح زیبای مهره‌ها، راهنما و بازگشت نامحدود و موسیقی دلنشین – کاملاً آفلاین و بدون تبلیغات با آرامش خاطر.",
+      },
+      tavolunio: {
+        name: "Tavolunio",
+        tag: "بازی آرکید رستوران سه‌بعدی",
+        description: "رستوران خود را به اوج برسانید: سفارش‌ها را ثبت کنید، روی اجاق آشپزی کنید، با سرعت سفارش‌ها را تحویل دهید و شیفت‌های پرهیجان را فتح کنید - ۱۰۰٪ بدون تبلیغات و خرید درون‌برنامه‌ای.",
       },
       dialvori: {
         name: "Dialvori: صفحه ساعت هیبریدی",
@@ -1668,6 +1698,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "和風・桜の庭 牌パズル",
         description: "静かな桜の庭園で楽しむ12問の麻雀ソリティア：美しい4種の牌デザイン、無制限のヒント＆取り消し、心安らぐ和の調べ。完全広告なし・オフライン対応。",
       },
+      tavolunio: {
+        name: "Tavolunio",
+        tag: "3D ダイナー＆レストラン・アーケード",
+        description: "レストランを大繁盛させよう！注文を受け、コンロで調理し、手際よく料理を提供して忙しいシフトを攻略。広告なし、アプリ内課金も一切なしの快適プレイ。",
+      },
       dialvori: {
         name: "Dialvori: ハイブリッド文字盤",
         tag: "Wear OS クロノグラフ",
@@ -1918,6 +1953,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Niwajori Mahjong Demo",
         tag: "樱花园林禅意麻将",
         description: "在静谧的樱花园林中畅玩 12 道治愈单人麻将谜题：4 种雅致牌面风格、无限提示与撤销、舒缓和风背景音乐——完全单机无广告，慢享宁静时光。",
+      },
+      tavolunio: {
+        name: "Tavolunio",
+        tag: "3D 餐馆与餐厅街机游戏",
+        description: "引领你的餐厅走向成功：接收顾客订单、在炉灶前烹饪、迅速上菜并征服充满挑战的忙碌轮班——100% 无广告、无应用内购买。",
       },
       dialvori: {
         name: "Dialvori: 混合指针表盘",
@@ -2170,6 +2210,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Mahjong Solitario Zen",
         description: "Dodici rilassanti rompicapi di mahjong in un tranquillo giardino di sakura: quattro set di tessere artistiche, aiuti illimitati e musiche dolci – 100% offline e senza pubblicità.",
       },
+      tavolunio: {
+        name: "Tavolunio",
+        tag: "Arcade Ristorante & Diner 3D",
+        description: "Porta il tuo ristorante al successo: prendi le ordinazioni, cucina sui fornelli, servi in fretta e affronta turni entusiasmanti: 100% senza pubblicità e senza acquisti in-app.",
+      },
       dialvori: {
         name: "Dialvori: Quadrante Ibrido",
         tag: "Wear OS Cronografo",
@@ -2420,6 +2465,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Niwajori Mahjong Demo",
         tag: "Solitário Mahjong Zen",
         description: "Doze puzzles relaxantes de mahjong num sereno jardim de sakura: quatro conjuntos de peças artísticas, dicas ilimitadas e música suave – 100% offline e sem anúncios.",
+      },
+      tavolunio: {
+        name: "Tavolunio",
+        tag: "Arcade de Restaurante e Diner 3D",
+        description: "Leve o seu restaurante ao sucesso: anote pedidos, cozinhe no fogão, sirva com agilidade e domine turnos dinâmicos – 100% sem anúncios e sem compras na app.",
       },
       dialvori: {
         name: "Dialvori: Mostrador Híbrido",
@@ -2672,6 +2722,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Дзен-пасьянс маджонг",
         description: "12 медитативных головоломок маджонг в цветущем саду сакуры: 4 изысканных набора костей, неограниченные подсказки и спокойная музыка — 100% без рекламы и офлайн.",
       },
+      tavolunio: {
+        name: "Tavolunio",
+        tag: "3D-аркада ресторана и закусочной",
+        description: "Приведите свой ресторан к успеху: принимайте заказы, готовьте на плите, быстро подавайте блюда и преодолевайте напряженные смены — 100% без рекламы и встроенных покупок.",
+      },
       dialvori: {
         name: "Dialvori: Гибридный циферблат",
         tag: "Хронограф Wear OS",
@@ -2922,6 +2977,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Niwajori Mahjong Demo",
         tag: "Zen Mahjong Solitaire",
         description: "Huzurlu sakura bahçesinde 12 dinlendirici mahjong bulmacası: 4 sanatsal taş seti, sınırsız ipucu ve sakinleştirici müzikler – %100 reklamsız ve tamamen çevrimdışı.",
+      },
+      tavolunio: {
+        name: "Tavolunio",
+        tag: "3D Restoran & Lokanta Atari Oyunu",
+        description: "Restoranınızı başarıya taşıyın: Müşteri siparişlerini alın, ocakta leziz yemekler pişirin, hızlı servis yapın ve yoğun vardiyaları yönetin - %100 reklamsız ve uygulama içi satın almasız.",
       },
       dialvori: {
         name: "Dialvori: Hibrit Saat Yüzü",
