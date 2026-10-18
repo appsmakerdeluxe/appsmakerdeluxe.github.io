@@ -187,6 +187,13 @@ const APPS_META = [
     tone: "amber",
     category: "phone" as const,
   },
+  {
+    key: "mahlvori" as const,
+    image: "/apps/mahlvori.webp",
+    url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.mahlvori",
+    tone: "emerald",
+    category: "phone" as const,
+  },
 ];
 
 const initialBackApp = APPS_META.find((a) => a.key === "everago")!;

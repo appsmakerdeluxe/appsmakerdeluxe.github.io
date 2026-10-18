@@ -167,6 +167,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "3D Diner & Restaurant Arcade",
         description: "Führe dein Restaurant zum Erfolg: Nimm Bestellungen auf, koche am Herd, serviere zügig und meistere herausfordernde Schichten – 100 % werbefrei und ohne In-App-Käufe.",
       },
+      mahlvori: {
+        name: "Mahlvori",
+        tag: "Essensplaner & Rezepte",
+        description: "Wochenplan, Rezepte, Vorrat und Einkauf: Plane Mahlzeiten nach deinen Vorlieben, behalte Zutaten im Blick und spare Zeit – 100 % lokal, offline und werbefrei.",
+      },
       dialvori: {
         name: "Dialvori: Hybrid Watch Face",
         tag: "Wear OS Chronograph",
@@ -422,6 +427,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Tavolunio",
         tag: "3D Diner & Restaurant Arcade",
         description: "Run your restaurant to victory: Take customer orders, cook on the stove, serve fast, and master demanding shifts – 100% ad-free and without in-app purchases.",
+      },
+      mahlvori: {
+        name: "Mahlvori",
+        tag: "Meal Planner & Recipes",
+        description: "Weekly meal planner, recipes, pantry, and grocery list: Plan dishes around your preferences, track ingredients, and save time – 100% local, offline, and ad-free.",
       },
       dialvori: {
         name: "Dialvori: Hybrid Watch Face",
@@ -679,6 +689,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Arcade Restaurant & Diner 3D",
         description: "Menez votre restaurant au succès : prenez les commandes, cuisinez aux fourneaux, servez vite et maîtrisez des services rythmés – 100 % sans pub ni achat intégré.",
       },
+      mahlvori: {
+        name: "Mahlvori",
+        tag: "Planificateur de repas & Recettes",
+        description: "Planning hebdomadaire, recettes, placard et liste de courses : organisez vos repas selon vos envies et gagnez du temps – 100 % local, hors ligne et sans publicité.",
+      },
       dialvori: {
         name: "Dialvori: Cadran Hybride",
         tag: "Wear OS Chronographe",
@@ -934,6 +949,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Tavolunio",
         tag: "Arcade de Restaurante y Diner 3D",
         description: "Lleva tu restaurante al éxito: anota pedidos, cocina en los fogones, sirve con rapidez y domina turnos desafiantes: 100 % sin anuncios ni compras integradas.",
+      },
+      mahlvori: {
+        name: "Mahlvori",
+        tag: "Planificador de Comidas y Recetas",
+        description: "Menú semanal, recetas, despensa y lista de la compra: planifica tus platos favoritos, controla los ingredientes y ahorra tiempo: 100 % local, sin conexión y sin anuncios.",
       },
       dialvori: {
         name: "Dialvori: Esfera Híbrida",
@@ -1191,6 +1211,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "لعبة مطعم ثلاثية الأبعاد",
         description: "قم بإدارة مطعمك نحو النجاح: استلم طلبات الزبائن، واطبخ على الموقد، وقدّم الأطباق بسرعة وتغلّب على نوبات العمل الحماسية - خالية تماماً من الإعلانات وعمليات الشراء.",
       },
+      mahlvori: {
+        name: "Mahlvori",
+        tag: "مخطط الوجبات والوصفات",
+        description: "جدول أسبوعي، وصفات شهية، إدارة المخزون وقائمة التسوق: خطط لوجباتك بسهولة ووفر وقتك - يعمل محلياً بالكامل على جهازك، دون إنترنت وبلا إعلانات.",
+      },
       dialvori: {
         name: "Dialvori: واجهة ساعة هجينة",
         tag: "كرونوغراف Wear OS",
@@ -1446,6 +1471,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Tavolunio",
         tag: "بازی آرکید رستوران سه‌بعدی",
         description: "رستوران خود را به اوج برسانید: سفارش‌ها را ثبت کنید، روی اجاق آشپزی کنید، با سرعت سفارش‌ها را تحویل دهید و شیفت‌های پرهیجان را فتح کنید - ۱۰۰٪ بدون تبلیغات و خرید درون‌برنامه‌ای.",
+      },
+      mahlvori: {
+        name: "Mahlvori",
+        tag: "برنامه‌ریز وعده‌های غذایی و دستور پخت",
+        description: "برنامه هفتگی، دستور پخت، موجودی انبار و لیست خرید: وعده‌های خود را مطابق سلیقه برنامه‌ریزی کنید و در زمان صرفه‌جویی نمایید - ۱۰۰٪ محلی، آفلاین و بدون تبلیغات.",
       },
       dialvori: {
         name: "Dialvori: صفحه ساعت هیبریدی",
@@ -1703,6 +1733,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "3D ダイナー＆レストラン・アーケード",
         description: "レストランを大繁盛させよう！注文を受け、コンロで調理し、手際よく料理を提供して忙しいシフトを攻略。広告なし、アプリ内課金も一切なしの快適プレイ。",
       },
+      mahlvori: {
+        name: "Mahlvori",
+        tag: "献立プランナー＆レシピ",
+        description: "週間献立、レシピ、パントリー在庫、買い物リストを一括管理。お好みに合わせた食事計画で時間を節約——100%ローカル保存、オフライン対応、広告なし。",
+      },
       dialvori: {
         name: "Dialvori: ハイブリッド文字盤",
         tag: "Wear OS クロノグラフ",
@@ -1958,6 +1993,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Tavolunio",
         tag: "3D 餐馆与餐厅街机游戏",
         description: "引领你的餐厅走向成功：接收顾客订单、在炉灶前烹饪、迅速上菜并征服充满挑战的忙碌轮班——100% 无广告、无应用内购买。",
+      },
+      mahlvori: {
+        name: "Mahlvori",
+        tag: "餐饮计划与精选食谱",
+        description: "周计划、美味食谱、食品储藏室与智能购物清单：根据个人喜好轻松规划餐食并节省时间——100% 本地运行、离线可用且无广告。",
       },
       dialvori: {
         name: "Dialvori: 混合指针表盘",
@@ -2215,6 +2255,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Arcade Ristorante & Diner 3D",
         description: "Porta il tuo ristorante al successo: prendi le ordinazioni, cucina sui fornelli, servi in fretta e affronta turni entusiasmanti: 100% senza pubblicità e senza acquisti in-app.",
       },
+      mahlvori: {
+        name: "Mahlvori",
+        tag: "Pianificatore Pasti & Ricette",
+        description: "Piano settimanale, ricette, dispensa e lista della spesa: organizza i tuoi pasti con semplicità e risparmia tempo: 100% locale sul tuo dispositivo, offline e senza annunci.",
+      },
       dialvori: {
         name: "Dialvori: Quadrante Ibrido",
         tag: "Wear OS Cronografo",
@@ -2470,6 +2515,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Tavolunio",
         tag: "Arcade de Restaurante e Diner 3D",
         description: "Leve o seu restaurante ao sucesso: anote pedidos, cozinhe no fogão, sirva com agilidade e domine turnos dinâmicos – 100% sem anúncios e sem compras na app.",
+      },
+      mahlvori: {
+        name: "Mahlvori",
+        tag: "Planeador de Refeições e Receitas",
+        description: "Plano semanal, receitas, despensa e lista de compras: organize as suas refeições à medida e poupe tempo – 100% local no dispositivo, offline e sem anúncios.",
       },
       dialvori: {
         name: "Dialvori: Mostrador Híbrido",
@@ -2727,6 +2777,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "3D-аркада ресторана и закусочной",
         description: "Приведите свой ресторан к успеху: принимайте заказы, готовьте на плите, быстро подавайте блюда и преодолевайте напряженные смены — 100% без рекламы и встроенных покупок.",
       },
+      mahlvori: {
+        name: "Mahlvori",
+        tag: "Планировщик питания и рецепты",
+        description: "План на неделю, рецепты, запасы и список покупок: планируйте любимые блюда, контролируйте ингредиенты и экономьте время — 100% локально, офлайн и без рекламы.",
+      },
       dialvori: {
         name: "Dialvori: Гибридный циферблат",
         tag: "Хронограф Wear OS",
@@ -2982,6 +3037,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: "Tavolunio",
         tag: "3D Restoran & Lokanta Atari Oyunu",
         description: "Restoranınızı başarıya taşıyın: Müşteri siparişlerini alın, ocakta leziz yemekler pişirin, hızlı servis yapın ve yoğun vardiyaları yönetin - %100 reklamsız ve uygulama içi satın almasız.",
+      },
+      mahlvori: {
+        name: "Mahlvori",
+        tag: "Öğün Planlayıcı & Tarifler",
+        description: "Haftalık menü, tarifler, kiler takibi ve alışveriş listesi: Yemeklerinizi tercihlerinize göre planlayın ve zamandan tasarruf edin - %100 yerel, çevrimdışı ve reklamsız.",
       },
       dialvori: {
         name: "Dialvori: Hibrit Saat Yüzü",

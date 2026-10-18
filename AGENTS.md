@@ -125,3 +125,10 @@ Windows PowerShell 5.1 reads UTF-8 .ps1 files without a BOM as the active ANSI c
 - **Uploads und Produktion:** Fuer Uploads die offizielle Butler-CLI verwenden. Vor jedem Push den bestaetigten itch.io-Projektnamen und Zielkanal aus dem konkreten Projekt/Account pruefen; die Form ist butler push BUILD-PFAD USER/PROJECT:CHANNEL. Ein erfolgreicher Push macht den gewaehlten Kanal sofort live. Deshalb nur nach ausdruecklichem Nutzerauftrag produktiv pushen, nie den Kanal erraten, und danach den Build-Status auf itch.io pruefen.
 - **Offizielle Referenzen:** https://itch.io/docs/butler/login.html, https://itch.io/docs/butler/pushing.html und https://itch.io/docs/api/serverside. Direkte Server-API-Aufrufe verwenden den Authorization-Bearer-Header; fuer Build-Uploads Butler bevorzugen.
 
+## Huawei AppGallery Connect API-Zugang
+
+- **Client-ID-Datei:** C:\Users\DrAvE\.codex-secrets\Huawei\api_client.txt.
+- **Credential-Datei:** C:\Users\DrAvE\.codex-secrets\Huawei\agconnect_api_credential.json. Beide Dateien vertraulich behandeln; Inhalte nicht in AGENTS.md, Repositories, Modellkontext, Prompts, Chats, Tool-Ausgaben oder Logs kopieren.
+- **Berechtigungen und Agenten:** Die NTFS-Rechte sind auf das aktuelle Windows-Konto und SYSTEM beschraenkt. Lokale Codex- und Gemini/Antigravity-Prozesse unter diesem Konto koennen die Dateien fuer angeforderte Huawei-Aufgaben verwenden. Werte nur in einem lokalen Prozess zur Laufzeit einlesen und nie ausgeben oder an ein Cloud-Modell uebertragen.
+- **Huawei-Aktionen:** Diese Zugangsdaten erteilen keinen eigenstaendigen Auftrag zur Veroeffentlichung. Vor API- oder Release-Aktionen die passende App, Paket-/Projektkennung, Produktionsziel und aktuelle Huawei-Anforderungen pruefen; erst nach ausdruecklichem Nutzerauftrag produktiv einreichen. Keine Client-ID oder Credentials erraten, neu generieren oder in Projekte kopieren.
+
