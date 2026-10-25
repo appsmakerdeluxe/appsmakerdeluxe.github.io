@@ -76,6 +76,15 @@ test("renders the finished German portfolio with real app links", async () => {
   assert.match(html, /@AppsMakerDeluxeStudios/);
   assert.match(html, /https:\/\/appsmakerdeluxe-studios\.itch\.io/);
   assert.match(html, /https:\/\/appsmakerdeluxe-studios\.itch\.io\/niwajori-mahjong/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119451681/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119511015/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119510953/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119510933/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119442407/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119500989/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119511513/);
+  assert.match(html, /app-secondary-huawei-link/);
+  assert.match(html, /itchio-huawei-btn/);
   assert.match(html, /header-itch-btn/);
   assert.match(html, /itchio-card/);
   assert.match(html, /itchio-spotlight/);
@@ -97,6 +106,10 @@ test("contains all 12 supported languages in translation dictionary", async () =
     assert.ok(dict.hero.titleLine1, `hero.titleLine1 exists for ${lang.code}`);
     assert.ok(dict.work.filterAll, `work.filterAll exists for ${lang.code}`);
     assert.ok(dict.work.filterWear, `work.filterWear exists for ${lang.code}`);
+    assert.ok(dict.work.huaweiStoreButton, `work.huaweiStoreButton exists for ${lang.code}`);
+    assert.ok(dict.work.huaweiProStoreButton, `work.huaweiProStoreButton exists for ${lang.code}`);
+    assert.ok(dict.work.openHuaweiStoreAria, `work.openHuaweiStoreAria exists for ${lang.code}`);
+    assert.ok(dict.itchio.huaweiStoreButton, `itchio.huaweiStoreButton exists for ${lang.code}`);
     assert.ok(dict.apps.daymigo.name, `daymigo exists for ${lang.code}`);
     assert.ok(dict.apps.lemivo.name, `lemivo exists for ${lang.code}`);
     assert.ok(dict.apps.shiftano.name, `shiftano exists for ${lang.code}`);

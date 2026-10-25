@@ -11,6 +11,14 @@ const YOUTUBE_CHANNEL_URL = "https://www.youtube.com/@AppsMakerDeluxeStudios";
 const ITCHIO_URL = "https://appsmakerdeluxe-studios.itch.io";
 const ITCHIO_NIWAJORI_URL = "https://appsmakerdeluxe-studios.itch.io/niwajori-mahjong";
 
+const HUAWEI_INDEXGENIE_URL = "https://appgallery.huawei.com/app/C119451681";
+const HUAWEI_PDFPOUCH_URL = "https://appgallery.huawei.com/app/C119511015";
+const HUAWEI_REFRAMIQ_URL = "https://appgallery.huawei.com/app/C119510953";
+const HUAWEI_REFRAMIQ_PRO_URL = "https://appgallery.huawei.com/app/C119510933";
+const HUAWEI_NIWAJORI_DEMO_URL = "https://appgallery.huawei.com/app/C119442407";
+const HUAWEI_NIWAJORI_FULL_URL = "https://appgallery.huawei.com/app/C119500989";
+const HUAWEI_TAVOLUNIO_URL = "https://appgallery.huawei.com/app/C119511513";
+
 const APPS_META = [
   {
     key: "daymigo" as const,
@@ -93,6 +101,7 @@ const APPS_META = [
     key: "indexgenie" as const,
     image: "/apps/indexgenie.webp",
     url: "https://play.google.com/store/apps/details?id=com.draven.indexgenie",
+    huaweiUrl: HUAWEI_INDEXGENIE_URL,
     tone: "cyan",
     category: "phone" as const,
   },
@@ -149,6 +158,7 @@ const APPS_META = [
     key: "pdfpouch" as const,
     image: "/apps/pdfpouch.webp",
     url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.pdfpouch",
+    huaweiUrl: HUAWEI_PDFPOUCH_URL,
     tone: "coral",
     category: "phone" as const,
   },
@@ -170,6 +180,8 @@ const APPS_META = [
     key: "reframiq" as const,
     image: "/apps/reframiq.webp",
     url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.reframiq",
+    huaweiUrl: HUAWEI_REFRAMIQ_URL,
+    huaweiProUrl: HUAWEI_REFRAMIQ_PRO_URL,
     tone: "indigo",
     category: "phone" as const,
   },
@@ -177,6 +189,7 @@ const APPS_META = [
     key: "niwajoridemo" as const,
     image: "/apps/niwajoridemo.webp",
     url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.niwajori.demo",
+    huaweiUrl: HUAWEI_NIWAJORI_DEMO_URL,
     tone: "rose",
     category: "phone" as const,
   },
@@ -184,6 +197,7 @@ const APPS_META = [
     key: "tavolunio" as const,
     image: "/apps/tavolunio.webp",
     url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.tavolunio",
+    huaweiUrl: HUAWEI_TAVOLUNIO_URL,
     tone: "amber",
     category: "phone" as const,
   },
@@ -506,6 +520,36 @@ function PortfolioView() {
                           <span aria-hidden="true">{isRtl ? "↖" : "↗"}</span>
                         </a>
                       )}
+                      {"huaweiUrl" in meta && meta.huaweiUrl && (
+                        <a
+                          href={meta.huaweiUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="app-secondary-huawei-link"
+                          aria-label={`${app.name} ${t.work.openHuaweiStoreAria}`}
+                        >
+                          <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true">
+                            <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12zm-7-8c-1.66 0-3-1.34-3-3H7c0 2.76 2.24 5 5 5s5-2.24 5-5h-2c0 1.66-1.34 3-3 3z"/>
+                          </svg>
+                          <span>{t.work.huaweiStoreButton}</span>{" "}
+                          <span aria-hidden="true">{isRtl ? "↖" : "↗"}</span>
+                        </a>
+                      )}
+                      {"huaweiProUrl" in meta && meta.huaweiProUrl && (
+                        <a
+                          href={meta.huaweiProUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="app-secondary-huawei-link"
+                          aria-label={`Reframiq Pro ${t.work.openHuaweiStoreAria}`}
+                        >
+                          <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true">
+                            <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12zm-7-8c-1.66 0-3-1.34-3-3H7c0 2.76 2.24 5 5 5s5-2.24 5-5h-2c0 1.66-1.34 3-3 3z"/>
+                          </svg>
+                          <span>{t.work.huaweiProStoreButton}</span>{" "}
+                          <span aria-hidden="true">{isRtl ? "↖" : "↗"}</span>
+                        </a>
+                      )}
                     </div>
                   ) : (
                     <span className="app-availability">{app.availability}</span>
@@ -769,6 +813,19 @@ function PortfolioView() {
                         <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
                       </svg>
                       <span>{t.itchio.gameBuyButton}</span>
+                      <span aria-hidden="true">{isRtl ? "↖" : "↗"}</span>
+                    </a>
+                    <a
+                      href={HUAWEI_NIWAJORI_FULL_URL}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="button itchio-huawei-btn"
+                      aria-label={`Niwajori Mahjong: ${t.itchio.huaweiStoreButton}`}
+                    >
+                      <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+                        <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12zm-7-8c-1.66 0-3-1.34-3-3H7c0 2.76 2.24 5 5 5s5-2.24 5-5h-2c0 1.66-1.34 3-3 3z"/>
+                      </svg>
+                      <span>{t.itchio.huaweiStoreButton}</span>
                       <span aria-hidden="true">{isRtl ? "↖" : "↗"}</span>
                     </a>
                     <a

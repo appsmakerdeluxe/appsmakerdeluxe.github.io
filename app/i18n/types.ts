@@ -59,8 +59,11 @@ export interface TranslationSchema {
     filterPhone: string;
     filterWear: string;
     playStoreButton: string;
+    huaweiStoreButton: string;
+    huaweiProStoreButton: string;
     screenshotAltPrefix: string;
     openPlayStoreAria: string;
+    openHuaweiStoreAria: string;
   };
   apps: {
     daymigo: AppItemTranslation;
@@ -174,6 +177,7 @@ export interface TranslationSchema {
     gameFeature3: string;
     gameBuyButton: string;
     gameStoreBadge: string;
+    huaweiStoreButton: string;
   };
   footer: {
     tagline: string;

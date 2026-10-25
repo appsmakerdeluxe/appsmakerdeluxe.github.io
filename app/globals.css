@@ -734,6 +734,28 @@ h1 span, h2 em, blockquote em { color: var(--blue); font-style: normal; }
   background: rgba(250, 92, 92, .12);
   transform: translateY(-2px);
 }
+.itchio-huawei-btn {
+  border: 1px solid rgba(255, 77, 100, .35);
+  background: rgba(207, 10, 44, .14);
+  color: #ffe6ea;
+  font-size: 13.5px;
+  font-weight: 600;
+  min-height: 46px;
+  padding: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 999px;
+  transition: all .25s ease;
+  text-decoration: none;
+}
+.itchio-huawei-btn:hover {
+  border-color: #ff4d64;
+  color: #ffffff;
+  background: rgba(207, 10, 44, .32);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(207, 10, 44, .3);
+}
 .app-card-actions {
   display: flex;
   flex-direction: column;
@@ -750,6 +772,19 @@ h1 span, h2 em, blockquote em { color: var(--blue); font-style: normal; }
 }
 .app-secondary-itch-link:hover {
   color: #ff7575!important;
+  text-decoration: underline;
+}
+.app-secondary-huawei-link {
+  font-size: 12px;
+  font-weight: 600;
+  color: #ff4d64!important;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: color .2s ease;
+}
+.app-secondary-huawei-link:hover {
+  color: #ff7588!important;
   text-decoration: underline;
 }
 .contact { display: grid; grid-template-columns: .9fr 1.1fr; gap: 9vw; padding-top: 150px; padding-bottom: 150px; }
@@ -829,7 +864,7 @@ footer p { font-size: 13px; margin: 0; color: #94a3b8; }
   .itchio-card { padding: 22px 18px; }
   .itchio-spotlight { grid-template-columns: 1fr; gap: 16px; padding: 16px 14px; }
   .itchio-spotlight-actions { flex-direction: column; width: 100%; }
-  .itchio-buy-btn, .itchio-profile-btn { width: 100%; justify-content: center; }
+  .itchio-buy-btn, .itchio-huawei-btn, .itchio-profile-btn { width: 100%; justify-content: center; }
   .field-row { grid-template-columns: 1fr; }
   .contact-form { padding: 24px 18px; }
   .contact-intro h2 { font-size: 43px; }
@@ -866,6 +901,8 @@ footer p { font-size: 13px; margin: 0; color: #94a3b8; }
 [dir="rtl"] .itchio-spotlight-actions { flex-direction: row; }
 [dir="rtl"] .itchio-exclusive-pill { left: auto; right: 10px; flex-direction: row; }
 [dir="rtl"] .app-secondary-itch-link { flex-direction: row; }
+[dir="rtl"] .app-secondary-huawei-link { flex-direction: row; }
+[dir="rtl"] .itchio-huawei-btn { flex-direction: row; }
 [dir="rtl"] .contact { direction: rtl; }
 [dir="rtl"] .contact-intro { text-align: right; }
 [dir="rtl"] .contact-form { direction: rtl; text-align: right; }

@@ -48,8 +48,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       filterPhone: "Smartphone",
       filterWear: "Wear OS & Smartwatch",
       playStoreButton: "Bei Google Play",
+      huaweiStoreButton: "In der AppGallery",
+      huaweiProStoreButton: "Reframiq Pro (AppGallery)",
       screenshotAltPrefix: "Originaler Google-Play-Screenshot von",
       openPlayStoreAria: "bei Google Play öffnen",
+      openHuaweiStoreAria: "in der Huawei AppGallery öffnen",
     },
     apps: {
       daymigo: {
@@ -267,6 +270,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       gameFeature3: "100 % werbefrei, offline & DRM-frei",
       gameBuyButton: "Vollversion auf itch.io kaufen",
       gameStoreBadge: "Vollversion exklusiv auf itch.io",
+      huaweiStoreButton: "In der Huawei AppGallery",
     },
     footer: {
       tagline: "Android-Produkte mit Charakter.",
@@ -309,8 +313,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       filterPhone: "Smartphone",
       filterWear: "Wear OS & Smartwatch",
       playStoreButton: "On Google Play",
+      huaweiStoreButton: "On AppGallery",
+      huaweiProStoreButton: "Reframiq Pro (AppGallery)",
       screenshotAltPrefix: "Original Google Play screenshot of",
       openPlayStoreAria: "open on Google Play",
+      openHuaweiStoreAria: "open on Huawei AppGallery",
     },
     apps: {
       daymigo: {
@@ -528,6 +535,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       gameFeature3: "100% Ad-Free, Offline & DRM-Free",
       gameBuyButton: "Buy Full Version on itch.io",
       gameStoreBadge: "Full version exclusive on itch.io",
+      huaweiStoreButton: "On Huawei AppGallery",
     },
     footer: {
       tagline: "Characterful Android experiences.",
@@ -570,8 +578,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       filterPhone: "Smartphone",
       filterWear: "Wear OS & Montres",
       playStoreButton: "Sur Google Play",
+      huaweiStoreButton: "Sur AppGallery",
+      huaweiProStoreButton: "Reframiq Pro (AppGallery)",
       screenshotAltPrefix: "Capture d'écran originale Google Play de",
       openPlayStoreAria: "ouvrir sur Google Play",
+      openHuaweiStoreAria: "ouvrir sur Huawei AppGallery",
     },
     apps: {
       daymigo: {
@@ -789,6 +800,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       gameFeature3: "100 % sans pub, hors ligne et sans DRM",
       gameBuyButton: "Acheter la version complète sur itch.io",
       gameStoreBadge: "Version complète exclusive sur itch.io",
+      huaweiStoreButton: "Sur Huawei AppGallery",
     },
     footer: {
       tagline: "Des expériences Android avec du caractère.",
@@ -831,8 +843,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       filterPhone: "Smartphone",
       filterWear: "Wear OS y Relojes",
       playStoreButton: "En Google Play",
+      huaweiStoreButton: "En AppGallery",
+      huaweiProStoreButton: "Reframiq Pro (AppGallery)",
       screenshotAltPrefix: "Captura de pantalla original de Google Play de",
       openPlayStoreAria: "abrir en Google Play",
+      openHuaweiStoreAria: "abrir en Huawei AppGallery",
     },
     apps: {
       daymigo: {
@@ -1050,6 +1065,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       gameFeature3: "100 % sin anuncios, sin conexión y sin DRM",
       gameBuyButton: "Comprar versión completa en itch.io",
       gameStoreBadge: "Versión completa exclusiva en itch.io",
+      huaweiStoreButton: "En Huawei AppGallery",
     },
     footer: {
       tagline: "Experiencias Android con personalidad propia.",
@@ -1092,8 +1108,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       filterPhone: "الهواتف الذكية",
       filterWear: "ساعات Wear OS",
       playStoreButton: "على Google Play",
+      huaweiStoreButton: "على AppGallery",
+      huaweiProStoreButton: "Reframiq Pro (على AppGallery)",
       screenshotAltPrefix: "لقطة شاشة أصلية من Google Play لتطبيق",
       openPlayStoreAria: "فتح على Google Play",
+      openHuaweiStoreAria: "الفتح على Huawei AppGallery",
     },
     apps: {
       daymigo: {
@@ -1311,6 +1330,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       gameFeature3: "خالٍ تماماً من الإعلانات وبدون اتصال ودون DRM",
       gameBuyButton: "شراء النسخة الكاملة من itch.io",
       gameStoreBadge: "النسخة الكاملة حصرياً على itch.io",
+      huaweiStoreButton: "على Huawei AppGallery",
     },
     footer: {
       tagline: "تطبيقات أندرويد مميزة بطابع خاص.",
@@ -1353,8 +1373,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       filterPhone: "گوشی هوشمند",
       filterWear: "ساعت هوشمند Wear OS",
       playStoreButton: "در Google Play",
+      huaweiStoreButton: "در AppGallery",
+      huaweiProStoreButton: "Reframiq Pro (در AppGallery)",
       screenshotAltPrefix: "تصویر اصلی Google Play از",
       openPlayStoreAria: "مشاهده در Google Play",
+      openHuaweiStoreAria: "باز کردن در Huawei AppGallery",
     },
     apps: {
       daymigo: {
@@ -1572,6 +1595,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       gameFeature3: "۱۰۰٪ بدون تبلیغات، آفلاین و بدون قفل DRM",
       gameBuyButton: "خرید نسخه کامل در itch.io",
       gameStoreBadge: "نسخه کامل منحصراً در itch.io",
+      huaweiStoreButton: "در Huawei AppGallery",
     },
     footer: {
       tagline: "محصولات اندروید با هویتی متمایز.",
@@ -1614,8 +1638,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       filterPhone: "スマートフォン",
       filterWear: "Wear OS / スマートウォッチ",
       playStoreButton: "Google Play で見る",
+      huaweiStoreButton: "AppGalleryで見る",
+      huaweiProStoreButton: "Reframiq Pro（AppGallery）",
       screenshotAltPrefix: "Google Play 公式スクリーンショット:",
       openPlayStoreAria: "Google Play で開く",
+      openHuaweiStoreAria: "Huawei AppGalleryで開く",
     },
     apps: {
       daymigo: {
@@ -1833,6 +1860,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       gameFeature3: "完全広告なし・オフライン・DRMフリー",
       gameBuyButton: "itch.io で完全版を購入",
       gameStoreBadge: "itch.io 限定の完全版",
+      huaweiStoreButton: "Huawei AppGalleryで見る",
     },
     footer: {
       tagline: "確かな個性を持つ Android プロダクト。",
@@ -1875,8 +1903,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       filterPhone: "智能手机应用",
       filterWear: "Wear OS 智能手表",
       playStoreButton: "在 Google Play 查看",
+      huaweiStoreButton: "在华为应用市场",
+      huaweiProStoreButton: "Reframiq Pro（华为应用市场）",
       screenshotAltPrefix: "Google Play 官方截图：",
       openPlayStoreAria: "在 Google Play 打开",
+      openHuaweiStoreAria: "在华为应用市场打开",
     },
     apps: {
       daymigo: {
@@ -2094,6 +2125,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       gameFeature3: "100%无广告、离线畅玩、免DRM",
       gameBuyButton: "在 itch.io 购买完整版",
       gameStoreBadge: "itch.io 独家完整版",
+      huaweiStoreButton: "在华为应用市场查看",
     },
     footer: {
       tagline: "富有独特个性的 Android 体验。",
@@ -2136,8 +2168,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       filterPhone: "Smartphone",
       filterWear: "Wear OS & Smartwatch",
       playStoreButton: "Su Google Play",
+      huaweiStoreButton: "Su AppGallery",
+      huaweiProStoreButton: "Reframiq Pro (AppGallery)",
       screenshotAltPrefix: "Screenshot originale Google Play di",
       openPlayStoreAria: "apri su Google Play",
+      openHuaweiStoreAria: "apri su Huawei AppGallery",
     },
     apps: {
       daymigo: {
@@ -2355,6 +2390,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       gameFeature3: "100% senza pubblicità, offline e senza DRM",
       gameBuyButton: "Acquista la versione completa su itch.io",
       gameStoreBadge: "Versione completa esclusiva su itch.io",
+      huaweiStoreButton: "Su Huawei AppGallery",
     },
     footer: {
       tagline: "Esperienze Android ricche di personalità.",
@@ -2397,8 +2433,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       filterPhone: "Smartphone",
       filterWear: "Wear OS & Smartwatch",
       playStoreButton: "No Google Play",
+      huaweiStoreButton: "Na AppGallery",
+      huaweiProStoreButton: "Reframiq Pro (AppGallery)",
       screenshotAltPrefix: "Captura de tela original do Google Play de",
       openPlayStoreAria: "abrir no Google Play",
+      openHuaweiStoreAria: "abrir na Huawei AppGallery",
     },
     apps: {
       daymigo: {
@@ -2616,6 +2655,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       gameFeature3: "100% livre de anúncios, offline e sem DRM",
       gameBuyButton: "Comprar versão completa no itch.io",
       gameStoreBadge: "Versão completa exclusiva no itch.io",
+      huaweiStoreButton: "Na Huawei AppGallery",
     },
     footer: {
       tagline: "Experiências Android com identidade própria.",
@@ -2658,8 +2698,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       filterPhone: "Смартфоны",
       filterWear: "Wear OS и смарт-часы",
       playStoreButton: "В Google Play",
+      huaweiStoreButton: "В AppGallery",
+      huaweiProStoreButton: "Reframiq Pro (AppGallery)",
       screenshotAltPrefix: "Официальный скриншот из Google Play для",
       openPlayStoreAria: "открыть в Google Play",
+      openHuaweiStoreAria: "открыть в Huawei AppGallery",
     },
     apps: {
       daymigo: {
@@ -2877,6 +2920,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       gameFeature3: "100% без рекламы, офлайн и без DRM",
       gameBuyButton: "Купить полную версию на itch.io",
       gameStoreBadge: "Полная версия эксклюзивно на itch.io",
+      huaweiStoreButton: "В Huawei AppGallery",
     },
     footer: {
       tagline: "Android-продукты с ярким характером.",
@@ -2919,8 +2963,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       filterPhone: "Akıllı Telefon",
       filterWear: "Wear OS & Akıllı Saat",
       playStoreButton: "Google Play'de Gör",
+      huaweiStoreButton: "AppGallery'de",
+      huaweiProStoreButton: "Reframiq Pro (AppGallery)",
       screenshotAltPrefix: "Google Play resmi ekran görüntüsü:",
       openPlayStoreAria: "Google Play'de aç",
+      openHuaweiStoreAria: "Huawei AppGallery'de aç",
     },
     apps: {
       daymigo: {
@@ -3138,6 +3185,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       gameFeature3: "%100 Reklamsız, Çevrimdışı ve DRM'siz",
       gameBuyButton: "itch.io'da Tam Sürümü Satın Al",
       gameStoreBadge: "Tam sürüm itch.io'ya özel",
+      huaweiStoreButton: "Huawei AppGallery'de",
     },
     footer: {
       tagline: "Karakteri olan Android deneyimleri.",
