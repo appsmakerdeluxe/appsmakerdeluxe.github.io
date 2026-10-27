@@ -190,6 +190,7 @@ const APPS_META = [
     image: "/apps/niwajoridemo.webp",
     url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.niwajori.demo",
     huaweiUrl: HUAWEI_NIWAJORI_DEMO_URL,
+    huaweiFullUrl: HUAWEI_NIWAJORI_FULL_URL,
     tone: "rose",
     category: "phone" as const,
   },
@@ -505,7 +506,7 @@ function PortfolioView() {
                         rel="noreferrer"
                         aria-label={`${app.name} ${t.work.openPlayStoreAria}`}
                       >
-                        {t.work.playStoreButton}{" "}
+                        <span>{t.work.playStoreButton}</span>
                         <span aria-hidden="true">{isRtl ? "↖" : "↗"}</span>
                       </a>
                       {meta.key === "niwajoridemo" && (
@@ -516,7 +517,9 @@ function PortfolioView() {
                           className="app-secondary-itch-link"
                           aria-label={`${t.itchio.gameBuyButton}: Niwajori Mahjong`}
                         >
-                          {t.itchio.gameStoreBadge}{" "}
+                          <span className="app-link-main">
+                            <span>{t.itchio.gameStoreBadge}</span>
+                          </span>
                           <span aria-hidden="true">{isRtl ? "↖" : "↗"}</span>
                         </a>
                       )}
@@ -528,10 +531,12 @@ function PortfolioView() {
                           className="app-secondary-huawei-link"
                           aria-label={`${app.name} ${t.work.openHuaweiStoreAria}`}
                         >
-                          <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true">
-                            <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12zm-7-8c-1.66 0-3-1.34-3-3H7c0 2.76 2.24 5 5 5s5-2.24 5-5h-2c0 1.66-1.34 3-3 3z"/>
-                          </svg>
-                          <span>{t.work.huaweiStoreButton}</span>{" "}
+                          <span className="app-link-main">
+                            <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true">
+                              <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12zm-7-8c-1.66 0-3-1.34-3-3H7c0 2.76 2.24 5 5 5s5-2.24 5-5h-2c0 1.66-1.34 3-3 3z"/>
+                            </svg>
+                            <span>{t.work.huaweiStoreButton}</span>
+                          </span>
                           <span aria-hidden="true">{isRtl ? "↖" : "↗"}</span>
                         </a>
                       )}
@@ -543,10 +548,29 @@ function PortfolioView() {
                           className="app-secondary-huawei-link"
                           aria-label={`Reframiq Pro ${t.work.openHuaweiStoreAria}`}
                         >
-                          <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true">
-                            <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12zm-7-8c-1.66 0-3-1.34-3-3H7c0 2.76 2.24 5 5 5s5-2.24 5-5h-2c0 1.66-1.34 3-3 3z"/>
-                          </svg>
-                          <span>{t.work.huaweiProStoreButton}</span>{" "}
+                          <span className="app-link-main">
+                            <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true">
+                              <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12zm-7-8c-1.66 0-3-1.34-3-3H7c0 2.76 2.24 5 5 5s5-2.24 5-5h-2c0 1.66-1.34 3-3 3z"/>
+                            </svg>
+                            <span>{t.work.huaweiProStoreButton}</span>
+                          </span>
+                          <span aria-hidden="true">{isRtl ? "↖" : "↗"}</span>
+                        </a>
+                      )}
+                      {"huaweiFullUrl" in meta && meta.huaweiFullUrl && (
+                        <a
+                          href={meta.huaweiFullUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="app-secondary-huawei-link"
+                          aria-label={`Niwajori Mahjong ${t.work.openHuaweiStoreAria}`}
+                        >
+                          <span className="app-link-main">
+                            <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true">
+                              <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12zm-7-8c-1.66 0-3-1.34-3-3H7c0 2.76 2.24 5 5 5s5-2.24 5-5h-2c0 1.66-1.34 3-3 3z"/>
+                            </svg>
+                            <span>{t.work.huaweiFullStoreButton}</span>
+                          </span>
                           <span aria-hidden="true">{isRtl ? "↖" : "↗"}</span>
                         </a>
                       )}

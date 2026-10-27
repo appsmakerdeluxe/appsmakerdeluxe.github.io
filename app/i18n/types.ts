@@ -61,6 +61,7 @@ export interface TranslationSchema {
     playStoreButton: string;
     huaweiStoreButton: string;
     huaweiProStoreButton: string;
+    huaweiFullStoreButton: string;
     screenshotAltPrefix: string;
     openPlayStoreAria: string;
     openHuaweiStoreAria: string;

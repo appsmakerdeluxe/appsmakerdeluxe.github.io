@@ -759,33 +759,48 @@ h1 span, h2 em, blockquote em { color: var(--blue); font-style: normal; }
 .app-card-actions {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0;
+}
+.app-card-actions a:not(:first-child) {
+  margin-top: 0;
+  padding-top: 12px;
+}
+.app-link-main {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  text-align: left;
+}
+[dir="rtl"] .app-link-main {
+  text-align: right;
 }
 .app-secondary-itch-link {
   font-size: 12px;
   font-weight: 600;
   color: #fa5c5c!important;
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 4px;
-  transition: color .2s ease;
+  justify-content: space-between;
+  transition: color .2s ease, border-color .2s ease;
 }
 .app-secondary-itch-link:hover {
   color: #ff7575!important;
-  text-decoration: underline;
+  border-color: #fa5c5c!important;
+  text-decoration: none;
 }
 .app-secondary-huawei-link {
   font-size: 12px;
   font-weight: 600;
-  color: #ff4d64!important;
-  display: inline-flex;
+  color: #e01836!important;
+  display: flex;
   align-items: center;
-  gap: 5px;
-  transition: color .2s ease;
+  justify-content: space-between;
+  transition: color .2s ease, border-color .2s ease;
 }
 .app-secondary-huawei-link:hover {
-  color: #ff7588!important;
-  text-decoration: underline;
+  color: #ad0921!important;
+  border-color: #e01836!important;
+  text-decoration: none;
 }
 .contact { display: grid; grid-template-columns: .9fr 1.1fr; gap: 9vw; padding-top: 150px; padding-bottom: 150px; }
 .contact-intro h2 { font-size: clamp(46px, 5vw, 76px); line-height: 1.03; margin: 22px 0 28px; }

@@ -151,3 +151,11 @@ Windows PowerShell 5.1 reads UTF-8 .ps1 files without a BOM as the active ANSI c
 ## Huawei AppGallery paid-app regions
 - For every paid/for-sale app, exclude Belarus and Russia from the selected AppGallery countries/regions. Apply this together with any existing region exclusions; do not re-add these countries through an API or console default.
 - Vor jeder kostenpflichtigen AppGallery-Veröffentlichung Belarus und Russland aus den ausgewählten Vertriebsregionen ausschließen. Diese Regel gilt zusätzlich zu bestehenden Gebietsausschlüssen; Länder nicht durch API- oder Konsolen-Standardwerte wieder hinzufügen.
+
+
+## Huawei AppGallery package naming for Android games
+
+- Huawei's official Joint Operations Game guidance requires an Android game package name to end in `.huawei` or `.HUAWEI`. Apply this only to game submissions covered by that Huawei flow; do not treat it as a universal requirement for every Huawei app. Check the current rules for the exact app category and distribution path before creating the listing. Prefer the lowercase `.huawei` suffix.
+- The suffix belongs to the Android package/application ID (for example, `com.company.product.huawei`), not to the APK filename; the artifact filename still ends in `.apk`. The package ID configured in AppGallery Connect must exactly match the built APK's application ID.
+- Register the Huawei-specific package ID before building/uploading. A different package ID is a separate Android app identity. Never change a package ID on an existing Huawei listing or upload an APK with a mismatched ID; verify the listing and Huawei-supported migration/recreation options first. Do not copy another app's package name.
+- Official references: https://developer.huawei.com/consumer/en/doc/HMS-2-Guides/hmssdk_jointOper_selfcheck and https://developer.huawei.com/consumer/de/doc/AppGallery-connect-Guides/appgallerykit-preparation-game-0000001055356911.
