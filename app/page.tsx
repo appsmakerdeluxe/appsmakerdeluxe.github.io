@@ -11,19 +11,39 @@ const YOUTUBE_CHANNEL_URL = "https://www.youtube.com/@AppsMakerDeluxeStudios";
 const ITCHIO_URL = "https://appsmakerdeluxe-studios.itch.io";
 const ITCHIO_NIWAJORI_URL = "https://appsmakerdeluxe-studios.itch.io/niwajori-mahjong";
 
+const HUAWEI_DAYMIGO_URL = "https://appgallery.huawei.com/app/C119556483";
+const HUAWEI_LEMIVO_URL = "https://appgallery.huawei.com/app/C119544223";
+const HUAWEI_RIFTIVO_URL = "https://appgallery.huawei.com/app/C119556563";
+const HUAWEI_RIFTIVO3D_URL = "https://appgallery.huawei.com/app/C119556615";
+const HUAWEI_MYLOVECALCULATOR_URL = "https://appgallery.huawei.com/app/C119556661";
+const HUAWEI_BUYMORROW_URL = "https://appgallery.huawei.com/app/C119556739";
+const HUAWEI_STORIVIO_URL = "https://appgallery.huawei.com/app/C119544241";
+const HUAWEI_EVERAGO_URL = "https://appgallery.huawei.com/app/C119556859";
+const HUAWEI_CALLBLOCKERPLUS_URL = "https://appgallery.huawei.com/app/C119556929";
 const HUAWEI_INDEXGENIE_URL = "https://appgallery.huawei.com/app/C119451681";
+const HUAWEI_LUXCUE_URL = "https://appgallery.huawei.com/app/C119557001";
+const HUAWEI_CHILIWISE_URL = "https://appgallery.huawei.com/app/C119557025";
+const HUAWEI_KAVORENZA_URL = "https://appgallery.huawei.com/app/C119557097";
+const HUAWEI_PAGINOTETRIAL_URL = "https://appgallery.huawei.com/app/C119544209";
+const HUAWEI_STIMMIVO_URL = "https://appgallery.huawei.com/app/C119557129";
+const HUAWEI_SHIFTANO_URL = "https://appgallery.huawei.com/app/C119557171";
+const HUAWEI_BATTERYNIVO_URL = "https://appgallery.huawei.com/app/C119557545";
 const HUAWEI_PDFPOUCH_URL = "https://appgallery.huawei.com/app/C119511015";
+const HUAWEI_SOLITOWERS_URL = "https://appgallery.huawei.com/app/C119557585";
+const HUAWEI_WALLIVEX_URL = "https://appgallery.huawei.com/app/C119557663";
 const HUAWEI_REFRAMIQ_URL = "https://appgallery.huawei.com/app/C119510953";
 const HUAWEI_REFRAMIQ_PRO_URL = "https://appgallery.huawei.com/app/C119510933";
 const HUAWEI_NIWAJORI_DEMO_URL = "https://appgallery.huawei.com/app/C119442407";
-const HUAWEI_NIWAJORI_FULL_URL = "https://appgallery.huawei.com/app/C119500989";
+const HUAWEI_NIWAJORI_FULL_URL = "https://appgallery.huawei.com/app/C119543997";
 const HUAWEI_TAVOLUNIO_URL = "https://appgallery.huawei.com/app/C119511513";
+const HUAWEI_MAHLVORI_URL = "https://appgallery.huawei.com/app/C119557711";
 
 const APPS_META = [
   {
     key: "daymigo" as const,
     image: "/apps/daymigo.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.daymigo",
+    huaweiUrl: HUAWEI_DAYMIGO_URL,
     tone: "mint",
     category: "phone" as const,
   },
@@ -31,6 +51,7 @@ const APPS_META = [
     key: "lemivo" as const,
     image: "/apps/lemivo.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.lemivo",
+    huaweiUrl: HUAWEI_LEMIVO_URL,
     tone: "emerald",
     category: "phone" as const,
   },
@@ -52,6 +73,7 @@ const APPS_META = [
     key: "riftivo" as const,
     image: "/apps/riftivo-store-2026-08.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.riftivo",
+    huaweiUrl: HUAWEI_RIFTIVO_URL,
     tone: "blue wide",
     category: "phone" as const,
   },
@@ -59,6 +81,7 @@ const APPS_META = [
     key: "riftivo3d" as const,
     image: "/apps/riftivo3d.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.riftivo3d",
+    huaweiUrl: HUAWEI_RIFTIVO3D_URL,
     tone: "lime",
     category: "phone" as const,
   },
@@ -66,6 +89,7 @@ const APPS_META = [
     key: "mylovecalculator" as const,
     image: "/apps/mylovecalculator.webp",
     url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.mylovecalculator",
+    huaweiUrl: HUAWEI_MYLOVECALCULATOR_URL,
     tone: "rose",
     category: "phone" as const,
   },
@@ -73,6 +97,7 @@ const APPS_META = [
     key: "buymorrow" as const,
     image: "/apps/buymorrow.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.buymorrow",
+    huaweiUrl: HUAWEI_BUYMORROW_URL,
     tone: "amber",
     category: "phone" as const,
   },
@@ -80,6 +105,7 @@ const APPS_META = [
     key: "storivio" as const,
     image: "/apps/storivio.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.storivio",
+    huaweiUrl: HUAWEI_STORIVIO_URL,
     tone: "green",
     category: "phone" as const,
   },
@@ -87,6 +113,7 @@ const APPS_META = [
     key: "everago" as const,
     image: "/apps/everago.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.everago",
+    huaweiUrl: HUAWEI_EVERAGO_URL,
     tone: "violet",
     category: "phone" as const,
   },
@@ -94,6 +121,7 @@ const APPS_META = [
     key: "callblockerplus" as const,
     image: "/apps/call-blocker-plus.webp",
     url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.callblockerplus",
+    huaweiUrl: HUAWEI_CALLBLOCKERPLUS_URL,
     tone: "coral",
     category: "phone" as const,
   },
@@ -109,6 +137,7 @@ const APPS_META = [
     key: "luxcue" as const,
     image: "/apps/luxcue.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.luxcue",
+    huaweiUrl: HUAWEI_LUXCUE_URL,
     tone: "gold",
     category: "phone" as const,
   },
@@ -116,6 +145,7 @@ const APPS_META = [
     key: "chiliwise" as const,
     image: "/apps/chiliwise.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.chiliwise",
+    huaweiUrl: HUAWEI_CHILIWISE_URL,
     tone: "red",
     category: "phone" as const,
   },
@@ -123,6 +153,7 @@ const APPS_META = [
     key: "kavorenza" as const,
     image: "/apps/kavorenza-store.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.Kavorenza",
+    huaweiUrl: HUAWEI_KAVORENZA_URL,
     tone: "indigo",
     category: "phone" as const,
   },
@@ -130,6 +161,7 @@ const APPS_META = [
     key: "paginotetrial" as const,
     image: "/apps/paginotetrial.webp",
     url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.paginotetrial",
+    huaweiUrl: HUAWEI_PAGINOTETRIAL_URL,
     tone: "slate",
     category: "phone" as const,
   },
@@ -137,6 +169,7 @@ const APPS_META = [
     key: "stimmivo" as const,
     image: "/apps/stimmivo.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.stimmivo",
+    huaweiUrl: HUAWEI_STIMMIVO_URL,
     tone: "purple",
     category: "phone" as const,
   },
@@ -144,6 +177,7 @@ const APPS_META = [
     key: "shiftano" as const,
     image: "/apps/shiftano.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.shiftano",
+    huaweiUrl: HUAWEI_SHIFTANO_URL,
     tone: "blue",
     category: "phone" as const,
   },
@@ -151,6 +185,7 @@ const APPS_META = [
     key: "batterynivo" as const,
     image: "/apps/batterynivo.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.batterynivo",
+    huaweiUrl: HUAWEI_BATTERYNIVO_URL,
     tone: "emerald",
     category: "phone" as const,
   },
@@ -166,6 +201,7 @@ const APPS_META = [
     key: "solitowers" as const,
     image: "/apps/solitowers.webp",
     url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.solitowers",
+    huaweiUrl: HUAWEI_SOLITOWERS_URL,
     tone: "emerald",
     category: "phone" as const,
   },
@@ -173,6 +209,7 @@ const APPS_META = [
     key: "wallivex" as const,
     image: "/apps/wallivex.webp",
     url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.wallivex",
+    huaweiUrl: HUAWEI_WALLIVEX_URL,
     tone: "emerald",
     category: "phone" as const,
   },
@@ -206,6 +243,7 @@ const APPS_META = [
     key: "mahlvori" as const,
     image: "/apps/mahlvori.webp",
     url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.mahlvori",
+    huaweiUrl: HUAWEI_MAHLVORI_URL,
     tone: "emerald",
     category: "phone" as const,
   },
