@@ -23,8 +23,10 @@ const HUAWEI_CALLBLOCKERPLUS_URL = "https://appgallery.huawei.com/app/C119556929
 const HUAWEI_INDEXGENIE_URL = "https://appgallery.huawei.com/app/C119451681";
 const HUAWEI_LUXCUE_URL = "https://appgallery.huawei.com/app/C119557001";
 const HUAWEI_CHILIWISE_URL = "https://appgallery.huawei.com/app/C119557025";
+const HUAWEI_CHILIWISE_PRO_URL = "https://appgallery.huawei.com/app/C119559005";
 const HUAWEI_KAVORENZA_URL = "https://appgallery.huawei.com/app/C119557097";
 const HUAWEI_PAGINOTETRIAL_URL = "https://appgallery.huawei.com/app/C119544209";
+const HUAWEI_PAGINOTE_PRO_URL = "https://appgallery.huawei.com/app/C119559187";
 const HUAWEI_STIMMIVO_URL = "https://appgallery.huawei.com/app/C119557129";
 const HUAWEI_SHIFTANO_URL = "https://appgallery.huawei.com/app/C119557171";
 const HUAWEI_BATTERYNIVO_URL = "https://appgallery.huawei.com/app/C119557545";
@@ -146,6 +148,7 @@ const APPS_META = [
     image: "/apps/chiliwise.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.chiliwise",
     huaweiUrl: HUAWEI_CHILIWISE_URL,
+    huaweiProUrl: HUAWEI_CHILIWISE_PRO_URL,
     tone: "red",
     category: "phone" as const,
   },
@@ -162,6 +165,7 @@ const APPS_META = [
     image: "/apps/paginotetrial.webp",
     url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.paginotetrial",
     huaweiUrl: HUAWEI_PAGINOTETRIAL_URL,
+    huaweiProUrl: HUAWEI_PAGINOTE_PRO_URL,
     tone: "slate",
     category: "phone" as const,
   },
@@ -578,23 +582,27 @@ function PortfolioView() {
                           <span aria-hidden="true">{isRtl ? "↖" : "↗"}</span>
                         </a>
                       )}
-                      {"huaweiProUrl" in meta && meta.huaweiProUrl && (
-                        <a
-                          href={meta.huaweiProUrl}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="app-secondary-huawei-link"
-                          aria-label={`Reframiq Pro ${t.work.openHuaweiStoreAria}`}
-                        >
-                          <span className="app-link-main">
-                            <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true">
-                              <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12zm-7-8c-1.66 0-3-1.34-3-3H7c0 2.76 2.24 5 5 5s5-2.24 5-5h-2c0 1.66-1.34 3-3 3z"/>
-                            </svg>
-                            <span>{t.work.huaweiProStoreButton}</span>
-                          </span>
-                          <span aria-hidden="true">{isRtl ? "↖" : "↗"}</span>
-                        </a>
-                      )}
+                      {"huaweiProUrl" in meta && meta.huaweiProUrl && (() => {
+                        const proTitle = meta.key === "paginotetrial" ? "PagiNote Pro" : `${app.name} Pro`;
+                        const proLabel = t.work.huaweiProStoreButton.replace("Reframiq Pro", proTitle);
+                        return (
+                          <a
+                            href={meta.huaweiProUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="app-secondary-huawei-link"
+                            aria-label={`${proTitle} ${t.work.openHuaweiStoreAria}`}
+                          >
+                            <span className="app-link-main">
+                              <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true">
+                                <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12zm-7-8c-1.66 0-3-1.34-3-3H7c0 2.76 2.24 5 5 5s5-2.24 5-5h-2c0 1.66-1.34 3-3 3z"/>
+                              </svg>
+                              <span>{proLabel}</span>
+                            </span>
+                            <span aria-hidden="true">{isRtl ? "↖" : "↗"}</span>
+                          </a>
+                        );
+                      })()}
                       {"huaweiFullUrl" in meta && meta.huaweiFullUrl && (
                         <a
                           href={meta.huaweiFullUrl}
