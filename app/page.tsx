@@ -29,8 +29,11 @@ const HUAWEI_PAGINOTETRIAL_URL = "https://appgallery.huawei.com/app/C119544209";
 const HUAWEI_PAGINOTE_PRO_URL = "https://appgallery.huawei.com/app/C119559187";
 const HUAWEI_STIMMIVO_URL = "https://appgallery.huawei.com/app/C119557129";
 const HUAWEI_SHIFTANO_URL = "https://appgallery.huawei.com/app/C119557171";
+const HUAWEI_SHIFTANO_PRO_URL = "https://appgallery.huawei.com/app/C119571899";
 const HUAWEI_BATTERYNIVO_URL = "https://appgallery.huawei.com/app/C119557545";
+const HUAWEI_BATTERYNIVO_PRO_URL = "https://appgallery.huawei.com/app/C119559589";
 const HUAWEI_PDFPOUCH_URL = "https://appgallery.huawei.com/app/C119511015";
+const HUAWEI_PDFPOUCH_PRO_URL = "https://appgallery.huawei.com/app/C119570541";
 const HUAWEI_SOLITOWERS_URL = "https://appgallery.huawei.com/app/C119557585";
 const HUAWEI_WALLIVEX_URL = "https://appgallery.huawei.com/app/C119557663";
 const HUAWEI_REFRAMIQ_URL = "https://appgallery.huawei.com/app/C119510953";
@@ -182,6 +185,7 @@ const APPS_META = [
     image: "/apps/shiftano.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.shiftano",
     huaweiUrl: HUAWEI_SHIFTANO_URL,
+    huaweiProUrl: HUAWEI_SHIFTANO_PRO_URL,
     tone: "blue",
     category: "phone" as const,
   },
@@ -190,6 +194,7 @@ const APPS_META = [
     image: "/apps/batterynivo.webp",
     url: "https://play.google.com/store/apps/details?id=de.appsmakerdeluxe.batterynivo",
     huaweiUrl: HUAWEI_BATTERYNIVO_URL,
+    huaweiProUrl: HUAWEI_BATTERYNIVO_PRO_URL,
     tone: "emerald",
     category: "phone" as const,
   },
@@ -198,6 +203,7 @@ const APPS_META = [
     image: "/apps/pdfpouch.webp",
     url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.pdfpouch",
     huaweiUrl: HUAWEI_PDFPOUCH_URL,
+    huaweiProUrl: HUAWEI_PDFPOUCH_PRO_URL,
     tone: "coral",
     category: "phone" as const,
   },

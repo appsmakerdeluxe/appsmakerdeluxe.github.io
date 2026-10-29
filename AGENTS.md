@@ -127,6 +127,14 @@ Windows PowerShell 5.1 reads UTF-8 .ps1 files without a BOM as the active ANSI c
 
 ## Huawei AppGallery Connect API-Zugang
 
+### Huawei AppGallery & Store Text- und Metadaten-Limitierungen (Verbindlich)
+
+- **App-Name / Store-Titel (strikt max. 30 Zeichen)**: Der App-Name in Huawei AppGallery Connect und Google Play darf in jeder Sprache (**de-DE**, **en-US** etc.) ausnahmslos **maximal 30 Zeichen** (`1-30`) lang sein. Titel ab 31 Zeichen werden von Huawei mit Fehler abgelehnt (*"One or more errors found in the settings. Please check: 1. App name / Number of characters: 1-30"*). Der Store-Name muss zudem dem Paket-Label (`android:label`) entsprechen.
+- **Kurzbeschreibung (Brief Info / Short Description)**: Streng maximal **80 Zeichen** (`1-80`).
+- **Versionshinweise (New Features)**: Bei Huawei AppGallery streng maximal **500 Zeichen** (`0-500`, Fehlercode `204144649` bei Überschreitung). Bei Google Play maximal 500 Zeichen pro Sprache.
+- **Vollständige Beschreibung (Full Description)**: Bei Huawei maximal **8000 Zeichen**, bei Google Play maximal **4000 Zeichen**.
+
+
 - **Huawei Connect API-Client:** C:\Users\DrAvE\.codex-secrets\Huawei\agconnect_api_team_client_2026-10-20.json (`type=team_client_id`). Die zugehörige TXT-Datei C:\Users\DrAvE\.codex-secrets\Huawei\agconnect_api_team_client_2026-10-20.txt enthält dieselbe Client-ID und denselben Client-Schlüssel; beide Dateien sind ACL-geschützt. Token-Abruf und lesende AppGallery-Abfragen wurden am 20.10.2026 erfolgreich geprüft. Nur getestete API-Berechtigungen als bestätigt behandeln.
 - **Token-Abruf:** Für `POST /api/oauth2/v1/token` das JSON-Format (`application/json`) mit `grant_type=client_credentials`, `client_id` und `client_secret` verwenden. Form-URL-encoded führte am 21.10.2026 zu `ApsAuthBySecretReq parse fail`; JSON funktionierte. Secret-Werte ausschließlich lokal verarbeiten.
 - **Huawei-Asset-Zuordnung:** Dateiendung und numerischer `fileType` sind verschiedene Angaben. `fileType` nicht aus der Dateiendung ableiten. Für den aktuell eingerichteten Huawei-Android-Publishing-API-Client wurden `fileType=0` (Icon) und `fileType=2` (Screenshots) empirisch bestätigt; dies ist client-/API-spezifisch und muss für andere Pfade neu verifiziert werden.
