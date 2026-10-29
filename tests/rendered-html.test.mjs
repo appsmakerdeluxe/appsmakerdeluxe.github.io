@@ -86,6 +86,7 @@ test("renders the finished German portfolio with real app links", async () => {
   assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119556859/);
   assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119556929/);
   assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119451681/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119576747/);
   assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119557001/);
   assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119557025/);
   assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119559005/);

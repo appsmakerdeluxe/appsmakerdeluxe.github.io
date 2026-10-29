@@ -21,6 +21,7 @@ const HUAWEI_STORIVIO_URL = "https://appgallery.huawei.com/app/C119544241";
 const HUAWEI_EVERAGO_URL = "https://appgallery.huawei.com/app/C119556859";
 const HUAWEI_CALLBLOCKERPLUS_URL = "https://appgallery.huawei.com/app/C119556929";
 const HUAWEI_INDEXGENIE_URL = "https://appgallery.huawei.com/app/C119451681";
+const HUAWEI_INDEXGENIE_PRO_URL = "https://appgallery.huawei.com/app/C119576747";
 const HUAWEI_LUXCUE_URL = "https://appgallery.huawei.com/app/C119557001";
 const HUAWEI_CHILIWISE_URL = "https://appgallery.huawei.com/app/C119557025";
 const HUAWEI_CHILIWISE_PRO_URL = "https://appgallery.huawei.com/app/C119559005";
@@ -135,6 +136,7 @@ const APPS_META = [
     image: "/apps/indexgenie.webp",
     url: "https://play.google.com/store/apps/details?id=com.draven.indexgenie",
     huaweiUrl: HUAWEI_INDEXGENIE_URL,
+    huaweiProUrl: HUAWEI_INDEXGENIE_PRO_URL,
     tone: "cyan",
     category: "phone" as const,
   },
