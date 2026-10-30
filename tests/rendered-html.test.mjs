@@ -74,8 +74,8 @@ test("renders the finished German portfolio with real app links", async () => {
   assert.match(html, /id="videos"/);
   assert.match(html, /https:\/\/www\.youtube\.com\/@AppsMakerDeluxeStudios/);
   assert.match(html, /@AppsMakerDeluxeStudios/);
-  assert.match(html, /https:\/\/appsmakerdeluxe-studios\.itch\.io/);
-  assert.match(html, /https:\/\/appsmakerdeluxe-studios\.itch\.io\/niwajori-mahjong/);
+  assert.doesNotMatch(html, /https:\/\/appsmakerdeluxe-studios\.itch\.io/);
+  assert.doesNotMatch(html, /itch\.io/i);
   assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119556483/);
   assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119544223/);
   assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119556563/);
@@ -111,12 +111,7 @@ test("renders the finished German portfolio with real app links", async () => {
   assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119557711/);
   assert.match(html, /app-secondary-huawei-link/);
   assert.match(html, /app-link-main/);
-  assert.match(html, /itchio-huawei-btn/);
-  assert.match(html, /header-itch-btn/);
-  assert.match(html, /itchio-card/);
-  assert.match(html, /itchio-spotlight/);
-  assert.match(html, /itchio-buy-btn/);
-  assert.match(html, /footer-itch-link/);
+  assert.doesNotMatch(html, /itchio|header-itch-btn|footer-itch-link/);
   assert.match(html, /lang-selector-btn/);
   assert.doesNotMatch(html, /In Vorbereitung/);
   assert.match(html, /og\.png/);
@@ -137,7 +132,6 @@ test("contains all 12 supported languages in translation dictionary", async () =
     assert.ok(dict.work.huaweiProStoreButton, `work.huaweiProStoreButton exists for ${lang.code}`);
     assert.ok(dict.work.huaweiFullStoreButton, `work.huaweiFullStoreButton exists for ${lang.code}`);
     assert.ok(dict.work.openHuaweiStoreAria, `work.openHuaweiStoreAria exists for ${lang.code}`);
-    assert.ok(dict.itchio.huaweiStoreButton, `itchio.huaweiStoreButton exists for ${lang.code}`);
     assert.ok(dict.apps.daymigo.name, `daymigo exists for ${lang.code}`);
     assert.ok(dict.apps.lemivo.name, `lemivo exists for ${lang.code}`);
     assert.ok(dict.apps.shiftano.name, `shiftano exists for ${lang.code}`);
@@ -157,12 +151,6 @@ test("contains all 12 supported languages in translation dictionary", async () =
     assert.ok(dict.nav.videos, `nav.videos exists for ${lang.code}`);
     assert.ok(dict.youtube.titlePrefix, `youtube.titlePrefix exists for ${lang.code}`);
     assert.ok(dict.footer.youtube, `footer.youtube exists for ${lang.code}`);
-    assert.ok(dict.itchio.title, `itchio.title exists for ${lang.code}`);
-    assert.ok(dict.itchio.badge, `itchio.badge exists for ${lang.code}`);
-    assert.ok(dict.itchio.gameTitle, `itchio.gameTitle exists for ${lang.code}`);
-    assert.ok(dict.itchio.gameBadge, `itchio.gameBadge exists for ${lang.code}`);
-    assert.ok(dict.itchio.gameBuyButton, `itchio.gameBuyButton exists for ${lang.code}`);
-    assert.ok(dict.footer.itchio, `footer.itchio exists for ${lang.code}`);
     assert.ok(dict.statement.quotePrefix, `statement exists for ${lang.code}`);
     assert.ok(dict.contact.form.submitButton, `contact.form.submitButton exists for ${lang.code}`);
   }
@@ -198,7 +186,6 @@ test("keeps final assets and accessibility safeguards in place", async () => {
   await access(new URL("../public/apps/niwajoridemo.webp", import.meta.url));
   await access(new URL("../public/apps/tavolunio.webp", import.meta.url));
   await access(new URL("../public/apps/mahlvori.webp", import.meta.url));
-  await access(new URL("../public/niwajori-itch-cover.jpg", import.meta.url));
   await access(new URL("../public/trailer-solitowers.webp", import.meta.url));
   await access(new URL("../public/youtube-avatar.webp", import.meta.url));
   await access(new URL("../public/logo-mark.webp", import.meta.url));

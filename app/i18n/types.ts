@@ -161,29 +161,9 @@ export interface TranslationSchema {
     playTrailerAria: string;
     closeTrailer: string;
   };
-  itchio: {
-    badge: string;
-    title: string;
-    lead: string;
-    feature1: string;
-    feature2: string;
-    feature3: string;
-    button: string;
-    headerAria: string;
-    gameBadge: string;
-    gameTitle: string;
-    gameLead: string;
-    gameFeature1: string;
-    gameFeature2: string;
-    gameFeature3: string;
-    gameBuyButton: string;
-    gameStoreBadge: string;
-    huaweiStoreButton: string;
-  };
   footer: {
     tagline: string;
     youtube: string;
-    itchio: string;
     backToTop: string;
     copyright: string;
   };
