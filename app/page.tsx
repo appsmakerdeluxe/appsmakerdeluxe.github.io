@@ -42,6 +42,7 @@ const HUAWEI_REFRAMIQ_PRO_URL = "https://appgallery.huawei.com/app/C119510933";
 const HUAWEI_NIWAJORI_DEMO_URL = "https://appgallery.huawei.com/app/C119442407";
 const HUAWEI_NIWAJORI_FULL_URL = "https://appgallery.huawei.com/app/C119543997";
 const HUAWEI_TAVOLUNIO_URL = "https://appgallery.huawei.com/app/C119511513";
+const HUAWEI_TAVOLUNIO_PRO_URL = "https://appgallery.huawei.com/app/C119582333";
 const HUAWEI_MAHLVORI_URL = "https://appgallery.huawei.com/app/C119557711";
 
 const APPS_META = [
@@ -248,6 +249,7 @@ const APPS_META = [
     image: "/apps/tavolunio.webp",
     url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.tavolunio",
     huaweiUrl: HUAWEI_TAVOLUNIO_URL,
+    huaweiProUrl: HUAWEI_TAVOLUNIO_PRO_URL,
     tone: "amber",
     category: "phone" as const,
   },
