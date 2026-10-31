@@ -48,7 +48,13 @@ test("renders the finished German portfolio with real app links", async () => {
     "com.appsmakerdeluxe.niwajori.demo",
     "com.appsmakerdeluxe.tavolunio",
     "com.appsmakerdeluxe.mahlvori",
+    "com.appsmakerdeluxe.mosaquli",
+    "com.appsmakerdeluxe.rotiluma",
+    "com.appsmakerdeluxe.petalnori",
   ]) assert.match(html, new RegExp(appId.replaceAll(".", "\\.")));
+  assert.match(html, /Mosaquli/);
+  assert.match(html, /Rotiluma/);
+  assert.match(html, /Petalnori/);
   assert.match(html, /Mahlvori/);
   assert.match(html, /Tavolunio/);
   assert.match(html, /Niwajori/);
@@ -109,6 +115,12 @@ test("renders the finished German portfolio with real app links", async () => {
   assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119511513/);
   assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119582333/);
   assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119557711/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119600989/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119601101/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119601247/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119601289/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119601383/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119601413/);
   assert.match(html, /app-secondary-huawei-link/);
   assert.match(html, /app-link-main/);
   assert.doesNotMatch(html, /itchio|header-itch-btn|footer-itch-link/);
@@ -148,6 +160,9 @@ test("contains all 12 supported languages in translation dictionary", async () =
     assert.ok(dict.apps.niwajoridemo.name, `niwajoridemo exists for ${lang.code}`);
     assert.ok(dict.apps.tavolunio.name, `tavolunio exists for ${lang.code}`);
     assert.ok(dict.apps.mahlvori.name, `mahlvori exists for ${lang.code}`);
+    assert.ok(dict.apps.mosaquli.name, `mosaquli exists for ${lang.code}`);
+    assert.ok(dict.apps.rotiluma.name, `rotiluma exists for ${lang.code}`);
+    assert.ok(dict.apps.petalnori.name, `petalnori exists for ${lang.code}`);
     assert.ok(dict.nav.videos, `nav.videos exists for ${lang.code}`);
     assert.ok(dict.youtube.titlePrefix, `youtube.titlePrefix exists for ${lang.code}`);
     assert.ok(dict.footer.youtube, `footer.youtube exists for ${lang.code}`);
@@ -186,6 +201,9 @@ test("keeps final assets and accessibility safeguards in place", async () => {
   await access(new URL("../public/apps/niwajoridemo.webp", import.meta.url));
   await access(new URL("../public/apps/tavolunio.webp", import.meta.url));
   await access(new URL("../public/apps/mahlvori.webp", import.meta.url));
+  await access(new URL("../public/apps/mosaquli.webp", import.meta.url));
+  await access(new URL("../public/apps/rotiluma.webp", import.meta.url));
+  await access(new URL("../public/apps/petalnori.webp", import.meta.url));
   await access(new URL("../public/trailer-solitowers.webp", import.meta.url));
   await access(new URL("../public/youtube-avatar.webp", import.meta.url));
   await access(new URL("../public/logo-mark.webp", import.meta.url));

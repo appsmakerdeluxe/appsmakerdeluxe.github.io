@@ -42,6 +42,12 @@ const HUAWEI_NIWAJORI_FULL_URL = "https://appgallery.huawei.com/app/C119543997";
 const HUAWEI_TAVOLUNIO_URL = "https://appgallery.huawei.com/app/C119511513";
 const HUAWEI_TAVOLUNIO_PRO_URL = "https://appgallery.huawei.com/app/C119582333";
 const HUAWEI_MAHLVORI_URL = "https://appgallery.huawei.com/app/C119557711";
+const HUAWEI_MOSAQULI_URL = "https://appgallery.huawei.com/app/C119600989";
+const HUAWEI_MOSAQULI_PRO_URL = "https://appgallery.huawei.com/app/C119601101";
+const HUAWEI_ROTILUMA_URL = "https://appgallery.huawei.com/app/C119601247";
+const HUAWEI_ROTILUMA_PRO_URL = "https://appgallery.huawei.com/app/C119601289";
+const HUAWEI_PETALNORI_URL = "https://appgallery.huawei.com/app/C119601383";
+const HUAWEI_PETALNORI_PRO_URL = "https://appgallery.huawei.com/app/C119601413";
 
 const APPS_META = [
   {
@@ -256,6 +262,33 @@ const APPS_META = [
     image: "/apps/mahlvori.webp",
     url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.mahlvori",
     huaweiUrl: HUAWEI_MAHLVORI_URL,
+    tone: "emerald",
+    category: "phone" as const,
+  },
+  {
+    key: "mosaquli" as const,
+    image: "/apps/mosaquli.webp",
+    url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.mosaquli",
+    huaweiUrl: HUAWEI_MOSAQULI_URL,
+    huaweiProUrl: HUAWEI_MOSAQULI_PRO_URL,
+    tone: "cyan",
+    category: "phone" as const,
+  },
+  {
+    key: "rotiluma" as const,
+    image: "/apps/rotiluma.webp",
+    url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.rotiluma",
+    huaweiUrl: HUAWEI_ROTILUMA_URL,
+    huaweiProUrl: HUAWEI_ROTILUMA_PRO_URL,
+    tone: "amber",
+    category: "phone" as const,
+  },
+  {
+    key: "petalnori" as const,
+    image: "/apps/petalnori.webp",
+    url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.petalnori",
+    huaweiUrl: HUAWEI_PETALNORI_URL,
+    huaweiProUrl: HUAWEI_PETALNORI_PRO_URL,
     tone: "emerald",
     category: "phone" as const,
   },

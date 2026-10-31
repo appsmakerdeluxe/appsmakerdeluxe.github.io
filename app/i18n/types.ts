@@ -93,6 +93,9 @@ export interface TranslationSchema {
     mahlvori: AppItemTranslation;
     dialvori: AppItemTranslation;
     dialvexa: AppItemTranslation;
+    mosaquli: AppItemTranslation;
+    rotiluma: AppItemTranslation;
+    petalnori: AppItemTranslation;
   };
   statement: {
     eyebrow: string;

@@ -186,6 +186,21 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Wear OS Luxus-Hybrid",
         description: "Futuristisches Luxus-Zifferblatt mit 12 Premium-Materialien (Titan, Forged Carbon), 12 HUD-Panels und leuchtenden LED-Akzenten.",
       },
+      mosaquli: {
+        name: 'Mosaquli',
+        tag: 'Farben- & Mosaik-Puzzle',
+        description: 'Führe bunte Keramik-Murmeln über kunstvolle Schienen und Weichen, um historische Mosaikmuster zu vervollständigen. 100 % offline und werbefrei.',
+      },
+      rotiluma: {
+        name: 'Rotiluma',
+        tag: 'Mechanisches Ring-Puzzle',
+        description: 'Drehe verschränkte Ringe, Zahnräder und Riegel, um kunstvolle Schlösser und Schiebemechaniken zu entriegeln. 100 % offline und werbefrei.',
+      },
+      petalnori: {
+        name: 'Petalnori',
+        tag: 'Botanisches Garten-Puzzle',
+        description: 'Pflanze Beete und Blüten nach cleveren Sonnen- und Schattenregeln und bringe deinen Zen-Garten zum Erblühen. 100 % offline und werbefrei.',
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -253,10 +268,12 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       headerAria: "Offizieller YouTube-Kanal von AppsMakerDeluxe Studios",
       playTrailerAria: "Trailer zu SoliTowers auf der Website abspielen",
       closeTrailer: "Video schließen",
-    },
+    },
+
     footer: {
       tagline: "Android-Produkte mit Charakter.",
-      youtube: "YouTube (@AppsMakerDeluxeStudios)",
+      youtube: "YouTube (@AppsMakerDeluxeStudios)",
+
       backToTop: "Nach oben ↑",
       copyright: "AppsMakerDeluxe Studios. Alle Rechte vorbehalten.",
     },
@@ -432,6 +449,21 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Wear OS Luxury Hybrid",
         description: "Futuristic luxury hybrid watch face featuring 12 premium materials (Titanium, Forged Carbon), 12 HUD telemetry panels, and luminous LED accents.",
       },
+      mosaquli: {
+        name: 'Mosaquli',
+        tag: 'Color & Mosaic Puzzle',
+        description: 'Guide vibrant ceramic marbles along patterned tracks and switches to complete ancient mosaic artworks. 100% offline and ad-free.',
+      },
+      rotiluma: {
+        name: 'Rotiluma',
+        tag: 'Mechanical Ring Puzzle',
+        description: 'Rotate interlocking rings, gears, and latches to unlock intricate mechanical lockboxes and puzzles. 100% offline and ad-free.',
+      },
+      petalnori: {
+        name: 'Petalnori',
+        tag: 'Botanical Garden Puzzle',
+        description: 'Cultivate serene flower beds following sunlight and shade rules to build your tranquil zen garden. 100% offline and ad-free.',
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -499,10 +531,12 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       headerAria: "AppsMakerDeluxe Studios official YouTube channel",
       playTrailerAria: "Play SoliTowers trailer on site",
       closeTrailer: "Close video",
-    },
+    },
+
     footer: {
       tagline: "Characterful Android experiences.",
-      youtube: "YouTube (@AppsMakerDeluxeStudios)",
+      youtube: "YouTube (@AppsMakerDeluxeStudios)",
+
       backToTop: "Back to top ↑",
       copyright: "AppsMakerDeluxe Studios. All rights reserved.",
     },
@@ -678,6 +712,21 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Wear OS Hybride de Luxe",
         description: "Cadran hybride futuriste et luxueux avec 12 matériaux haut de gamme (Titane, Forged Carbon), 12 panneaux télémétriques HUD et accents LED.",
       },
+      mosaquli: {
+        name: 'Mosaquli',
+        tag: 'Puzzle de Couleurs & Mosaïque',
+        description: 'Guidez des billes de céramique colorées sur des rails et aiguillages pour compléter des mosaïques historiques. 100 % hors ligne et sans publicité.',
+      },
+      rotiluma: {
+        name: 'Rotiluma',
+        tag: "Puzzle Mécanique d'Anneaux",
+        description: 'Tournez des anneaux entrelacés, engrenages et verrous pour déverrouiller des serrures mécaniques sophistiquées. 100 % hors ligne et sans publicité.',
+      },
+      petalnori: {
+        name: 'Petalnori',
+        tag: 'Puzzle Botanique de Jardin',
+        description: "Disposez parterres et fleurs selon les règles de lumière et d'ombre pour faire fleurir votre jardin zen. 100 % hors ligne et sans publicité.",
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -745,10 +794,12 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       headerAria: "Chaîne YouTube officielle d'AppsMakerDeluxe Studios",
       playTrailerAria: "Lire la bande-annonce de SoliTowers",
       closeTrailer: "Fermer la vidéo",
-    },
+    },
+
     footer: {
       tagline: "Des expériences Android avec du caractère.",
-      youtube: "YouTube (@AppsMakerDeluxeStudios)",
+      youtube: "YouTube (@AppsMakerDeluxeStudios)",
+
       backToTop: "Haut de page ↑",
       copyright: "AppsMakerDeluxe Studios. Tous droits réservés.",
     },
@@ -924,6 +975,21 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Wear OS Híbrido de Lujo",
         description: "Esfera híbrida futurista de lujo con 12 materiales premium (Titanio, Carbono forjado), 12 paneles telemétricos HUD y acentos luminosos LED.",
       },
+      mosaquli: {
+        name: 'Mosaquli',
+        tag: 'Puzle de Colores y Mosaicos',
+        description: 'Guía canicas de cerámica por intrincadas vías e interruptores para completar mosaicos históricos. 100 % sin conexión y sin anuncios.',
+      },
+      rotiluma: {
+        name: 'Rotiluma',
+        tag: 'Puzle Mecánico de Anillos',
+        description: 'Gira anillos entrelazados, engranajes y pestillos para abrir ingeniosos cerrojos mecánicos. 100 % sin conexión y sin anuncios.',
+      },
+      petalnori: {
+        name: 'Petalnori',
+        tag: 'Puzle Botánico de Jardín',
+        description: 'Planta flores y bancales siguiendo reglas de sol y sombra para hacer florecer tu apacible jardín zen. 100 % sin conexión y sin anuncios.',
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -991,10 +1057,12 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       headerAria: "Canal oficial de YouTube de AppsMakerDeluxe Studios",
       playTrailerAria: "Reproducir tráiler de SoliTowers en el sitio",
       closeTrailer: "Cerrar vídeo",
-    },
+    },
+
     footer: {
       tagline: "Experiencias Android con personalidad propia.",
-      youtube: "YouTube (@AppsMakerDeluxeStudios)",
+      youtube: "YouTube (@AppsMakerDeluxeStudios)",
+
       backToTop: "Volver arriba ↑",
       copyright: "AppsMakerDeluxe Studios. Todos los derechos reservados.",
     },
@@ -1170,6 +1238,21 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "واجهة فاخرة Wear OS",
         description: "واجهة ساعة مستقبلية فاخرة بنظام Wear OS تضم 12 مادة فاخرة (تيتانيوم، كربون)، 12 لوحة HUD للبيانات وإضاءة LED براقة.",
       },
+      mosaquli: {
+        name: 'Mosaquli',
+        tag: 'لغز الألوان والفسيفساء',
+        description: 'وجّه الكرات الخزفية الملونة عبر مسارات ومفاتيح دقيقة لإكمال لوحات الفسيفساء التاريخية. يعمل بالكامل دون إنترنت وبلا إعلانات.',
+      },
+      rotiluma: {
+        name: 'Rotiluma',
+        tag: 'لغز الحلقات الميكانيكية',
+        description: 'أدر الحلقات المتشابكة والتروس والمزالج لفك أقفال ميكانيكية متقنة ومبتكرة. يعمل بالكامل دون إنترنت وبلا إعلانات.',
+      },
+      petalnori: {
+        name: 'Petalnori',
+        tag: 'لغز الحدائق النباتية',
+        description: 'ازرع الزهور والأحواض وفق قواعد ذكية لضوء الشمس والظل لتزدهر حديقتك الهادئة. يعمل بالكامل دون إنترنت وبلا إعلانات.',
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -1237,10 +1320,12 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       headerAria: "قناة يوتيوب الرسمية لـ AppsMakerDeluxe Studios",
       playTrailerAria: "تشغيل العرض الترويجي للعبة SoliTowers",
       closeTrailer: "إغلاق الفيديو",
-    },
+    },
+
     footer: {
       tagline: "تطبيقات أندرويد مميزة بطابع خاص.",
-      youtube: "YouTube (@AppsMakerDeluxeStudios)",
+      youtube: "YouTube (@AppsMakerDeluxeStudios)",
+
       backToTop: "إلى الأعلى ↑",
       copyright: "AppsMakerDeluxe Studios. جميع الحقوق محفوظة.",
     },
@@ -1416,6 +1501,21 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "طراحی لوکس Wear OS",
         description: "صفحه ساعت لوکس و آینده‌نگرانه Wear OS با ۱۲ متریال پریمیوم (تیتانیوم، فیبر کربن)، ۱۲ پنل تله‌متری HUD و نورهای درخشان LED.",
       },
+      mosaquli: {
+        name: 'Mosaquli',
+        tag: 'پازل رنگ و کاشی\u200cکاری',
+        description: 'تیله\u200cهای سرامیکی رنگارنگ را از میان ریل\u200cها و سوئیچ\u200cهای هوشمندانه هدایت کنید تا طرح\u200cهای موزاییکی تاریخی کامل شوند. کاملاً آفلاین و بدون تبلیغات.',
+      },
+      rotiluma: {
+        name: 'Rotiluma',
+        tag: 'پازل مکانیکی حلقه\u200cها',
+        description: 'حلقه\u200cهای درهم\u200cتنیده، چرخ\u200cدنده\u200cها و ضامن\u200cها را بچرخانید تا قفل\u200cهای مکانیکی پیچیده و جذاب باز شوند. کاملاً آفلاین و بدون تبلیغات.',
+      },
+      petalnori: {
+        name: 'Petalnori',
+        tag: 'پازل باغ گیاه\u200cشناسی',
+        description: 'گل\u200cها و باغچه\u200cها را بر اساس قوانین هوشمندانه نور آفتاب و سایه بکارید و باغ آرامش\u200cبخش خود را شکوفا کنید. کاملاً آفلاین و بدون تبلیغات.',
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -1483,10 +1583,12 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       headerAria: "کانال رسمی یوتیوب AppsMakerDeluxe Studios",
       playTrailerAria: "پخش تریلر SoliTowers در سایت",
       closeTrailer: "بستن ویدیو",
-    },
+    },
+
     footer: {
       tagline: "محصولات اندروید با هویتی متمایز.",
-      youtube: "YouTube (@AppsMakerDeluxeStudios)",
+      youtube: "YouTube (@AppsMakerDeluxeStudios)",
+
       backToTop: "بازگشت به بالا ↑",
       copyright: "AppsMakerDeluxe Studios. کلیه حقوق محفوظ است.",
     },
@@ -1662,6 +1764,21 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Wear OS ラグジュアリー文字盤",
         description: "チタンやフォージドカーボンなど12の高級素材、12のHUDテレメトリパネル、高輝度LEDアクセントを備えた近未来ハイブリッドウォッチフェイス。",
       },
+      mosaquli: {
+        name: 'Mosaquli',
+        tag: 'カラー＆モザイクパズル',
+        description: '色鮮やかな陶器のビー玉を線路や分岐器を通して導き、歴史あるモザイクアートを完成させましょう。完全オフライン・広告なし。',
+      },
+      rotiluma: {
+        name: 'Rotiluma',
+        tag: '機械仕掛けのリングパズル',
+        description: '連動するリング、歯車、掛け金を回転させ、精巧な機械錠の仕掛けを解き明かしましょう。完全オフライン・広告なし。',
+      },
+      petalnori: {
+        name: 'Petalnori',
+        tag: 'ボタニカルガーデンパズル',
+        description: '日当たりや日陰のルールに従って花壇に花を植え、心安らぐ静かな禅の庭を育てましょう。完全オフライン・広告なし。',
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -1729,10 +1846,12 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       headerAria: "AppsMakerDeluxe Studios 公式YouTubeチャンネル",
       playTrailerAria: "SoliTowersのトレーラーを再生",
       closeTrailer: "動画を閉じる",
-    },
+    },
+
     footer: {
       tagline: "確かな個性を持つ Android プロダクト。",
-      youtube: "YouTube (@AppsMakerDeluxeStudios)",
+      youtube: "YouTube (@AppsMakerDeluxeStudios)",
+
       backToTop: "トップへ戻る ↑",
       copyright: "AppsMakerDeluxe Studios. All rights reserved.",
     },
@@ -1908,6 +2027,21 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Wear OS 奢华混合表盘",
         description: "未来感奢华混合智能表盘，支持钛合金与锻造碳纤维等 12 种质感材质、12 种 HUD 遥测仪表与璀璨 LED 荧光光效。",
       },
+      mosaquli: {
+        name: 'Mosaquli',
+        tag: '色彩镶嵌拼图',
+        description: '穿过精心设计的轨道与转辙器，引导彩色陶瓷弹珠填补历史马赛克图案。完全离线且无广告。',
+      },
+      rotiluma: {
+        name: 'Rotiluma',
+        tag: '机械圆环解谜',
+        description: '旋转环环相扣的齿轮、卡榫与金属圆环，解开结构巧妙的精工机械锁。完全离线且无广告。',
+      },
+      petalnori: {
+        name: 'Petalnori',
+        tag: '植物庭园逻辑拼图',
+        description: '按照阳光与树荫的逻辑法则精心栽种花圃，构筑专属于你的静谧禅意花园。完全离线且无广告。',
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -1975,10 +2109,12 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       headerAria: "AppsMakerDeluxe Studios 官方 YouTube 频道",
       playTrailerAria: "在站内播放 SoliTowers 预告片",
       closeTrailer: "关闭视频",
-    },
+    },
+
     footer: {
       tagline: "富有独特个性的 Android 体验。",
-      youtube: "YouTube (@AppsMakerDeluxeStudios)",
+      youtube: "YouTube (@AppsMakerDeluxeStudios)",
+
       backToTop: "返回顶部 ↑",
       copyright: "AppsMakerDeluxe Studios. 保留所有权利。",
     },
@@ -2154,6 +2290,21 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Wear OS Ibrido di Lusso",
         description: "Quadrante ibrido futuristico di lusso con 12 materiali pregiati (Titanio, Carbonio Forgiato), 12 pannelli telemetrici HUD e accenti LED luminosi.",
       },
+      mosaquli: {
+        name: 'Mosaquli',
+        tag: 'Rompicapo a Colori e Mosaici',
+        description: 'Guida biglie in ceramica lungo binari e scambi per completare splendidi mosaici storici. 100% offline e senza pubblicità.',
+      },
+      rotiluma: {
+        name: 'Rotiluma',
+        tag: 'Rompicapo Meccanico ad Anelli',
+        description: 'Ruota anelli interconnessi, ingranaggi e scrocchi per sbloccare sofisticati meccanismi e lucchetti. 100% offline e senza pubblicità.',
+      },
+      petalnori: {
+        name: 'Petalnori',
+        tag: 'Rompicapo Botanico da Giardino',
+        description: 'Coltiva aiuole e fiori seguendo regole di sole e ombra per far fiorire il tuo rilassante giardino zen. 100% offline e senza pubblicità.',
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -2221,10 +2372,12 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       headerAria: "Canale YouTube ufficiale di AppsMakerDeluxe Studios",
       playTrailerAria: "Riproduci il trailer di SoliTowers",
       closeTrailer: "Chiudi video",
-    },
+    },
+
     footer: {
       tagline: "Esperienze Android ricche di personalità.",
-      youtube: "YouTube (@AppsMakerDeluxeStudios)",
+      youtube: "YouTube (@AppsMakerDeluxeStudios)",
+
       backToTop: "Torna su ↑",
       copyright: "AppsMakerDeluxe Studios. Tutti i diritti riservati.",
     },
@@ -2400,6 +2553,21 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Wear OS Híbrido de Luxo",
         description: "Mostrador híbrido futurista de luxo com 12 materiais premium (Titânio, Carbono Forjado), 12 painéis de telemetria HUD e iluminação LED brilhante.",
       },
+      mosaquli: {
+        name: 'Mosaquli',
+        tag: 'Quebra-cabeça de Cores e Mosaicos',
+        description: 'Guie bolinhas de cerâmica coloridas por trilhos e desvios para completar mosaicos históricos. 100% offline e sem anúncios.',
+      },
+      rotiluma: {
+        name: 'Rotiluma',
+        tag: 'Quebra-cabeça Mecânico de Anéis',
+        description: 'Gire anéis entrelaçados, engrenagens e trincos para desbloquear fechaduras mecânicas engenhosas. 100% offline e sem anúncios.',
+      },
+      petalnori: {
+        name: 'Petalnori',
+        tag: 'Quebra-cabeça Botânico de Jardim',
+        description: 'Cultive canteiros e flores seguindo regras de sol e sombra para criar seu sereno jardim zen. 100% offline e sem anúncios.',
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -2467,10 +2635,12 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       headerAria: "Canal oficial no YouTube da AppsMakerDeluxe Studios",
       playTrailerAria: "Reproduzir trailer do SoliTowers",
       closeTrailer: "Fechar vídeo",
-    },
+    },
+
     footer: {
       tagline: "Experiências Android com identidade própria.",
-      youtube: "YouTube (@AppsMakerDeluxeStudios)",
+      youtube: "YouTube (@AppsMakerDeluxeStudios)",
+
       backToTop: "Voltar ao topo ↑",
       copyright: "AppsMakerDeluxe Studios. Todos os direitos reservados.",
     },
@@ -2646,6 +2816,21 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Люксовый циферблат Wear OS",
         description: "Футуристический люксовый гибридный циферблат с 12 премиальными материалами (титан, кованый карбон), 12 HUD-панелями и яркой LED-подсветкой.",
       },
+      mosaquli: {
+        name: 'Mosaquli',
+        tag: 'Цветная мозаичная головоломка',
+        description: 'Прокатывайте цветные керамические шарики по затейливым рельсам и стрелкам, собирая исторические мозаики. Полностью офлайн и без рекламы.',
+      },
+      rotiluma: {
+        name: 'Rotiluma',
+        tag: 'Механическая кольцевая головоломка',
+        description: 'Вращайте сцепленные кольца, шестеренки и задвижки, открывая изящные механические замки. Полностью офлайн и без рекламы.',
+      },
+      petalnori: {
+        name: 'Petalnori',
+        tag: 'Ботаническая садовая головоломка',
+        description: 'Высаживайте цветы и клумбы по законам света и тени, взращивая свой безмятежный дзен-сад. Полностью офлайн и без рекламы.',
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -2713,10 +2898,12 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       headerAria: "Официальный YouTube-канал AppsMakerDeluxe Studios",
       playTrailerAria: "Воспроизвести трейлер SoliTowers на сайте",
       closeTrailer: "Закрыть видео",
-    },
+    },
+
     footer: {
       tagline: "Android-продукты с ярким характером.",
-      youtube: "YouTube (@AppsMakerDeluxeStudios)",
+      youtube: "YouTube (@AppsMakerDeluxeStudios)",
+
       backToTop: "Наверх ↑",
       copyright: "AppsMakerDeluxe Studios. Все права защищены.",
     },
@@ -2892,6 +3079,21 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: "Wear OS Lüks Hibrit",
         description: "12 premium malzeme (Titanyum, Karbon), 12 telemetri HUD paneli ve parlak LED aydınlatma sunan fütüristik lüks Wear OS saat yüzü.",
       },
+      mosaquli: {
+        name: 'Mosaquli',
+        tag: 'Renk ve Mozaik Bulmacası',
+        description: 'Tarihi mozaik desenlerini tamamlamak için renkli seramik misketleri raylar ve makaslar üzerinden yönlendirin. %100 çevrimdışı ve reklamsız.',
+      },
+      rotiluma: {
+        name: 'Rotiluma',
+        tag: 'Mekanik Halka Bulmacası',
+        description: 'Zarif mekanik kilitleri açmak için iç içe geçmiş halkaları, dişlileri ve mandalları döndürün. %100 çevrimdışı ve reklamsız.',
+      },
+      petalnori: {
+        name: 'Petalnori',
+        tag: 'Botanik Bahçe Bulmacası',
+        description: 'Huzurlu zen bahçenizi yeşertmek için çiçekleri güneş ve gölge kurallarına göre dikin. %100 çevrimdışı ve reklamsız.',
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -2959,10 +3161,12 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       headerAria: "AppsMakerDeluxe Studios resmi YouTube kanalı",
       playTrailerAria: "SoliTowers fragmanını sitede oynat",
       closeTrailer: "Videoyu kapat",
-    },
+    },
+
     footer: {
       tagline: "Karakteri olan Android deneyimleri.",
-      youtube: "YouTube (@AppsMakerDeluxeStudios)",
+      youtube: "YouTube (@AppsMakerDeluxeStudios)",
+
       backToTop: "Yukarı çık ↑",
       copyright: "AppsMakerDeluxe Studios. Tüm hakları saklıdır.",
     },
