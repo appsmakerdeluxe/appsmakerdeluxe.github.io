@@ -204,7 +204,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       herbalunio: {
         name: 'Herbalunio',
         tag: 'Heilpflanzen & Kräuterlexikon',
-        description: 'Kompaktes Offline-Lexikon für 20 ausgewählte Heilpflanzen und Küchenkräuter mit Saisonzeiten, Sammelbuch, Verwechslungswarnungen und Botanikwissen. 100 % offline und werbefrei.',
+        description: 'Kompaktes Offline-Lexikon für Heilpflanzen und Küchenkräuter mit Saisonzeiten, Sammelbuch, Verwechslungswarnungen und Botanikwissen. 100 % offline und werbefrei.',
       },
     },
     statement: {
@@ -472,7 +472,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       herbalunio: {
         name: 'Herbalunio',
         tag: 'Herbal & Medicinal Plant Guide',
-        description: 'Compact offline guide to 20 medicinal herbs and kitchen plants featuring harvest seasons, a field journal, lookalike warnings, and botanical insights. 100% offline and ad-free.',
+        description: 'Compact offline guide to medicinal herbs and kitchen plants featuring harvest seasons, a field journal, lookalike warnings, and botanical insights. 100% offline and ad-free.',
       },
     },
     statement: {
@@ -740,7 +740,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       herbalunio: {
         name: 'Herbalunio',
         tag: 'Guide des Plantes Médicinales',
-        description: 'Guide compact hors ligne de 20 plantes médicinales et herbes aromatiques avec périodes de récolte, carnet de cueillette et conseils botaniques. 100 % hors ligne et sans pub.',
+        description: 'Guide compact hors ligne des plantes médicinales et herbes aromatiques avec périodes de récolte, carnet de cueillette et conseils botaniques. 100 % hors ligne et sans pub.',
       },
     },
     statement: {
@@ -1008,7 +1008,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       herbalunio: {
         name: 'Herbalunio',
         tag: 'Guía de Plantas Medicinales',
-        description: 'Guía compacta sin conexión de 20 plantas medicinales y aromáticas con temporadas de recolección, diario de campo y consejos botánicos. 100 % sin conexión y sin anuncios.',
+        description: 'Guía compacta sin conexión de plantas medicinales y aromáticas con temporadas de recolección, diario de campo y consejos botánicos. 100 % sin conexión y sin anuncios.',
       },
     },
     statement: {
@@ -1276,7 +1276,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       herbalunio: {
         name: 'Herbalunio',
         tag: 'دليل الأعشاب والنباتات الطبية',
-        description: 'دليل مدمج يعمل بلا إنترنت لعشرين نبتة طبية وعشبية مختارة مع مواسم الحصاد وسجل الملاحظات والتحذيرات النباتية. 100% بدون إنترنت وخالٍ من الإعلانات.',
+        description: 'دليل مدمج يعمل بلا إنترنت للنباتات الطبية والأعشاب مع مواسم الحصاد وسجل الملاحظات والتحذيرات النباتية. 100% بدون إنترنت وخالٍ من الإعلانات.',
       },
     },
     statement: {
@@ -1544,7 +1544,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       herbalunio: {
         name: 'Herbalunio',
         tag: 'راهنمای گیاهان دارویی و سبزیجات',
-        description: 'راهنمای کم‌حجم و آفلاین برای ۲۰ گیاه دارویی و خوراکی با زمان برداشت، دفترچه یادداشت، هشدارهای تشخیصی و دانش گیاه‌شناسی. ۱۰۰٪ آفلاین و بدون تبلیغات.',
+        description: 'راهنمای کم‌حجم و آفلاین برای گیاهان دارویی و خوراکی با زمان برداشت، دفترچه یادداشت، هشدارهای تشخیصی و دانش گیاه‌شناسی. ۱۰۰٪ آفلاین و بدون تبلیغات.',
       },
     },
     statement: {
@@ -1812,7 +1812,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       herbalunio: {
         name: 'Herbalunio',
         tag: '薬草・ハーブ事典',
-        description: '厳選された20種の薬草・ハーブを収録した完全オフライン事典。採取時期、野帳、類似種の見分け方、植物学知識を網羅。広告なし・100%オフライン。',
+        description: '薬草・ハーブを収録した完全オフライン事典。採取時期、野帳、類似種の見分け方、植物学知識を網羅。広告なし・100%オフライン。',
       },
     },
     statement: {
@@ -2080,7 +2080,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       herbalunio: {
         name: 'Herbalunio',
         tag: '草药与药用植物图鉴',
-        description: '精选20种草药与药用植物的紧凑型离线图鉴，包含采摘季节、野外笔记、易混淆植物警示与植物学知识。100%离线，纯净无广告。',
+        description: '草药与药用植物紧凑型离线图鉴，包含采摘季节、野外笔记、易混淆植物警示与植物学知识。100%离线，纯净无广告。',
       },
     },
     statement: {
@@ -2348,7 +2348,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       herbalunio: {
         name: 'Herbalunio',
         tag: 'Guida alle Piante ed Erbe',
-        description: 'Guida tascabile offline a 20 piante medicinali ed erbe aromatiche con calendari di raccolta, diario de campo e note botaniche. 100% offline e senza pubblicità.',
+        description: 'Guida tascabile offline a piante medicinali ed erbe aromatiche con calendari di raccolta, diario di campo e note botaniche. 100% offline e senza pubblicità.',
       },
     },
     statement: {
@@ -2616,7 +2616,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       herbalunio: {
         name: 'Herbalunio',
         tag: 'Guia de Plantas Medicinais',
-        description: 'Guia compacto offline de 20 plantas medicinais e ervas aromáticas com épocas de colheita, diário de campo e orientações botânicas. 100% offline e sem anúncios.',
+        description: 'Guia compacto offline de plantas medicinais e ervas aromáticas com épocas de colheita, diário de campo e orientações botânicas. 100% offline e sem anúncios.',
       },
     },
     statement: {
@@ -2884,7 +2884,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       herbalunio: {
         name: 'Herbalunio',
         tag: 'Справочник трав и растений',
-        description: 'Компактный офлайн-справочник по 20 лекарственным и кулинарным травам с календарем сбора, дневником находок и ботаническими данными. 100% офлайн и без рекламы.',
+        description: 'Компактный офлайн-справочник по лекарственным и кулинарным травам с календарем сбора, дневником находок и ботаническими данными. 100% офлайн и без рекламы.',
       },
     },
     statement: {
@@ -3152,7 +3152,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       herbalunio: {
         name: 'Herbalunio',
         tag: 'Şifalı Bitkiler Rehberi',
-        description: '20 seçkin şifalı bitki ve mutfak otu için derlenmiş, hasat takvimi, toplama günlüğü ve botanik bilgiler içeren pratik rehber. %100 çevrimdışı ve reklamsız.',
+        description: 'Şifalı bitkiler ve mutfak otları için derlenmiş, hasat takvimi, toplama günlüğü ve botanik bilgiler içeren pratik rehber. %100 çevrimdışı ve reklamsız.',
       },
     },
     statement: {
