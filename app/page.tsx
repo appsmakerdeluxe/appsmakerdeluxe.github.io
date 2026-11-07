@@ -48,6 +48,7 @@ const HUAWEI_ROTILUMA_URL = "https://appgallery.huawei.com/app/C119601247";
 const HUAWEI_ROTILUMA_PRO_URL = "https://appgallery.huawei.com/app/C119601289";
 const HUAWEI_PETALNORI_URL = "https://appgallery.huawei.com/app/C119601383";
 const HUAWEI_PETALNORI_PRO_URL = "https://appgallery.huawei.com/app/C119601413";
+const HUAWEI_HERBALUNIO_URL = "https://appgallery.huawei.com/app/C119700797";
 
 const APPS_META = [
   {
@@ -289,6 +290,14 @@ const APPS_META = [
     url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.petalnori",
     huaweiUrl: HUAWEI_PETALNORI_URL,
     huaweiProUrl: HUAWEI_PETALNORI_PRO_URL,
+    tone: "emerald",
+    category: "phone" as const,
+  },
+  {
+    key: "herbalunio" as const,
+    image: "/apps/herbalunio.webp",
+    url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.herbalunio",
+    huaweiUrl: HUAWEI_HERBALUNIO_URL,
     tone: "emerald",
     category: "phone" as const,
   },

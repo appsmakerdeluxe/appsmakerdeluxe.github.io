@@ -96,6 +96,7 @@ export interface TranslationSchema {
     mosaquli: AppItemTranslation;
     rotiluma: AppItemTranslation;
     petalnori: AppItemTranslation;
+    herbalunio: AppItemTranslation;
   };
   statement: {
     eyebrow: string;

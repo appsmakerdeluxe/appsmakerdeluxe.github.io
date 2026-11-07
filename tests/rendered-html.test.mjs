@@ -51,7 +51,9 @@ test("renders the finished German portfolio with real app links", async () => {
     "com.appsmakerdeluxe.mosaquli",
     "com.appsmakerdeluxe.rotiluma",
     "com.appsmakerdeluxe.petalnori",
+    "com.appsmakerdeluxe.herbalunio",
   ]) assert.match(html, new RegExp(appId.replaceAll(".", "\\.")));
+  assert.match(html, /Herbalunio/);
   assert.match(html, /Mosaquli/);
   assert.match(html, /Rotiluma/);
   assert.match(html, /Petalnori/);
@@ -121,6 +123,7 @@ test("renders the finished German portfolio with real app links", async () => {
   assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119601289/);
   assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119601383/);
   assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119601413/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119700797/);
   assert.match(html, /app-secondary-huawei-link/);
   assert.match(html, /app-link-main/);
   assert.doesNotMatch(html, /itchio|header-itch-btn|footer-itch-link/);
@@ -163,6 +166,7 @@ test("contains all 12 supported languages in translation dictionary", async () =
     assert.ok(dict.apps.mosaquli.name, `mosaquli exists for ${lang.code}`);
     assert.ok(dict.apps.rotiluma.name, `rotiluma exists for ${lang.code}`);
     assert.ok(dict.apps.petalnori.name, `petalnori exists for ${lang.code}`);
+    assert.ok(dict.apps.herbalunio.name, `herbalunio exists for ${lang.code}`);
     assert.ok(dict.nav.videos, `nav.videos exists for ${lang.code}`);
     assert.ok(dict.youtube.titlePrefix, `youtube.titlePrefix exists for ${lang.code}`);
     assert.ok(dict.footer.youtube, `footer.youtube exists for ${lang.code}`);
@@ -204,6 +208,7 @@ test("keeps final assets and accessibility safeguards in place", async () => {
   await access(new URL("../public/apps/mosaquli.webp", import.meta.url));
   await access(new URL("../public/apps/rotiluma.webp", import.meta.url));
   await access(new URL("../public/apps/petalnori.webp", import.meta.url));
+  await access(new URL("../public/apps/herbalunio.webp", import.meta.url));
   await access(new URL("../public/trailer-solitowers.webp", import.meta.url));
   await access(new URL("../public/youtube-avatar.webp", import.meta.url));
   await access(new URL("../public/logo-mark.webp", import.meta.url));

@@ -201,6 +201,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: 'Botanisches Garten-Puzzle',
         description: 'Pflanze Beete und Blüten nach cleveren Sonnen- und Schattenregeln und bringe deinen Zen-Garten zum Erblühen. 100 % offline und werbefrei.',
       },
+      herbalunio: {
+        name: 'Herbalunio',
+        tag: 'Heilpflanzen & Kräuterlexikon',
+        description: 'Kompaktes Offline-Lexikon für 20 ausgewählte Heilpflanzen und Küchenkräuter mit Saisonzeiten, Sammelbuch, Verwechslungswarnungen und Botanikwissen. 100 % offline und werbefrei.',
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -463,6 +468,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: 'Petalnori',
         tag: 'Botanical Garden Puzzle',
         description: 'Cultivate serene flower beds following sunlight and shade rules to build your tranquil zen garden. 100% offline and ad-free.',
+      },
+      herbalunio: {
+        name: 'Herbalunio',
+        tag: 'Herbal & Medicinal Plant Guide',
+        description: 'Compact offline guide to 20 medicinal herbs and kitchen plants featuring harvest seasons, a field journal, lookalike warnings, and botanical insights. 100% offline and ad-free.',
       },
     },
     statement: {
@@ -727,6 +737,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: 'Puzzle Botanique de Jardin',
         description: "Disposez parterres et fleurs selon les règles de lumière et d'ombre pour faire fleurir votre jardin zen. 100 % hors ligne et sans publicité.",
       },
+      herbalunio: {
+        name: 'Herbalunio',
+        tag: 'Guide des Plantes Médicinales',
+        description: 'Guide compact hors ligne de 20 plantes médicinales et herbes aromatiques avec périodes de récolte, carnet de cueillette et conseils botaniques. 100 % hors ligne et sans pub.',
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -989,6 +1004,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: 'Petalnori',
         tag: 'Puzle Botánico de Jardín',
         description: 'Planta flores y bancales siguiendo reglas de sol y sombra para hacer florecer tu apacible jardín zen. 100 % sin conexión y sin anuncios.',
+      },
+      herbalunio: {
+        name: 'Herbalunio',
+        tag: 'Guía de Plantas Medicinales',
+        description: 'Guía compacta sin conexión de 20 plantas medicinales y aromáticas con temporadas de recolección, diario de campo y consejos botánicos. 100 % sin conexión y sin anuncios.',
       },
     },
     statement: {
@@ -1253,6 +1273,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: 'لغز الحدائق النباتية',
         description: 'ازرع الزهور والأحواض وفق قواعد ذكية لضوء الشمس والظل لتزدهر حديقتك الهادئة. يعمل بالكامل دون إنترنت وبلا إعلانات.',
       },
+      herbalunio: {
+        name: 'Herbalunio',
+        tag: 'دليل الأعشاب والنباتات الطبية',
+        description: 'دليل مدمج يعمل بلا إنترنت لعشرين نبتة طبية وعشبية مختارة مع مواسم الحصاد وسجل الملاحظات والتحذيرات النباتية. 100% بدون إنترنت وخالٍ من الإعلانات.',
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -1515,6 +1540,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: 'Petalnori',
         tag: 'پازل باغ گیاه\u200cشناسی',
         description: 'گل\u200cها و باغچه\u200cها را بر اساس قوانین هوشمندانه نور آفتاب و سایه بکارید و باغ آرامش\u200cبخش خود را شکوفا کنید. کاملاً آفلاین و بدون تبلیغات.',
+      },
+      herbalunio: {
+        name: 'Herbalunio',
+        tag: 'راهنمای گیاهان دارویی و سبزیجات',
+        description: 'راهنمای کم‌حجم و آفلاین برای ۲۰ گیاه دارویی و خوراکی با زمان برداشت، دفترچه یادداشت، هشدارهای تشخیصی و دانش گیاه‌شناسی. ۱۰۰٪ آفلاین و بدون تبلیغات.',
       },
     },
     statement: {
@@ -1779,6 +1809,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: 'ボタニカルガーデンパズル',
         description: '日当たりや日陰のルールに従って花壇に花を植え、心安らぐ静かな禅の庭を育てましょう。完全オフライン・広告なし。',
       },
+      herbalunio: {
+        name: 'Herbalunio',
+        tag: '薬草・ハーブ事典',
+        description: '厳選された20種の薬草・ハーブを収録した完全オフライン事典。採取時期、野帳、類似種の見分け方、植物学知識を網羅。広告なし・100%オフライン。',
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -2041,6 +2076,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: 'Petalnori',
         tag: '植物庭园逻辑拼图',
         description: '按照阳光与树荫的逻辑法则精心栽种花圃，构筑专属于你的静谧禅意花园。完全离线且无广告。',
+      },
+      herbalunio: {
+        name: 'Herbalunio',
+        tag: '草药与药用植物图鉴',
+        description: '精选20种草药与药用植物的紧凑型离线图鉴，包含采摘季节、野外笔记、易混淆植物警示与植物学知识。100%离线，纯净无广告。',
       },
     },
     statement: {
@@ -2305,6 +2345,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: 'Rompicapo Botanico da Giardino',
         description: 'Coltiva aiuole e fiori seguendo regole di sole e ombra per far fiorire il tuo rilassante giardino zen. 100% offline e senza pubblicità.',
       },
+      herbalunio: {
+        name: 'Herbalunio',
+        tag: 'Guida alle Piante ed Erbe',
+        description: 'Guida tascabile offline a 20 piante medicinali ed erbe aromatiche con calendari di raccolta, diario de campo e note botaniche. 100% offline e senza pubblicità.',
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -2567,6 +2612,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: 'Petalnori',
         tag: 'Quebra-cabeça Botânico de Jardim',
         description: 'Cultive canteiros e flores seguindo regras de sol e sombra para criar seu sereno jardim zen. 100% offline e sem anúncios.',
+      },
+      herbalunio: {
+        name: 'Herbalunio',
+        tag: 'Guia de Plantas Medicinais',
+        description: 'Guia compacto offline de 20 plantas medicinais e ervas aromáticas com épocas de colheita, diário de campo e orientações botânicas. 100% offline e sem anúncios.',
       },
     },
     statement: {
@@ -2831,6 +2881,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: 'Ботаническая садовая головоломка',
         description: 'Высаживайте цветы и клумбы по законам света и тени, взращивая свой безмятежный дзен-сад. Полностью офлайн и без рекламы.',
       },
+      herbalunio: {
+        name: 'Herbalunio',
+        tag: 'Справочник трав и растений',
+        description: 'Компактный офлайн-справочник по 20 лекарственным и кулинарным травам с календарем сбора, дневником находок и ботаническими данными. 100% офлайн и без рекламы.',
+      },
     },
     statement: {
       eyebrow: "AppsMakerDeluxe Studios",
@@ -3093,6 +3148,11 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         name: 'Petalnori',
         tag: 'Botanik Bahçe Bulmacası',
         description: 'Huzurlu zen bahçenizi yeşertmek için çiçekleri güneş ve gölge kurallarına göre dikin. %100 çevrimdışı ve reklamsız.',
+      },
+      herbalunio: {
+        name: 'Herbalunio',
+        tag: 'Şifalı Bitkiler Rehberi',
+        description: '20 seçkin şifalı bitki ve mutfak otu için derlenmiş, hasat takvimi, toplama günlüğü ve botanik bilgiler içeren pratik rehber. %100 çevrimdışı ve reklamsız.',
       },
     },
     statement: {
