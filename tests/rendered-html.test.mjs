@@ -1,0 +1,256 @@
+import assert from "node:assert/strict";
+import { access, readFile } from "node:fs/promises";
+import test from "node:test";
+
+async function render() {
+  const workerUrl = new URL("../dist/server/index.js", import.meta.url);
+  workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
+  const { default: worker } = await import(workerUrl.href);
+  return worker.fetch(
+    new Request("http://localhost/", { headers: { accept: "text/html" } }),
+    { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } },
+    { waitUntil() {}, passThroughOnException() {} },
+  );
+}
+
+test("renders the finished German portfolio with real app links", async () => {
+  const response = await render();
+  assert.equal(response.status, 200);
+  assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
+  const html = await response.text();
+  assert.match(html, /<html lang="de">/i);
+  assert.match(html, /<title>AppsMakerDeluxe Studios \| Android-Produkte<\/title>/i);
+  assert.match(html, /Apps, die sich/);
+  for (const appId of [
+    "de.appsmakerdeluxe.daymigo",
+    "de.appsmakerdeluxe.lemivo",
+    "de.appsmakerdeluxe.riftivo",
+    "de.appsmakerdeluxe.riftivo3d",
+    "com.appsmakerdeluxe.mylovecalculator",
+    "de.appsmakerdeluxe.buymorrow",
+    "de.appsmakerdeluxe.everago",
+    "com.appsmakerdeluxe.callblockerplus",
+    "com.draven.indexgenie",
+    "de.appsmakerdeluxe.luxcue",
+    "de.appsmakerdeluxe.storivio",
+    "de.appsmakerdeluxe.chiliwise",
+    "de.appsmakerdeluxe.Kavorenza",
+    "com.appsmakerdeluxe.paginotetrial",
+    "de.appsmakerdeluxe.stimmivo",
+    "de.appsmakerdeluxe.shiftano",
+    "de.appsmakerdeluxe.batterynivo",
+    "com.appsmakerdeluxe.pdfpouch",
+    "com.appsmakerdeluxe.solitowers",
+    "com.appsmakerdeluxe.wallivex",
+    "com.appsmakerdeluxe.reframiq",
+    "de.appsmakerdeluxe.dialvori",
+    "de.appsmakerdeluxe.dialvexa",
+    "com.appsmakerdeluxe.niwajori.demo",
+    "com.appsmakerdeluxe.tavolunio",
+    "com.appsmakerdeluxe.mahlvori",
+    "com.appsmakerdeluxe.mosaquli",
+    "com.appsmakerdeluxe.rotiluma",
+    "com.appsmakerdeluxe.petalnori",
+    "com.appsmakerdeluxe.herbalunio",
+  ]) assert.match(html, new RegExp(appId.replaceAll(".", "\\.")));
+  assert.match(html, /Herbalunio/);
+  assert.match(html, /Mosaquli/);
+  assert.match(html, /Rotiluma/);
+  assert.match(html, /Petalnori/);
+  assert.match(html, /Mahlvori/);
+  assert.match(html, /Tavolunio/);
+  assert.match(html, /Niwajori/);
+  assert.match(html, /Lemivo/);
+  assert.match(html, /PagiNote Trial/);
+  assert.match(html, /Stimmivo/);
+  assert.match(html, /Shiftano/);
+  assert.match(html, /BatteryNivo/);
+  assert.match(html, /PDFPouch/);
+  assert.match(html, /SoliTowers/);
+  assert.match(html, /Wallivex/);
+  assert.match(html, /Reframiq/);
+  assert.match(html, /Dialvori/);
+  assert.match(html, /Dialvexa/);
+  assert.match(html, /Wear OS/);
+  assert.match(html, /My Love Calculator/);
+  assert.doesNotMatch(html, /Recallune/);
+  assert.match(html, /ChiliWise/);
+  assert.match(html, /Kavorenza/);
+  assert.match(html, /wachsende Sammlung/);
+  assert.match(html, /appsmakerdeluxe@gmail\.com/);
+  assert.match(html, /id="kontakt"/);
+  assert.match(html, /id="videos"/);
+  assert.match(html, /https:\/\/www\.youtube\.com\/@AppsMakerDeluxeStudios/);
+  assert.match(html, /@AppsMakerDeluxeStudios/);
+  assert.doesNotMatch(html, /https:\/\/appsmakerdeluxe-studios\.itch\.io/);
+  assert.doesNotMatch(html, /itch\.io/i);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119556483/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119544223/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119556563/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119556615/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119556661/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119556739/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C11944241|https:\/\/appgallery\.huawei\.com\/app\/C119544241/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119556859/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119556929/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119451681/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119576747/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119557001/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119557025/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119559005/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119557097/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119544209/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119559187/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119557129/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119557171/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119571899/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119557545/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119559589/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119511015/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119570541/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119557585/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119557663/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119510953/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119510933/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119442407/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119543997/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119511513/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119582333/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119557711/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119600989/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119601101/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119601247/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119601289/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119601383/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119601413/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119700797/);
+  assert.match(html, /https:\/\/appgallery\.huawei\.com\/app\/C119718957/);
+  assert.match(html, /app-secondary-huawei-link/);
+  assert.match(html, /app-link-main/);
+  assert.doesNotMatch(html, /itchio|header-itch-btn|footer-itch-link/);
+  assert.match(html, /lang-selector-btn/);
+  assert.doesNotMatch(html, /In Vorbereitung/);
+  assert.match(html, /og\.png/);
+  assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton|formsubmit|Projekt anfragen|App anfragen/i);
+});
+
+test("contains all 12 supported languages in translation dictionary", async () => {
+  const { SUPPORTED_LANGUAGES, translations } = await import("../app/i18n/translations.ts");
+  assert.equal(SUPPORTED_LANGUAGES.length, 12);
+  for (const lang of SUPPORTED_LANGUAGES) {
+    const dict = translations[lang.code];
+    assert.ok(dict, `Translation dictionary for ${lang.code} exists`);
+    assert.ok(dict.nav.apps, `nav.apps exists for ${lang.code}`);
+    assert.ok(dict.hero.titleLine1, `hero.titleLine1 exists for ${lang.code}`);
+    assert.ok(dict.work.filterAll, `work.filterAll exists for ${lang.code}`);
+    assert.ok(dict.work.filterWear, `work.filterWear exists for ${lang.code}`);
+    assert.ok(dict.work.huaweiStoreButton, `work.huaweiStoreButton exists for ${lang.code}`);
+    assert.ok(dict.work.huaweiProStoreButton, `work.huaweiProStoreButton exists for ${lang.code}`);
+    assert.ok(dict.work.huaweiFullStoreButton, `work.huaweiFullStoreButton exists for ${lang.code}`);
+    assert.ok(dict.work.openHuaweiStoreAria, `work.openHuaweiStoreAria exists for ${lang.code}`);
+    assert.ok(dict.apps.daymigo.name, `daymigo exists for ${lang.code}`);
+    assert.ok(dict.apps.lemivo.name, `lemivo exists for ${lang.code}`);
+    assert.ok(dict.apps.shiftano.name, `shiftano exists for ${lang.code}`);
+    assert.ok(dict.apps.batterynivo.name, `batterynivo exists for ${lang.code}`);
+    assert.ok(dict.apps.pdfpouch.name, `pdfpouch exists for ${lang.code}`);
+    assert.ok(dict.apps.solitowers.name, `solitowers exists for ${lang.code}`);
+    assert.ok(dict.apps.wallivex.name, `wallivex exists for ${lang.code}`);
+    assert.ok(dict.apps.reframiq.name, `reframiq exists for ${lang.code}`);
+    assert.ok(dict.apps.dialvori.name, `dialvori exists for ${lang.code}`);
+    assert.ok(dict.apps.dialvexa.name, `dialvexa exists for ${lang.code}`);
+    assert.ok(dict.apps.mylovecalculator.name, `mylovecalculator exists for ${lang.code}`);
+    assert.ok(dict.apps.paginotetrial.name, `paginotetrial exists for ${lang.code}`);
+    assert.ok(dict.apps.stimmivo.name, `stimmivo exists for ${lang.code}`);
+    assert.ok(dict.apps.niwajoridemo.name, `niwajoridemo exists for ${lang.code}`);
+    assert.ok(dict.apps.tavolunio.name, `tavolunio exists for ${lang.code}`);
+    assert.ok(dict.apps.mahlvori.name, `mahlvori exists for ${lang.code}`);
+    assert.ok(dict.apps.mosaquli.name, `mosaquli exists for ${lang.code}`);
+    assert.ok(dict.apps.rotiluma.name, `rotiluma exists for ${lang.code}`);
+    assert.ok(dict.apps.petalnori.name, `petalnori exists for ${lang.code}`);
+    assert.ok(dict.apps.herbalunio.name, `herbalunio exists for ${lang.code}`);
+    assert.ok(dict.apps.brewvori.name, `brewvori exists for ${lang.code}`);
+    assert.ok(dict.apps.brewvori.tag, `brewvori tag exists for ${lang.code}`);
+    assert.ok(dict.apps.brewvori.description, `brewvori description exists for ${lang.code}`);
+    assert.ok(dict.apps.rhyvelo.name, `rhyvelo exists for ${lang.code}`);
+    assert.ok(dict.apps.rhyvelo.tag, `rhyvelo tag exists for ${lang.code}`);
+    assert.ok(dict.apps.rhyvelo.description, `rhyvelo description exists for ${lang.code}`);
+    if (lang.code === "de") {
+      assert.match(dict.apps.brewvori.tag, /Kaffee/);
+      assert.match(dict.apps.brewvori.description, /Kaffeewissen/);
+      assert.match(dict.apps.rhyvelo.tag, /Rhythmus/);
+      assert.match(dict.apps.rhyvelo.description, /Hindernissen/);
+    }
+    if (lang.code === "en") {
+      assert.equal(dict.apps.brewvori.tag, "Coffee, made approachable");
+      assert.equal(dict.apps.rhyvelo.tag, "Rhythm runner action");
+    }
+    assert.ok(dict.nav.videos, `nav.videos exists for ${lang.code}`);
+    assert.ok(dict.youtube.titlePrefix, `youtube.titlePrefix exists for ${lang.code}`);
+    assert.ok(dict.footer.youtube, `footer.youtube exists for ${lang.code}`);
+    assert.ok(dict.statement.quotePrefix, `statement exists for ${lang.code}`);
+    assert.ok(dict.contact.form.submitButton, `contact.form.submitButton exists for ${lang.code}`);
+  }
+});
+
+test("keeps final assets and accessibility safeguards in place", async () => {
+  const [page, css, packageJson] = await Promise.all([
+    readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/globals.css", import.meta.url), "utf8"),
+    readFile(new URL("../package.json", import.meta.url), "utf8"),
+  ]);
+  assert.match(page, /className="skip-link"/);
+  assert.match(page, /prefers-reduced-motion|reduced-motion/i.test(css) ? /skip-link/ : /$^/);
+  assert.match(css, /prefers-reduced-motion:\s*reduce/);
+  assert.doesNotMatch(packageJson, /react-loading-skeleton/);
+  await access(new URL("../public/og.png", import.meta.url));
+  await access(new URL("../public/logo.webp", import.meta.url));
+  await access(new URL("../public/studio-badge.webp", import.meta.url));
+  await access(new URL("../public/apps/lemivo.webp", import.meta.url));
+  await access(new URL("../public/apps/paginotetrial.webp", import.meta.url));
+  await access(new URL("../public/apps/stimmivo.webp", import.meta.url));
+  await access(new URL("../public/apps/shiftano.webp", import.meta.url));
+  await access(new URL("../public/apps/batterynivo.webp", import.meta.url));
+  await access(new URL("../public/apps/pdfpouch.webp", import.meta.url));
+  await access(new URL("../public/apps/solitowers.webp", import.meta.url));
+  await access(new URL("../public/apps/wallivex.webp", import.meta.url));
+  await access(new URL("../public/apps/reframiq.webp", import.meta.url));
+  await access(new URL("../public/apps/dialvori.webp", import.meta.url));
+  await access(new URL("../public/apps/dialvexa.webp", import.meta.url));
+  await access(new URL("../public/apps/dialvexa-store.webp", import.meta.url));
+  await access(new URL("../public/apps/kavorenza.webp", import.meta.url));
+  await access(new URL("../public/apps/kavorenza-store.webp", import.meta.url));
+  await access(new URL("../public/apps/niwajoridemo.webp", import.meta.url));
+  await access(new URL("../public/apps/tavolunio.webp", import.meta.url));
+  await access(new URL("../public/apps/mahlvori.webp", import.meta.url));
+  await access(new URL("../public/apps/mosaquli.webp", import.meta.url));
+  await access(new URL("../public/apps/rotiluma.webp", import.meta.url));
+  await access(new URL("../public/apps/petalnori.webp", import.meta.url));
+  await access(new URL("../public/apps/herbalunio.webp", import.meta.url));
+  await access(new URL("../public/apps/brewvori-feature.webp", import.meta.url));
+  await access(new URL("../public/apps/rhyvelo-feature.webp", import.meta.url));
+  await access(new URL("../public/trailer-solitowers.webp", import.meta.url));
+  await access(new URL("../public/youtube-avatar.webp", import.meta.url));
+  await access(new URL("../public/logo-mark.webp", import.meta.url));
+  await access(new URL("../public/favicon.png", import.meta.url));
+  await assert.rejects(access(new URL("../app/_sites-preview/SkeletonPreview.tsx", import.meta.url)));
+});
+
+test("hero rotating apps pool dynamically includes phone apps and supports hover pause", async () => {
+  const page = await readFile(new URL("../app/page.tsx", import.meta.url), "utf8");
+  assert.match(page, /export const HERO_APPS/);
+  assert.match(page, /onMouseEnter=\{.*setIsPaused\(true\)/);
+  assert.match(page, /onMouseLeave=\{.*setIsPaused\(false\)/);
+  assert.match(page, /10000/);
+  assert.match(page, /phone phone-back/);
+  assert.match(page, /phone phone-main/);
+});
+
+test("includes the bilingual BrewVori privacy page in the Pages source", async () => {
+  const page = await readFile(new URL("../public/brewvori-privacy/index.html", import.meta.url), "utf8");
+  assert.match(page, /com\.appsmakerdeluxe\.brewvori/);
+  assert.match(page, /com\.appsmakerdeluxe\.brewvoripro/);
+  assert.match(page, /<section id="de"/);
+  assert.match(page, /<section id="en"/);
+  assert.match(page, /no Internet permission/i);
+});
+
