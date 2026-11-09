@@ -319,7 +319,7 @@ const APPS_META = [
   {
     key: "rhyvelo" as const,
     image: "/apps/rhyvelo-feature.webp",
-    url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.rhyvelo",
+    url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.beatskieslite",
     huaweiUrl: HUAWEI_BEATSKIES_LITE_URL,
     huaweiProUrl: HUAWEI_BEATSKIES_PRO_URL,
     tone: "cyber wide",
