@@ -172,6 +172,7 @@ test("contains all 12 supported languages in translation dictionary", async () =
     assert.ok(dict.apps.brewvori.tag, `brewvori tag exists for ${lang.code}`);
     assert.ok(dict.apps.brewvori.description, `brewvori description exists for ${lang.code}`);
     assert.ok(dict.apps.rhyvelo.name, `rhyvelo exists for ${lang.code}`);
+    assert.equal(dict.apps.rhyvelo.name, "BeatSkies Lite", `BeatSkies Lite name is localized for ${lang.code}`);
     assert.ok(dict.apps.rhyvelo.tag, `rhyvelo tag exists for ${lang.code}`);
     assert.ok(dict.apps.rhyvelo.description, `rhyvelo description exists for ${lang.code}`);
     if (lang.code === "de") {

@@ -52,8 +52,8 @@ const HUAWEI_HERBALUNIO_URL = "https://appgallery.huawei.com/app/C119700797";
 const HUAWEI_HERBALUNIO_PRO_URL = "https://appgallery.huawei.com/app/C119718957";
 const HUAWEI_BREWVORI_URL = "https://appgallery.huawei.com/app/C119722237";
 const HUAWEI_BREWVORI_PRO_URL = "https://appgallery.huawei.com/app/C119722247";
-const HUAWEI_RHYEVELO_LITE_URL = "https://appgallery.huawei.com/app/C119722743";
-const HUAWEI_RHYEVELO_PRO_URL = "https://appgallery.huawei.com/app/C119722753";
+const HUAWEI_BEATSKIES_LITE_URL = "https://appgallery.huawei.com/app/C119737323";
+const HUAWEI_BEATSKIES_PRO_URL = "https://appgallery.huawei.com/app/C119737341";
 
 const APPS_META = [
   {
@@ -320,8 +320,8 @@ const APPS_META = [
     key: "rhyvelo" as const,
     image: "/apps/rhyvelo-feature.webp",
     url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.rhyvelo",
-    huaweiUrl: HUAWEI_RHYEVELO_LITE_URL,
-    huaweiProUrl: HUAWEI_RHYEVELO_PRO_URL,
+    huaweiUrl: HUAWEI_BEATSKIES_LITE_URL,
+    huaweiProUrl: HUAWEI_BEATSKIES_PRO_URL,
     tone: "cyber wide",
     category: "phone" as const,
   },
@@ -631,7 +631,11 @@ function PortfolioView() {
                         </a>
                       )}
                       {"huaweiProUrl" in meta && meta.huaweiProUrl && (() => {
-                        const proTitle = meta.key === "paginotetrial" ? "PagiNote Pro" : `${app.name} Pro`;
+                        const proTitle = meta.key === "paginotetrial"
+                          ? "PagiNote Pro"
+                          : meta.key === "rhyvelo"
+                            ? "BeatSkies Pro"
+                            : `${app.name} Pro`;
                         const proLabel = t.work.huaweiProStoreButton.replace("Reframiq Pro", proTitle);
                         return (
                           <a
