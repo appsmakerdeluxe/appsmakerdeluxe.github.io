@@ -317,8 +317,8 @@ const APPS_META = [
     category: "phone" as const,
   },
   {
-    key: "rhyvelo" as const,
-    image: "/apps/rhyvelo-feature.webp",
+    key: "beatskieslite" as const,
+    image: "/apps/beatskieslite-feature.webp",
     url: "https://play.google.com/store/apps/details?id=com.appsmakerdeluxe.beatskieslite",
     huaweiUrl: HUAWEI_BEATSKIES_LITE_URL,
     huaweiProUrl: HUAWEI_BEATSKIES_PRO_URL,
@@ -633,7 +633,7 @@ function PortfolioView() {
                       {"huaweiProUrl" in meta && meta.huaweiProUrl && (() => {
                         const proTitle = meta.key === "paginotetrial"
                           ? "PagiNote Pro"
-                          : meta.key === "rhyvelo"
+                          : meta.key === "beatskieslite"
                             ? "BeatSkies Pro"
                             : `${app.name} Pro`;
                         const proLabel = t.work.huaweiProStoreButton.replace("Reframiq Pro", proTitle);

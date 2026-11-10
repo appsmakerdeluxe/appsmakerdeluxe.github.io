@@ -98,7 +98,7 @@ export interface TranslationSchema {
     petalnori: AppItemTranslation;
     herbalunio: AppItemTranslation;
     brewvori: AppItemTranslation;
-    rhyvelo: AppItemTranslation;
+    beatskieslite: AppItemTranslation;
   };
   statement: {
     eyebrow: string;

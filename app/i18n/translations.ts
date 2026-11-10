@@ -206,7 +206,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: 'Kaffee einfach zubereiten',
         description: 'Kaffeewissen, Rezepte und ein geführter Brüh-Timer begleiten dich vom ersten Schritt bis zur fertigen Tasse.',
       },
-      rhyvelo: {
+      beatskieslite: {
         name: 'BeatSkies Lite',
         tag: 'Rhythmus-Runner-Action',
         description: 'Steuere deinen Speeder im Takt durch Neon-Strecken, weiche Hindernissen aus und sammle Energie.',
@@ -484,7 +484,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: 'Coffee, made approachable',
         description: 'Coffee know-how, recipes, and a guided brew timer help you go from first step to a finished cup.',
       },
-      rhyvelo: {
+      beatskieslite: {
         name: 'BeatSkies Lite',
         tag: 'Rhythm runner action',
         description: 'Pilot your speeder through neon tracks, dodge hazards, and collect energy in a rhythm-driven runner.',
@@ -762,7 +762,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: 'Le café en toute simplicité',
         description: 'Conseils, recettes et minuteur de préparation vous accompagnent à chaque étape jusqu’à la tasse.',
       },
-      rhyvelo: {
+      beatskieslite: {
         name: 'BeatSkies Lite',
         tag: 'Action au rythme effréné',
         description: 'Pilotez votre speeder sur des pistes néon, évitez les obstacles et collectez de l’énergie au rythme du jeu.',
@@ -1040,7 +1040,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: 'Café sin complicaciones',
         description: 'Consejos, recetas y un temporizador guiado te acompañan desde el primer paso hasta tu taza.',
       },
-      rhyvelo: {
+      beatskieslite: {
         name: 'BeatSkies Lite',
         tag: 'Acción al ritmo',
         description: 'Pilota tu nave por pistas de neón, esquiva obstáculos y recoge energía al ritmo de la partida.',
@@ -1318,7 +1318,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: 'قهوة بطريقة سهلة',
         description: 'معرفة القهوة والوصفات ومؤقت التحضير الموجّه يرافقك من الخطوة الأولى حتى فنجانك.',
       },
-      rhyvelo: {
+      beatskieslite: {
         name: 'BeatSkies Lite',
         tag: 'تحديات بإيقاع سريع',
         description: 'قد مركبتك عبر مسارات النيون، وتفادَ العقبات واجمع الطاقة مع إيقاع اللعبة.',
@@ -1596,7 +1596,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: 'قهوه، ساده و دلنشین',
         description: 'دانش قهوه، دستورها و زمان‌سنج هدایت‌شده از نخستین گام تا فنجان نهایی همراه شماست.',
       },
-      rhyvelo: {
+      beatskieslite: {
         name: 'BeatSkies Lite',
         tag: 'هیجان دونده ریتمیک',
         description: 'با ریتم بازی سفینه را در مسیرهای نئونی برانید، از موانع بگذرید و انرژی جمع کنید.',
@@ -1874,7 +1874,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: 'コーヒーをもっと手軽に',
         description: 'コーヒーの知識、レシピ、ガイド付きタイマーで、最初の一手から一杯までサポートします。',
       },
-      rhyvelo: {
+      beatskieslite: {
         name: 'BeatSkies Lite',
         tag: 'リズムランナーアクション',
         description: 'ネオンコースで機体を操り、障害物を避け、リズムに合わせてエネルギーを集めよう。',
@@ -2152,7 +2152,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: '轻松冲煮咖啡',
         description: '咖啡知识、配方和引导计时器，陪你从第一步冲煮到完成一杯。',
       },
-      rhyvelo: {
+      beatskieslite: {
         name: 'BeatSkies Lite',
         tag: '节奏跑酷挑战',
         description: '驾驶飞行器穿越霓虹赛道，躲避障碍并跟随节奏收集能量。',
@@ -2430,7 +2430,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: 'Caffè, con semplicità',
         description: 'Consigli, ricette e un timer guidato ti accompagnano dal primo passaggio fino alla tazza.',
       },
-      rhyvelo: {
+      beatskieslite: {
         name: 'BeatSkies Lite',
         tag: 'Azione a ritmo',
         description: 'Guida il tuo speeder tra piste al neon, schiva gli ostacoli e raccogli energia a ritmo di gioco.',
@@ -2708,7 +2708,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: 'Café sem complicações',
         description: 'Conhecimentos, receitas e um temporizador guiado acompanham cada etapa até à chávena.',
       },
-      rhyvelo: {
+      beatskieslite: {
         name: 'BeatSkies Lite',
         tag: 'Ação em ritmo',
         description: 'Pilote a nave por pistas neon, desvie dos obstáculos e recolha energia ao ritmo do jogo.',
@@ -2986,7 +2986,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: 'Кофе без сложностей',
         description: 'Советы о кофе, рецепты и пошаговый таймер помогут пройти путь от начала до готовой чашки.',
       },
-      rhyvelo: {
+      beatskieslite: {
         name: 'BeatSkies Lite',
         tag: 'Ритмичный раннер',
         description: 'Проведите спидер по неоновым трассам, обходите препятствия и собирайте энергию в ритме игры.',
@@ -3264,7 +3264,7 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         tag: 'Kahve, kolayca',
         description: 'Kahve bilgileri, tarifler ve adım adım zamanlayıcı ilk adımdan fincana kadar eşlik eder.',
       },
-      rhyvelo: {
+      beatskieslite: {
         name: 'BeatSkies Lite',
         tag: 'Ritimli koşu aksiyonu',
         description: 'Speeder aracını neon parkurlarda sür, engellerden kaç ve oyunun ritminde enerji topla.',

@@ -47,6 +47,7 @@ test("renders the finished German portfolio with real app links", async () => {
     "de.appsmakerdeluxe.dialvexa",
     "com.appsmakerdeluxe.niwajori.demo",
     "com.appsmakerdeluxe.tavolunio",
+    "com.appsmakerdeluxe.beatskieslite",
     "com.appsmakerdeluxe.mahlvori",
     "com.appsmakerdeluxe.mosaquli",
     "com.appsmakerdeluxe.rotiluma",
@@ -171,19 +172,19 @@ test("contains all 12 supported languages in translation dictionary", async () =
     assert.ok(dict.apps.brewvori.name, `brewvori exists for ${lang.code}`);
     assert.ok(dict.apps.brewvori.tag, `brewvori tag exists for ${lang.code}`);
     assert.ok(dict.apps.brewvori.description, `brewvori description exists for ${lang.code}`);
-    assert.ok(dict.apps.rhyvelo.name, `rhyvelo exists for ${lang.code}`);
-    assert.equal(dict.apps.rhyvelo.name, "BeatSkies Lite", `BeatSkies Lite name is localized for ${lang.code}`);
-    assert.ok(dict.apps.rhyvelo.tag, `rhyvelo tag exists for ${lang.code}`);
-    assert.ok(dict.apps.rhyvelo.description, `rhyvelo description exists for ${lang.code}`);
+    assert.ok(dict.apps.beatskieslite.name, `beatskieslite exists for ${lang.code}`);
+    assert.equal(dict.apps.beatskieslite.name, "BeatSkies Lite", `BeatSkies Lite name is localized for ${lang.code}`);
+    assert.ok(dict.apps.beatskieslite.tag, `beatskieslite tag exists for ${lang.code}`);
+    assert.ok(dict.apps.beatskieslite.description, `beatskieslite description exists for ${lang.code}`);
     if (lang.code === "de") {
       assert.match(dict.apps.brewvori.tag, /Kaffee/);
       assert.match(dict.apps.brewvori.description, /Kaffeewissen/);
-      assert.match(dict.apps.rhyvelo.tag, /Rhythmus/);
-      assert.match(dict.apps.rhyvelo.description, /Hindernissen/);
+      assert.match(dict.apps.beatskieslite.tag, /Rhythmus/);
+      assert.match(dict.apps.beatskieslite.description, /Hindernissen/);
     }
     if (lang.code === "en") {
       assert.equal(dict.apps.brewvori.tag, "Coffee, made approachable");
-      assert.equal(dict.apps.rhyvelo.tag, "Rhythm runner action");
+      assert.equal(dict.apps.beatskieslite.tag, "Rhythm runner action");
     }
     assert.ok(dict.nav.videos, `nav.videos exists for ${lang.code}`);
     assert.ok(dict.youtube.titlePrefix, `youtube.titlePrefix exists for ${lang.code}`);
@@ -228,7 +229,7 @@ test("keeps final assets and accessibility safeguards in place", async () => {
   await access(new URL("../public/apps/petalnori.webp", import.meta.url));
   await access(new URL("../public/apps/herbalunio.webp", import.meta.url));
   await access(new URL("../public/apps/brewvori-feature.webp", import.meta.url));
-  await access(new URL("../public/apps/rhyvelo-feature.webp", import.meta.url));
+  await access(new URL("../public/apps/beatskieslite-feature.webp", import.meta.url));
   await access(new URL("../public/trailer-solitowers.webp", import.meta.url));
   await access(new URL("../public/youtube-avatar.webp", import.meta.url));
   await access(new URL("../public/logo-mark.webp", import.meta.url));
